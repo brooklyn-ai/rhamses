@@ -1,0 +1,71 @@
+.modal
+	height: 0
+	background: white
+	.modal-inner
+		background: white
+		height: 1px
+		overflow: hidden
+		overflow-x: hidden
+		overflow-y: scroll
+		-webkit-overflow-scrolling: touch
+		position: fixed
+		top: 100%
+		left: 50%
+		-webkit-transform: translate(-50%, -100%)
+		-ms-transform: translate(-50%, -100%)
+		transform: translate(-50%, -100%)
+		transition: width 0.5s ease 0.5s, height 0.5s ease
+		width: 0
+		z-index: 10
+
+	input
+		cursor: pointer
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		background-color: white
+		width:  40px 
+		height: 40px 
+		background-color: rgba(255, 255, 255, 0.5) !important
+		border-radius: 50%
+		left: calc(50% - 20px)
+		top: 77.5vh
+
+		&:focus 
+			outline: none
+	
+		&:checked 
+			position: fixed
+			z-index: 11
+			-webkit-appearance: none
+			-moz-appearance: none
+			appearance: none
+			&::after,
+			&:before 
+				border-top: 1px solid $dark_grey
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				-webkit-transform: rotate(45deg)
+				-ms-transform: rotate(45deg)
+				transform: rotate(45deg)
+				width: 100%
+			
+			&::after 
+				-webkit-transform: rotate(-45deg)
+				-ms-transform: rotate(-45deg)
+				transform: rotate(-45deg)
+
+	input:checked + label 
+		color: $dark_grey
+		transition: color 0.5s ease
+	
+	input:checked ~ .modal-inner
+		height: 100%
+		width: 100%
+		transition: width 0.5s ease, height 0.5s ease 0.5s
+		overflow-y: scroll
+
+
+

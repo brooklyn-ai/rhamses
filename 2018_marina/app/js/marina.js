@@ -140,55 +140,30 @@ var onClose = function() {
 
   // ATTACH MODALS (radio) TO BUTTONS
 
-  //OPEN 1
-  document.getElementById("signUpButton").addEventListener('click', function () {
-  document.getElementById("button-modal-1").checked = true;
-    onOpen();
-  });
-  // button 
-  document.getElementById("cta").addEventListener('click', function () {
+  //OPEN 1 CALENDAR
+  document.getElementById("forModal1").addEventListener('click', function () {
   document.getElementById("button-modal-1").checked = true;
     onOpen();
   });
 
-  // button 2 
-  document.getElementById("heroCTA-signUp").addEventListener('click', function () {
-  document.getElementById("button-modal-1").checked = true;
-    onOpen();
-  });
+  // button 
+  //document.getElementById("cta").addEventListener('click', function () {
+  //document.getElementById("button-modal-1").checked = true;
+   // onOpen();
+  //});
+
+
 
   document.getElementById("button-modal-1").addEventListener('click', function () {
     onClose();
   });
 
 
-// var x1 = document.getElementById("button-modal-1").checked; 
-
-//   if ( x1 = true ) {
-
-
-// $(modal.keyup(function(event){
-//   if (event.keyCode == 27){
-//     // Close the modal/menu
-//    document.getElementById("button-modal-1").checked = false;
-//  onClose();
-
-//   }
-// }))
-
-
-
-// };
 
 
 
 
-
-
-
-
-
-  //OPEN MODAL 2
+  //OPEN MODAL 2 MENU
   document.getElementById("forModal2").addEventListener('click', function () {
   document.getElementById("button-modal-2").checked = true;
     onOpen();
@@ -197,11 +172,52 @@ var onClose = function() {
   document.getElementById("button-modal-2").addEventListener('click', function () {
     onClose();
     // move back down when modal is closed 
-    var element8 = document.getElementById("unit1");
-    element8.scrollIntoView({behavior: "instant", block: "start"});
+    var element2 = document.getElementById("unit1");
+    element2.scrollIntoView({behavior: "instant", block: "start"});
   });
 
 
+
+  //OPEN MODAL 3 MAP
+  document.getElementById("forModal3").addEventListener('click', function () {
+  document.getElementById("button-modal-3").checked = true;
+    onOpen();
+  });
+
+  document.getElementById("button-modal-3").addEventListener('click', function () {
+    onClose();
+    // move back down when modal is closed 
+    var element3 = document.getElementById("unit1");
+    element3.scrollIntoView({behavior: "instant", block: "start"});
+  });
+
+
+  //OPEN MODAL 4 PHOTOS
+  document.getElementById("forModal4").addEventListener('click', function () {
+  document.getElementById("button-modal-4").checked = true;
+    onOpen();
+  });
+
+  document.getElementById("button-modal-4").addEventListener('click', function () {
+    onClose();
+    // move back down when modal is closed 
+    var element4 = document.getElementById("unit1");
+    element4.scrollIntoView({behavior: "instant", block: "start"});
+  });
+
+
+  //OPEN MODAL 5 INFO
+  document.getElementById("forModal5").addEventListener('click', function () {
+  document.getElementById("button-modal-5").checked = true;
+    onOpen();
+  });
+
+  document.getElementById("button-modal-5").addEventListener('click', function () {
+    onClose();
+    // move back down when modal is closed 
+    var element5 = document.getElementById("unit1");
+    element5.scrollIntoView({behavior: "instant", block: "start"});
+  });
 
 
 
