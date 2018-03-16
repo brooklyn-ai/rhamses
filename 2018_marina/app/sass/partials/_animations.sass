@@ -1,0 +1,314 @@
+// ANIMATIONS
+
+
+// TREE ANIMATION  --- section 7
+@-webkit-keyframes fadeInUpTree  
+	0%
+		opacity: 0
+		width: 1%
+		-webkit-transform: translate3d(0, 100%, 0)
+		transform: translate3d(0, 100%, 0)
+
+	100% 
+		opacity: 1
+		width: 10%
+		-webkit-transform: translate3d(0, 0, 0)
+		transform: translate3d(0, 0, 0)
+
+
+@keyframes fadeInUpTree 
+	0% 
+		opacity: 0
+		width: 1%
+		-webkit-transform: translate3d(0, 100%, 0)
+		transform: translate3d(0, 100%, 0)
+
+	100% 
+		width: 10%
+		opacity: 1
+		-webkit-transform: translate3d(0, 0, 0)
+		transform: translate3d(0, 0, 0)
+
+
+
+.treeInViewport
+	-webkit-animation-duration: 0.5s
+	animation-duration: 0.5s
+
+	-webkit-animation-fill-mode: forwards
+	animation-fill-mode: forwards
+
+	-webkit-animation-name: fadeInUpTree
+	animation-name: fadeInUpTree
+
+	transition-property: all
+	-webkit-transition-property: all
+	
+
+
+
+
+
+
+
+// OTHER ANIMATIONS ACTIVATED AT BOTTOM OF VIEW-PORT/WINDOW
+
+
+@-webkit-keyframes fadeInUp
+	0%
+		opacity: 0.3
+		-webkit-transform: scale(0.97, 0.97)
+		transform: scale(0.97, 0.97)
+
+	90%
+		opacity: 1
+		-webkit-transform: scaleX(1.05) scaleY(1.05) 
+		transform: scaleX(1.05) scaleY(1.05) 
+
+	100% 
+		opacity: 1
+		-webkit-transform: scaleX(1) scaleY(1) scaleZ(1)
+		transform: scaleX(1) scaleY(1) scaleZ(1)
+
+@keyframes fadeInUp
+	0%
+		opacity: 0.3
+		-webkit-transform: scale(0.97, 0.97)
+		transform: scale(0.97, 0.97)
+
+	90%
+		opacity: 1
+		-webkit-transform: scaleX(1.05) scaleY(1.05) 
+		transform: scaleX(1.05) scaleY(1.05) 
+
+	100% 
+		opacity: 1
+		-webkit-transform: scaleX(1) scaleY(1) scaleZ(1)
+		transform: scaleX(1) scaleY(1) scaleZ(1)
+
+
+// Graphic expand - 
+.graphicInViewport
+	-webkit-animation-name: fadeInUp
+	animation-name: fadeInUp
+
+	transition-property: opacity, transform
+	-webkit-transition-property: opacity, transform
+
+// Icons expand - 
+.iconInViewport
+	-webkit-animation-name: fadeInUp
+	animation-name: fadeInUp
+
+	transition-property: opacity, transform
+	-webkit-transition-property: opacity, transform
+
+// Icons expand - 
+.socialInViewport
+	-webkit-animation-name: fadeInUp
+	animation-name: fadeInUp
+	transition-property: opacity, transform
+	-webkit-transition-property: opacity, transform
+	-webkit-animation-duration: 0.3s
+	animation-duration: 0.3s
+	-webkit-animation-delay: 0.5s
+	animation-delay: 0.5s
+
+
+@keyframes floating
+	0%
+		-webkit-transform: scale(0.97, 0.97)
+		transform: scale(0.97, 0.97)
+
+	50%
+		-webkit-transform: scaleX(1.05) scaleY(1.05) 
+		transform: scaleX(1.05) scaleY(1.05) 
+
+	100% 
+		-webkit-transform: scale(0.97, 0.97)
+		transform: scale(0.97, 0.97)
+
+
+@-webkit-keyframes floating
+	0%
+		-webkit-transform: scale(0.97, 0.97)
+		transform: scale(0.97, 0.97)
+
+	50%
+		-webkit-transform: scaleX(1.05) scaleY(1.05) 
+		transform: scaleX(1.05) scaleY(1.05) 
+
+	100% 
+		-webkit-transform: scale(0.97, 0.97)
+		transform: scale(0.97, 0.97)
+
+// Floating 
+.floating
+	-webkit-animation: floating 7s infinite
+	animation: floating 7s infinite
+	transition-property: transform
+	-webkit-transition-property: transform
+
+
+
+
+
+
+
+
+
+
+// BASIC -- TEXT --ANIMAION - FADE IN and EXPAND<-->
+
+@-webkit-keyframes textFadeInUp
+	0%
+		opacity: 0.3
+		-webkit-transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+		transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+
+	90%
+		opacity: 1
+		-webkit-transform: scaleX(1.02) scaleY(1.02)  translate3d(0, 0, 0)
+		transform: scaleX(1.02) scaleY(1.02)  translate3d(0, 0, 0)
+
+	100% 
+		opacity: 1
+		-webkit-transform: scaleX(1) scaleY(1) scaleZ(1) translate3d(0, 0, 0)
+		transform: scaleX(1) scaleY(1) scaleZ(1) translate3d(0, 0, 0)
+
+@keyframes textFadeInUp
+	0%
+		opacity: 0.3
+		-webkit-transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+		transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+
+	90%
+		opacity: 1
+		-webkit-transform: scaleX(1.02) scaleY(1.02)  translate3d(0, 0, 0)
+		transform: scaleX(1.02) scaleY(1.02)  translate3d(0, 0, 0)
+
+	100% 
+		opacity: 1
+		-webkit-transform: scaleX(1) scaleY(1) scaleZ(1) translate3d(0, 0, 0)
+		transform: scaleX(1) scaleY(1) scaleZ(1) translate3d(0, 0, 0)
+
+
+
+
+// ALL HEADER 2
+.h2InViewport
+	-webkit-animation-name: textFadeInUp
+	animation-name: textFadeInUp
+	-webkit-animation-delay: 0.3s
+	animation-delay: 0.3s
+	-webkit-animation-duration: 0.9s
+	animation-duration: 0.9s
+
+//h2:not(div > div > article > *)
+	//opacity: 0.3
+	//-webkit-animation-fill-mode: forwards
+	//animation-fill-mode: forwards
+	//-webkit-transform-origin: 50%
+	//transform-origin: 50%
+	//-webkit-transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+	//transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+
+
+
+// ALL HEADER 3
+.h3InViewport
+	-webkit-animation-name: textFadeInUp
+	animation-name: textFadeInUp
+	-webkit-animation-delay: 0.3s
+	animation-delay: 0.3s
+	-webkit-animation-duration: 0.9s
+	animation-duration: 0.9s
+
+//h3:not(div > div > article > *)
+	//opacity: 0.3
+	//-webkit-animation-fill-mode: forwards
+	//animation-fill-mode: forwards
+	//-webkit-transform-origin: 50%
+	//transform-origin: 50%
+	//-webkit-transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+	//transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+
+
+
+// ALL HEADER 4
+.h4InViewport
+	-webkit-animation-name: textFadeInUp
+	animation-name: textFadeInUp
+	-webkit-animation-delay: 0.3s
+	animation-delay: 0.3s
+	-webkit-animation-duration: 0.9s
+	animation-duration: 0.9s
+
+//h4:not(div > div > article > *)
+	//opacity: 0.3
+	//-webkit-animation-fill-mode: forwards
+	//animation-fill-mode: forwards
+	//-webkit-transform-origin: 50%
+	//transform-origin: 50%
+	//-webkit-transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+	//transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+
+
+
+
+// ALL PARAGRAPH
+.pInViewport
+	-webkit-animation-name: textFadeInUp
+	animation-name: textFadeInUp
+	-webkit-animation-delay: 0.3s
+	animation-delay: 0.3s
+	-webkit-animation-duration: 0.9s
+	animation-duration: 0.9s
+
+//p:not(div > div > article > *)
+	//opacity: 0.3
+	//-webkit-animation-fill-mode: forwards
+	//animation-fill-mode: forwards
+	//-webkit-transform-origin: 50%
+	//transform-origin: 50%
+	//-webkit-transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+	//transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+
+
+
+// ALL BUTTON
+.buttonInViewport
+	-webkit-animation-name: textFadeInUp
+	animation-name: textFadeInUp
+	-webkit-animation-delay: 0.3s
+	animation-delay: 0.3s
+	-webkit-animation-duration: 0.9s
+	animation-duration: 0.9s
+
+//button:not(div > div > article > *)
+	//opacity: 0.3
+	//-webkit-animation-fill-mode: forwards
+	//animation-fill-mode: forwards
+	//-webkit-transform-origin: 50%
+	//transform-origin: 50%
+	//-webkit-transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+	//transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+
+
+// FORM ANIMATION
+.formInViewport
+	-webkit-animation-name: textFadeInUp
+	animation-name: textFadeInUp
+	-webkit-animation-delay: 0.3s
+	animation-delay: 0.3s
+	-webkit-animation-duration: 0.9s
+	animation-duration: 0.9s
+
+form#form
+	opacity: 0.3
+	-webkit-animation-fill-mode: forwards
+	animation-fill-mode: forwards
+	-webkit-transform-origin: 50%
+	transform-origin: 50%
+	-webkit-transform: scale(0.97, 0.97) translate3d(0, 10%, 0)
+	transform: scale(0.97, 0.97) translate3d(0, 10%, 0)

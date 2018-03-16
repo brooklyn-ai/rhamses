@@ -1,0 +1,100 @@
+
+// NAV & MOBILE HAMBRGER DROP NAV
+header 
+	background-color: #fff
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1)
+	position: fixed
+	width: 100%
+	z-index: 3
+	user-select: none
+
+	img
+		position: absolute
+		width: 120px
+		left: calc(50% - 60px)
+		padding: 7px 0 0 0
+		cursor: pointer
+
+	ul 
+		margin: 0
+		padding: 0
+		list-style: none
+		overflow: hidden
+		background-color: #fff
+
+	li a 
+		display: block
+		padding: 20px 20px
+		color: $dark_grey
+		text-decoration: none
+		cursor: pointer
+		user-select: select
+
+	li a:active 
+		background-color: #f4f4f4
+	li a:hover
+		text-decoration: underline
+	li a.active
+		text-decoration: underline
+	.menu 
+		clear: both
+		max-height: 0
+		transition: max-height .2s ease-out
+
+	.menu-icon 
+		cursor: pointer
+		display: inline-block
+		float: right
+		padding: 22px 34px
+		position: relative
+		user-select: none
+
+	.menu-icon .navicon 
+		background: $light_grey
+		display: block
+		height: 2px
+		position: relative
+		transition: background .2s ease-out
+		width: 21px
+
+	.menu-icon .navicon:before,
+	.menu-icon .navicon:after 
+		background: $light_grey
+		content: ''
+		display: block
+		height: 100%
+		position: absolute
+		transition: all .2s ease-out
+		width: 100%
+
+	.menu-icon .navicon:before 
+		top: 6px
+
+	.menu-icon .navicon:after 
+		top: -6px
+
+	.menu-btn 
+		display: none
+
+	.menu-btn:checked ~ .menu 
+		max-height: 375px
+
+	.menu-btn:checked ~ .menu-icon .navicon 
+		background: transparent
+
+	.menu-btn:checked ~ .menu-icon .navicon:before 
+		-webkit-transform: rotate(45deg)
+		-ms-transform: rotate(45deg)
+		transform: rotate(45deg)
+
+	.menu-btn:checked ~ .menu-icon .navicon:after
+		-webkit-transform: rotate(-45deg)
+		-ms-transform: rotate(-45deg) 
+		transform: rotate(-45deg)
+
+	.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+	.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after 
+		top: 0
+
+
+
