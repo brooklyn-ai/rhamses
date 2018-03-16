@@ -1,0 +1,10 @@
+=respond($media)
+  @if $media == large
+    @media only screen and (min-width: ($desktop-device-width))
+      @content
+  @else if $media == medium_screen
+    @media only screen and (min-width: ($tablet-device-width))
+      @content
+  @else
+    @media only screen and (min-width: ($media))
+      @content

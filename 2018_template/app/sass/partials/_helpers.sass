@@ -1,0 +1,80 @@
+// UNIVERSAL HELPERS  override all higher/above (styles) 
+
+//prevent jumping when modal is open 
+.modal--opened 
+	position: fixed
+	left: 0
+	right: 0
+	article
+		top: 0
+
+// SET UP ANIMATED ELEMENTS
+p, h2, h3, h4, h5, button, form, .graphic, .icons 
+	opacity: 0
+	-webkit-animation-fill-mode: forwards
+	animation-fill-mode: forwards
+
+
+img, svg, p, h1, h2, h3, h4, h5
+	-webkit-overflow-scrolling: touch
+	-webkit-user-drag: none
+	-khtml-user-drag: none
+	-moz-user-drag: none
+	-o-user-drag: none
+	user-drag: none
+	cursor: default
+
+
+img, h1, h2, button, header
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-o-user-select: none
+	user-select: none
+
+
+
+br.mobile
+	display: block
+br.tablet
+	display: none
+br.desktop
+	display: none
+
+
+
+button
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	cursor: pointer
+	&:active
+		border: none
+		outline: none
+	&:focus
+		border: none
+		outline: none
+
+
+// DEVICE SPECIFIC RULES
+
+
+// // fix select text center issue for safari  (form > state > drop options )
+body.safari .modal-1-wrap .content form span:nth-of-type(1) select.state
+	text-indent: 25%
+	height: 33px
+body.safari.select .modal-1-wrap .content form span:nth-of-type(1) select.state
+	text-indent: 6.5%
+
+
+body.safari article section.unit-11 form span:nth-of-type(1) select.state
+	text-indent: 25%
+	height: 33px
+body.safari.select article section.unit-11 form span:nth-of-type(1) select.state
+	text-indent: 6.5%
+
+
+//section
+	//scroll-snap-align: center none
+//article
+	//scroll-snap-type: y mandatory

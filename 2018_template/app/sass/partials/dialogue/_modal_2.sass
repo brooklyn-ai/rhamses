@@ -1,0 +1,262 @@
+
+// MODAL 2.0 Why Renewable
+
+.modal-2-wrap
+	height: 0
+
+	.modal-2
+		background: white
+		height: 1px
+		overflow: hidden
+		overflow-x: hidden
+		overflow-y: scroll
+		-webkit-overflow-scrolling: touch
+		position: fixed
+		top: 100%
+		left: 50%
+		-webkit-transform: translate(-50%, -100%)
+		-ms-transform: translate(-50%, -100%)
+		transform: translate(-50%, -100%)
+		transition: width 0.5s ease 0.5s, height 0.5s ease
+		width: 0
+		z-index: 10
+
+	input#button-modal-2
+		cursor: pointer
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		background-color: white
+		&:focus 
+			outline: none
+	
+	input:checked 
+		position: fixed
+		z-index: 11
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		&::after,
+		&:before 
+			border-top: 1px solid $dark_grey
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			-webkit-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			transform: rotate(45deg)
+			width: 100%
+		
+		&::after 
+			-webkit-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+	
+	input:checked + label 
+		color: $dark_grey
+		transition: color 0.5s ease
+	
+	input:checked ~ .modal-2
+		height: 100%
+		width: 100%
+		transition: width 0.5s ease, height 0.5s ease 0.5s
+		overflow-y: scroll
+
+	article
+		color: $dark_grey
+		transition: color 0.5s ease 0.5s
+		section 
+			position: relative
+			display: inline-block
+
+			h3
+				width: 25%
+				display: inline-block
+			p 
+				width: 25%
+				display: inline-block
+				user-select: none
+
+			p.pInViewport
+				animation: none
+				opacity: 1
+			h2.h2InViewport
+				animation: none
+				opacity: 1
+			h3.h3InViewport
+				animation: none
+				opacity: 1
+
+		section:nth-of-type(1)
+			background-color: $brand_blue
+			color: white
+			text-align: center
+			//height: 137vh
+			h2 
+				font-size: 7vw
+				line-height: 136%
+				width: 90%
+				margin: auto
+				margin-bottom: 7%
+				margin-top: 7%
+			p 
+				margin: auto
+				width: 90%
+				font-size: 4vw
+				margin-bottom: 4%
+			img 
+				width: 300%
+				bottom: 0
+				margin-left: -95%
+				margin-bottom: -15px
+
+			button 
+				font-size: 4.3vw
+				border: 2px solid white 
+				border-radius: 25px
+				color: white
+				background-color: transparent
+				padding: 9px 32px
+				margin-top: 30px
+				opacity: 1
+
+		section:nth-of-type(2)
+			background-color: #f3f3f3
+			text-align: right
+
+			img 
+				width: 100%
+			p 
+				width: 83%
+				display: block
+				text-align: center
+				margin: auto
+				margin-top: 7%
+				margin-bottom: 8%
+				font-size: 4.5vw
+
+			h3:nth-of-type(2)
+				display: none
+
+			h3:nth-of-type(1)
+				width: 100%
+				text-align: center
+				font-size: 6vw
+
+		section:nth-of-type(3)
+			text-align: left
+
+			img 
+				width: 100%
+			h3
+				width: 100%
+				text-align: center
+				font-size: 6vw
+			p:nth-of-type(1)
+				display: none
+			p:nth-of-type(2)
+				width: 83%
+				display: block
+				text-align: center
+				margin: auto
+				margin-top: 7%
+				margin-bottom: 8%
+				font-size: 4.5vw
+
+		section:nth-of-type(4)
+			text-align: right
+			background-color: #f3f3f3
+
+			img 
+				width: 100%
+			p 
+				width: 83%
+				display: block
+				text-align: center
+				margin: auto
+				margin-top: 7%
+				margin-bottom: 8%
+				font-size: 4.5vw
+
+			h3:nth-of-type(2)
+				display: none
+
+			h3:nth-of-type(1)
+				width: 100%
+				text-align: center
+				font-size: 6vw
+
+		section:nth-of-type(5)
+			text-align: left
+
+			img 
+				width: 100%
+
+			h3
+				width: 100%
+				text-align: center
+				font-size: 6vw
+
+			p:nth-of-type(1)
+				display: none
+
+			p:nth-of-type(2)
+				width: 83%
+				display: block
+				text-align: center
+				margin: auto
+				margin-top: 7%
+				margin-bottom: 8%
+				font-size: 4.5vw
+
+		section:nth-of-type(6)
+			text-align: right
+			background-color: #f3f3f3
+
+			img
+				width: 100%
+
+			h3:nth-of-type(2)
+				display: none
+
+			h3:nth-of-type(1)
+				width: 100%
+				text-align: center
+				font-size: 6vw
+			p 
+				width: 83%
+				display: block
+				text-align: center
+				margin: auto
+				margin-top: 7%
+				margin-bottom: 8%
+				font-size: 4.5vw
+
+		section:nth-of-type(7)
+			text-align: left
+
+			img 
+				width: 100%
+
+			h3
+				width: 100%
+				text-align: center
+				font-size: 6vw
+
+			p:nth-of-type(1)
+				display: none
+
+			p:nth-of-type(2)
+				width: 83%
+				display: block
+				text-align: center
+				margin: auto
+				margin-top: 7%
+				margin-bottom: 8%
+				font-size: 4.5vw
+				margin-bottom: 55%
+
+
+
+
