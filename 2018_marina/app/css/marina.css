@@ -397,8 +397,9 @@ body footer div:nth-of-type(5) {
 /* line 1, ../sass/partials/dialogue/_modal_share.sass */
 body .modal {
   height: 0;
+  background: white;
 }
-/* line 3, ../sass/partials/dialogue/_modal_share.sass */
+/* line 4, ../sass/partials/dialogue/_modal_share.sass */
 body .modal .modal-inner {
   background: white;
   height: 1px;
@@ -416,7 +417,7 @@ body .modal .modal-inner {
   width: 0;
   z-index: 10;
 }
-/* line 20, ../sass/partials/dialogue/_modal_share.sass */
+/* line 21, ../sass/partials/dialogue/_modal_share.sass */
 body .modal input {
   cursor: pointer;
   -webkit-appearance: none;
@@ -430,11 +431,11 @@ body .modal input {
   left: calc(50% - 20px);
   top: 77.5vh;
 }
-/* line 33, ../sass/partials/dialogue/_modal_share.sass */
+/* line 34, ../sass/partials/dialogue/_modal_share.sass */
 body .modal input:focus {
   outline: none;
 }
-/* line 36, ../sass/partials/dialogue/_modal_share.sass */
+/* line 37, ../sass/partials/dialogue/_modal_share.sass */
 body .modal input:checked {
   position: fixed;
   z-index: 11;
@@ -442,7 +443,7 @@ body .modal input:checked {
   -moz-appearance: none;
   appearance: none;
 }
-/* line 42, ../sass/partials/dialogue/_modal_share.sass */
+/* line 43, ../sass/partials/dialogue/_modal_share.sass */
 body .modal input:checked::after, body .modal input:checked:before {
   border-top: 1px solid #676767;
   content: "";
@@ -454,18 +455,18 @@ body .modal input:checked::after, body .modal input:checked:before {
   transform: rotate(45deg);
   width: 100%;
 }
-/* line 54, ../sass/partials/dialogue/_modal_share.sass */
+/* line 55, ../sass/partials/dialogue/_modal_share.sass */
 body .modal input:checked::after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 59, ../sass/partials/dialogue/_modal_share.sass */
+/* line 60, ../sass/partials/dialogue/_modal_share.sass */
 body .modal input:checked + label {
   color: #676767;
   transition: color 0.5s ease;
 }
-/* line 63, ../sass/partials/dialogue/_modal_share.sass */
+/* line 64, ../sass/partials/dialogue/_modal_share.sass */
 body .modal input:checked ~ .modal-inner {
   height: 100%;
   width: 100%;

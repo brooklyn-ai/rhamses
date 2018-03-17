@@ -140,30 +140,40 @@ var onClose = function() {
 
   // ATTACH MODALS (radio) TO BUTTONS
 
-  //OPEN 1 CALENDAR
+ 
+
+
+  //OPEN MODAL 0.0 SiteMap
+  document.getElementById("forModal0").addEventListener('click', function () {
+  document.getElementById("button-modal-0").checked = true;
+    onOpen();
+  });
+
+  document.getElementById("button-modal-0").addEventListener('click', function () {
+    onClose();
+    // move back down when modal is closed 
+    var element0= document.getElementById("unit1");
+    element0.scrollIntoView({behavior: "instant", block: "start"});
+  });
+
+
+
+  //OPEN MODAL 1.0 Calendar
   document.getElementById("forModal1").addEventListener('click', function () {
   document.getElementById("button-modal-1").checked = true;
     onOpen();
   });
 
-  // button 
-  //document.getElementById("cta").addEventListener('click', function () {
-  //document.getElementById("button-modal-1").checked = true;
-   // onOpen();
-  //});
-
-
-
   document.getElementById("button-modal-1").addEventListener('click', function () {
     onClose();
+    // move back down when modal is closed 
+    var element1 = document.getElementById("unit1");
+    element1.scrollIntoView({behavior: "instant", block: "start"});
   });
 
 
 
-
-
-
-  //OPEN MODAL 2 MENU
+  //OPEN MODAL 1.2 Menu
   document.getElementById("forModal2").addEventListener('click', function () {
   document.getElementById("button-modal-2").checked = true;
     onOpen();
@@ -177,8 +187,7 @@ var onClose = function() {
   });
 
 
-
-  //OPEN MODAL 3 MAP
+  //OPEN MODAL 1.3.0 Map
   document.getElementById("forModal3").addEventListener('click', function () {
   document.getElementById("button-modal-3").checked = true;
     onOpen();
@@ -192,7 +201,7 @@ var onClose = function() {
   });
 
 
-  //OPEN MODAL 4 PHOTOS
+  //OPEN MODAL 1.4.0 Photos
   document.getElementById("forModal4").addEventListener('click', function () {
   document.getElementById("button-modal-4").checked = true;
     onOpen();
@@ -206,7 +215,7 @@ var onClose = function() {
   });
 
 
-  //OPEN MODAL 5 INFO
+  //OPEN MODAL 1.5.0 Information
   document.getElementById("forModal5").addEventListener('click', function () {
   document.getElementById("button-modal-5").checked = true;
     onOpen();
@@ -219,6 +228,45 @@ var onClose = function() {
     element5.scrollIntoView({behavior: "instant", block: "start"});
   });
 
+  //OPEN MODAL 1.6.0 Partners
+  document.getElementById("forModal6").addEventListener('click', function () {
+  document.getElementById("button-modal-6").checked = true;
+    onOpen();
+  });
+
+  document.getElementById("button-modal-6").addEventListener('click', function () {
+    onClose();
+    // move back down when modal is closed 
+    var element6 = document.getElementById("unit1");
+    element6.scrollIntoView({behavior: "instant", block: "start"});
+  });
+
+  //OPEN MODAL 1.7.0 Social
+  document.getElementById("forModal7").addEventListener('click', function () {
+  document.getElementById("button-modal-7").checked = true;
+    onOpen();
+  });
+
+  document.getElementById("button-modal-7").addEventListener('click', function () {
+    onClose();
+    // move back down when modal is closed 
+    var element7 = document.getElementById("unit1");
+    element7.scrollIntoView({behavior: "instant", block: "start"});
+  });
+
+
+  //OPEN MODAL 1.8.0  Art/Gallery
+  document.getElementById("forModal8").addEventListener('click', function () {
+  document.getElementById("button-modal-8").checked = true;
+    onOpen();
+  });
+
+  document.getElementById("button-modal-8").addEventListener('click', function () {
+    onClose();
+    // move back down when modal is closed 
+    var element8 = document.getElementById("unit1");
+    element8.scrollIntoView({behavior: "instant", block: "start"});
+  });
 
 
 
@@ -254,6 +302,64 @@ function lazyLoadPageA(){
  });
 
   document.getElementById("forModal3").addEventListener('click', function () {
+
+    for(var i=0; i<lazyPageA.length; i++){
+        if (lazyPageA[i].getAttribute('data-src')){
+            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
+            lazyPageA[i].removeAttribute('data-src');
+        }
+    }
+    cleanLazyPageA();   //below after lazyPage
+    
+ });
+
+    document.getElementById("forModal4").addEventListener('click', function () {
+
+    for(var i=0; i<lazyPageA.length; i++){
+        if (lazyPageA[i].getAttribute('data-src')){
+            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
+            lazyPageA[i].removeAttribute('data-src');
+        }
+    }
+    cleanLazyPageA();   //below after lazyPage
+    
+ });
+
+      document.getElementById("forModal5").addEventListener('click', function () {
+
+    for(var i=0; i<lazyPageA.length; i++){
+        if (lazyPageA[i].getAttribute('data-src')){
+            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
+            lazyPageA[i].removeAttribute('data-src');
+        }
+    }
+    cleanLazyPageA();   //below after lazyPage
+    
+ });
+
+        document.getElementById("forModal6").addEventListener('click', function () {
+
+    for(var i=0; i<lazyPageA.length; i++){
+        if (lazyPageA[i].getAttribute('data-src')){
+            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
+            lazyPageA[i].removeAttribute('data-src');
+        }
+    }
+    cleanLazyPageA();   //below after lazyPage
+    
+ });
+          document.getElementById("forModal7").addEventListener('click', function () {
+
+    for(var i=0; i<lazyPageA.length; i++){
+        if (lazyPageA[i].getAttribute('data-src')){
+            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
+            lazyPageA[i].removeAttribute('data-src');
+        }
+    }
+    cleanLazyPageA();   //below after lazyPage
+    
+ });
+            document.getElementById("forModal8").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
         if (lazyPageA[i].getAttribute('data-src')){
@@ -982,65 +1088,6 @@ scrollTo = function scrollTo(element) {
 
 
 
-var element1 = document.getElementById("unit1");
-document.getElementById("logo").addEventListener('click', function () {
-$.scrollify.move("#Home");
-//element1.scrollIntoView({behavior: "smooth", block: "start"});
-
-});
-
-var element2 = document.getElementById("unit3");
-document.getElementById("scrollButton1").addEventListener('click', function () {
-
-  //$.scrollify.move("#3");
-  $.scrollify.move("#Why-Renewables");
-  
-// element2.scrollIntoView({behavior: "smooth", block: "start"});
-
-
-});
-
-var element3 = document.getElementById("unit7");
-document.getElementById("scrollButton2").addEventListener('click', function () {
-
-  //$.scrollify.move("#7");
-  $.scrollify.move("#Your-Impact");
-//element3.scrollIntoView({behavior: "smooth", block: "start"});
-});
-
-var element4 = document.getElementById("unit8");
-document.getElementById("scrollButton3").addEventListener('click', function () {
-
-   //$.scrollify.move("#8");
-   $.scrollify.move("#How-It-Works");
-//element4.scrollIntoView({behavior: "smooth", block: "start"});
-});
-
-var element5 = document.getElementById("unit10");
-document.getElementById("scrollButton4").addEventListener('click', function () {
-
-   //$.scrollify.move("#11");
-   $.scrollify.move("#Stay-Connected");
-//element5.scrollIntoView({behavior: "smooth", block: "start"});
-});
-
-var element6 = document.getElementById("unit1");
-document.getElementById("footerLogo").addEventListener('click', function () {
-element6.scrollIntoView({behavior: "smooth", block: "start"});
-});
-
-var element7 = document.getElementById("backgroundMe");  // in modal 3 'health'
-document.getElementById("healthScroll").addEventListener('click', function () {
-element7.scrollIntoView({behavior: "smooth", block: "start"});
-});
-
-var element9 = document.getElementById("scroll2target");   // in modal 2 'why'
-document.getElementById("modal2scroll").addEventListener('click', function () {
-element9.scrollIntoView({behavior: "smooth", block: "start"});
-});
-
-
-
 
 
 
@@ -1049,14 +1096,14 @@ element9.scrollIntoView({behavior: "smooth", block: "start"});
 
 
 //Close MOBILE AND TABLET HAMBURGER  menu when item is clicked
-document.getElementById("logo").onclick = function(){document.getElementById("menu-btn").checked = false;};
+//document.getElementById("logo").onclick = function(){document.getElementById("menu-btn").checked = false;};
 
 
-document.getElementById("scrollButton1").onclick = function(){document.getElementById("menu-btn").checked = false;};
-document.getElementById("scrollButton2").onclick = function(){document.getElementById("menu-btn").checked = false;};
-document.getElementById("scrollButton3").onclick = function(){document.getElementById("menu-btn").checked = false;};
-document.getElementById("scrollButton4").onclick = function(){document.getElementById("menu-btn").checked = false;};
-document.getElementById("signUpButton").onclick  = function(){document.getElementById("menu-btn").checked = false;};
+document.getElementById("forModal1").onclick = function(){document.getElementById("menu-btn").checked = false;};
+document.getElementById("forModal2").onclick = function(){document.getElementById("menu-btn").checked = false;};
+document.getElementById("forModal3").onclick = function(){document.getElementById("menu-btn").checked = false;};
+document.getElementById("forModal4").onclick = function(){document.getElementById("menu-btn").checked = false;};
+document.getElementById("forModal5").onclick  = function(){document.getElementById("menu-btn").checked = false;};
 
 
 
