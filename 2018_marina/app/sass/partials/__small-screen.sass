@@ -37,7 +37,7 @@ body
 
 	// CONTENT 
 
-	article
+	article.scene
 		background-image: url(../img/raster/scene/marina-background.jpg)
 		background-size: cover
 		background-repeat: no-repeat
@@ -46,7 +46,7 @@ body
 		background-position-y: 4vh
 		width: 237vw
 		
-		section
+		//section
 	
 
 
@@ -81,11 +81,76 @@ body
 
 
 
-		// Three Side by side items    -- unit 2
-		section.unit-2
+			.cloud
+				position: absolute
+				left: 0
+				top: -50px
+				width: 960px
+				height: 300
+				-webkit-animation: flight 150s infinite linear
+				-moz-animation: flight 150s infinite linear
+				animation: flight 150s infinite linear
+
+	
+			.cloud-1 
+				position: absolute
+				right: 80px
+				top: 100px
+				width: 469px
+				height: 254px
+				background: transparent url(../img/raster/scene/cloud-1.png) no-repeat left top
+				//z-index: -6
+
+			.cloud-2 
+				position: absolute
+				left: -140px
+				width: 557px
+				height: 299px
+				background: transparent url(../img/raster/scene/cloud-2.png) no-repeat left top
+				//z-index: -6
+
+			.cloud-3 
+				position: absolute
+				right: -490px
+				top: -60px
+				width: 685px
+				height: 390px
+				background: transparent url(../img/raster/scene/cloud-3.png) no-repeat left top
+				//z-index: -6
 			
 
+		// Three Side by side items    -- unit 2
+		section.unit-2
+			img:nth-of-type(1)
+				width: 29%
+				position: absolute
+				bottom: 90%
+				display: none
 
+			div.marina-text
+				background-image: url(../img/raster/marina/marina.png)
+				background-size: contain
+				background-repeat: no-repeat
+				width: 30%
+				height: 11vh
+				position: absolute
+				bottom: 90%
+			div.seafood-burgers
+				background-image: url(../img/raster/marina/seafood-and-burgers.png)
+				background-size: contain
+				background-repeat: no-repeat
+				width: 30%
+				height: 11vh
+				position: absolute
+				bottom: 85%
+			div.fish
+				background-image: url(../img/raster/marina/fish.png)
+				background-size: contain
+				background-repeat: no-repeat
+				width: 30%
+				height: 11vh
+				position: absolute
+				bottom: 75%
 
 
 
@@ -151,7 +216,36 @@ body
 // ANIMTIONS CLASSES AND KEYFRAMES
 @import partials/animations
 
+@-webkit-keyframes flight 
+	0% 
+		-webkit-transform: translateX(0)
+	100%
+		-webkit-transform: translateX(100%)
 
+
+@-moz-keyframes flight 
+	0% 
+		-moz-transform: translateX(0)
+	100%
+		-moz-transform: translateX(100%)
+
+@-o-keyframes flight 
+	0% 
+		-o-transform: translateX(0)
+	100%
+		-o-transform: translateX(100%)
+
+@-ms-keyframes flight 
+	0% 
+		-ms-transform: translateX(0)
+	100%
+		-ms-transform: translateX(100%)
+
+@keyframes flight 
+	0% 
+		transform: translateX(0)
+	100%
+		transform: translateX(100%)
 
 
 // Device specific styles

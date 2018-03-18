@@ -28,8 +28,10 @@
 		height: 40px 
 		background-color: rgba(255, 255, 255, 0.5) !important
 		border-radius: 50%
-		left: calc(50% - 20px)
-		top: 77.5vh
+		//left: calc(50% - 20px)
+		//top: 77.5vh
+		right: 0
+		top: 0
 
 		&:focus 
 			outline: none
@@ -67,5 +69,82 @@
 		transition: width 0.5s ease, height 0.5s ease 0.5s
 		overflow-y: scroll
 
+
+
+
+		// BEGIN ACCORDIAN STYLES
+		.accordion 
+			//width: 90%
+			//display: inline-block
+			//text-align: right
+			//color: rgb(255, 255, 255)
+			//margin-left: -3%
+			//margin-bottom: 65%
+			//margin-top: -16%
+
+		.accordion input 
+			display: none
+
+		.box 
+			position: relative
+			height: 8vh
+			transition: all .5s ease-in-out
+
+		.box::before 
+			content: ''
+			position: absolute
+			display: block
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			pointer-events: none
+
+		.box-title 
+			cursor: pointer
+			font-size: 4vw
+			-webkit-touch-callout: none
+			-webkit-user-select: none
+			-khtml-user-select: none
+			-moz-user-select: none
+			-ms-user-select: none
+			user-select: none
+			//color: white
+			opacity: 0.5
+			font-weight: 700
+
+			&:hover 
+				font-size: 4.5vw
+				transition: font-size 1.7s
+				opacity: 1
+				//color: white
+
+		.box-content 
+			width: calc(100% - 40px)
+			font-size: 1.4vw
+			display: none
+
+		.box-close 
+			position: absolute
+			width: 100%
+			top: 0
+			left: 0
+			cursor: pointer
+			display: none
+
+		input:checked + .box 
+			height: auto
+			
+		input:checked + .box .box-content p 
+			opacity: 1
+
+		input:checked + .box .box-title
+			font-size: 4.5vw 
+			//color: white
+			opacity: 1
+
+		input:checked + .box .box-content,
+		input:checked + .box .box-close 
+			display: inline-block
 
 

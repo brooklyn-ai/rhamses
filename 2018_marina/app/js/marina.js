@@ -498,15 +498,15 @@ elements.forEach(function(element) {
 
 
 // detect     form elements
-var elements = Array.prototype.slice.call(
-    document.querySelectorAll('form')
-);
+//var elements = Array.prototype.slice.call(
+    //document.querySelectorAll('form')
+//);
 
-elements.forEach(function(element) {
-    new WhenInViewport(element, function(elementInViewport) {
-        elementInViewport.classList.add('formInViewport');
-    });
-});
+//elements.forEach(function(element) {
+   // new WhenInViewport(element, function(elementInViewport) {
+      //  elementInViewport.classList.add('formInViewport');
+   // });
+//});
 
 
 // END ANIMATIONS
