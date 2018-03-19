@@ -193,16 +193,11 @@ var onClose = function() {
     onOpen();
   });
 
-  document.getElementById("button-modal-2").addEventListener('click', function () {
-    onClose();
-    // move back down when modal is closed 
-    var element2 = document.getElementById("unit1");
-    element2.scrollIntoView({behavior: "instant", block: "start"});
-  });
+
 
 
   //OPEN MODAL 1.3.0 Map
-  document.getElementById("forModal3").addEventListener('click', function () {
+  document.getElementById("forModal3-a").addEventListener('click', function () {
   document.getElementById("button-modal-3").checked = true;
     onOpen();
     // check/ OPEN 
@@ -216,6 +211,16 @@ var onClose = function() {
     var element3 = document.getElementById("unit1");
     element3.scrollIntoView({behavior: "instant", block: "start"});
   });
+
+    document.getElementById("forModal3-b").addEventListener('click', function () {
+  document.getElementById("button-modal-3").checked = true;
+    onOpen();
+    // check/ OPEN 
+    document.getElementById("cb4").checked = true;
+
+  });
+
+
 
 
   //OPEN MODAL 1.4.0 Photos

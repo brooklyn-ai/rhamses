@@ -222,63 +222,50 @@ body article.scene section.unit-1 .cloud-3 {
   background: transparent url(../img/raster/scene/cloud-3.png) no-repeat left top;
 }
 /* line 146, ../sass/partials/__small-screen.sass */
-body article.scene section.unit-1 #forModal2-b {
+body article.scene section.unit-1 ul.buttons {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 3;
+}
+/* line 151, ../sass/partials/__small-screen.sass */
+body article.scene section.unit-1 ul.buttons li {
+  display: inline;
+  height: 30px;
+  width: 30px;
+}
+/* line 157, ../sass/partials/__small-screen.sass */
+body article.scene section.unit-1 #forModal2-b {
   background-color: #ff2814;
-  height: 30px;
-  width: 30px;
 }
-/* line 155, ../sass/partials/__small-screen.sass */
+/* line 161, ../sass/partials/__small-screen.sass */
+body article.scene section.unit-1 #forModal3-b {
+  background-color: #ff2814;
+}
+/* line 166, ../sass/partials/__small-screen.sass */
 body article.scene section.unit-1 #forModal6 {
-  position: absolute;
-  bottom: 0;
-  left: 35px;
-  z-index: 3;
   background-color: red;
-  height: 30px;
-  width: 30px;
 }
-/* line 164, ../sass/partials/__small-screen.sass */
+/* line 171, ../sass/partials/__small-screen.sass */
 body article.scene section.unit-1 #forModal7 {
-  position: absolute;
-  bottom: 0;
-  left: 70px;
-  z-index: 3;
   background-color: lime;
-  height: 30px;
-  width: 30px;
 }
-/* line 173, ../sass/partials/__small-screen.sass */
+/* line 176, ../sass/partials/__small-screen.sass */
 body article.scene section.unit-1 #forModal8 {
-  position: absolute;
-  bottom: 0;
-  left: 100px;
-  z-index: 3;
   background-color: blue;
-  height: 30px;
-  width: 30px;
 }
-/* line 182, ../sass/partials/__small-screen.sass */
+/* line 180, ../sass/partials/__small-screen.sass */
 body article.scene section.unit-1 #forModal0 {
-  position: absolute;
-  bottom: 0;
-  left: 140px;
-  z-index: 3;
   background-color: cyan;
-  height: 30px;
-  width: 30px;
 }
-/* line 192, ../sass/partials/__small-screen.sass */
+/* line 188, ../sass/partials/__small-screen.sass */
 body article.scene section.unit-2 img:nth-of-type(1) {
   width: 29%;
   position: absolute;
   bottom: 90%;
   display: none;
 }
-/* line 198, ../sass/partials/__small-screen.sass */
+/* line 194, ../sass/partials/__small-screen.sass */
 body article.scene section.unit-2 div.marina-text {
   background-image: url(../img/raster/marina/marina.png);
   background-size: contain;
@@ -292,7 +279,7 @@ body article.scene section.unit-2 div.marina-text {
   position: absolute;
   bottom: 87%;
 }
-/* line 213, ../sass/partials/__small-screen.sass */
+/* line 209, ../sass/partials/__small-screen.sass */
 body article.scene section.unit-2 div.seafood-burgers {
   background-image: url(../img/raster/marina/seafood-and-burgers.png);
   background-size: contain;
@@ -302,7 +289,7 @@ body article.scene section.unit-2 div.seafood-burgers {
   position: absolute;
   bottom: 77%;
 }
-/* line 225, ../sass/partials/__small-screen.sass */
+/* line 221, ../sass/partials/__small-screen.sass */
 body article.scene section.unit-2 div.fish {
   background-image: url(../img/raster/marina/fish.png);
   background-size: contain;
@@ -993,13 +980,6 @@ body #modal5 .modal-inner article nav div.box:nth-of-type(2) div div iframe {
   margin: auto;
   margin-left: 30%;
 }
-/* line 22, ../sass/partials/dialogue/_modal_5.sass */
-body #modal5 > div > article > nav > div:nth-child(4) > div > div > iframe {
-  width: 100%;
-  height: 52vh;
-  margin: auto;
-  margin-left: 30%;
-}
 /* line 4, ../sass/partials/dialogue/_modal_6.sass */
 body #modal2 {
   height: 0;
@@ -1013,22 +993,22 @@ body #modal2 {
   height: 0;
 }
 
-/* line 275, ../sass/partials/__small-screen.sass */
+/* line 271, ../sass/partials/__small-screen.sass */
 ::-webkit-scrollbar {
   width: 40px;
 }
 
-/* line 278, ../sass/partials/__small-screen.sass */
+/* line 274, ../sass/partials/__small-screen.sass */
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
 }
 
-/* line 281, ../sass/partials/__small-screen.sass */
+/* line 277, ../sass/partials/__small-screen.sass */
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(60, 110, 145, 0.6);
 }
 
-/* line 284, ../sass/partials/__small-screen.sass */
+/* line 280, ../sass/partials/__small-screen.sass */
 ::-webkit-scrollbar-track {
   border: 12px dotted rgba(4, 124, 209, 0.25);
 }
