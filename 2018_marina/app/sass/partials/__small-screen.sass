@@ -22,11 +22,20 @@
 
 
 html
-
+	margin: 0
+	padding: 0
+	-webkit-font-smoothing: antialiased
+	-webkit-hyphens: auto
+	-moz-hyphens: auto
+	-ms-hyphens: auto
+	hyphens: auto
+	font-family: $brand_font
+	color: $text_color
 
 //MOBILE FIRST STYLES
 body
-
+	margin: 0
+	padding: 0
 
 
 
@@ -38,24 +47,40 @@ body
 	// CONTENT 
 
 	article.scene
-		background-image: url(../img/raster/scene/marina-background.jpg)
+		//background-image: url(../img/raster/scene/marina-background.jpg)
 		background-size: cover
 		background-repeat: no-repeat
 
-		height: 81vh
-		background-position-y: 4vh
+		height: 90vh
+		//background-position-y: 4vh
 		width: 237vw
 		
-		//section
+		
 	
 
 
 
 		// HERO --- unit 1
 		section.unit-1
+			overflow-y: hidden
+
+			img.background
+				position: absolute
+				height: 86vh
+
+			img.building
+				position: absolute
+				bottom: 10vh
+				width: 250%
+
+			img.dragon
+				position: absolute
+				bottom: 15vh
+				margin-left: 69vh
+
 			
 			div.marina
-				background-image: url(../img/raster/scene/marina-build.png)
+				//background-image: url(../img/raster/scene/marina-build.png)
 				background-size: contain
 				background-repeat: no-repeat
 
@@ -117,8 +142,51 @@ body
 				height: 390px
 				background: transparent url(../img/raster/scene/cloud-3.png) no-repeat left top
 				//z-index: -6
-			
 
+			#forModal2-b
+				position: absolute
+				bottom: 0
+				left: 0
+				z-index: 3
+				background-color: rgb(255, 40, 20)
+				height: 30px
+				width: 30px
+
+			#forModal6
+				position: absolute
+				bottom: 0
+				left: 35px
+				z-index: 3
+				background-color: rgb(255, 0, 0)
+				height: 30px
+				width: 30px
+
+			#forModal7
+				position: absolute
+				bottom: 0
+				left: 70px
+				z-index: 3
+				background-color: rgb(0, 255, 0)
+				height: 30px
+				width: 30px
+
+			#forModal8
+				position: absolute
+				bottom: 0
+				left: 100px
+				z-index: 3
+				background-color: rgb(0, 0, 255)
+				height: 30px
+				width: 30px
+
+			#forModal0
+				position: absolute
+				bottom: 0
+				left: 140px
+				z-index: 3
+				background-color: rgb(0, 255, 255)
+				height: 30px
+				width: 30px
 		// Three Side by side items    -- unit 2
 		section.unit-2
 			img:nth-of-type(1)
@@ -135,23 +203,36 @@ body
 				height: 11vh
 				position: absolute
 				bottom: 90%
+
+
+				width: 51%
+				height: 11vh
+				position: absolute
+				bottom: 87%
+
 			div.seafood-burgers
 				background-image: url(../img/raster/marina/seafood-and-burgers.png)
 				background-size: contain
 				background-repeat: no-repeat
-				width: 30%
+
+
+				width: 44%
 				height: 11vh
 				position: absolute
-				bottom: 85%
+				bottom: 77%
+
+
 			div.fish
 				background-image: url(../img/raster/marina/fish.png)
 				background-size: contain
 				background-repeat: no-repeat
-				width: 30%
+
+
+				width: 25%
 				height: 11vh
 				position: absolute
-				bottom: 75%
-
+				bottom: 69%
+				left: 39%
 
 
 
@@ -172,16 +253,18 @@ body
 
 	// global
 	@import partials/dialogue/modal_share
-
+	@import partials/dialogue/modal_0
 	// modal  1.0 Sign Up
 	@import partials/dialogue/modal_1
 
 	// modal  2.0 Why Renewable 
 	@import partials/dialogue/modal_2
-
-	
-
-
+	@import partials/dialogue/modal_3
+	@import partials/dialogue/modal_4
+	@import partials/dialogue/modal_5
+	@import partials/dialogue/modal_6
+	@import partials/dialogue/modal_7
+	@import partials/dialogue/modal_8
 //  END DOM CONTENT --via DOM, i.e., close on <BODY>TAG --
 
 
@@ -190,7 +273,7 @@ body
 // Scrollbar 
 
 ::-webkit-scrollbar
-	width: 45px
+	width: 40px
 
 ::-webkit-scrollbar-thumb
 	border-radius: 0

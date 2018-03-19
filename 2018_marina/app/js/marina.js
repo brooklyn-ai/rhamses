@@ -68,26 +68,22 @@ function registerListener(event, func) {
 // BASIC PARALLAX
 
 function parallax(){
-
-   // HERO BACKGROUND
-   // var prlx_lyr_1 = document.getElementById('unit1') ;
-// prlx_lyr_1.style.backgroundSize = Math.abs((window.pageYOffset + 180 / 1.7))+'%';
-
-
-   // var prlx_lyr_2 = document.getElementById('tree1');
-//prlx_lyr_2.style.opacity = +((window.pageYOffset  * 1.2) / 5450);
-
-
-   // var prlx_lyr_3 = document.getElementById('bike');
-//prlx_lyr_3.style.left = -(window.pageYOffset / -20)+'%';
-
-
-   // var prlx_lyr_4 = document.getElementById('icons');
-//prlx_lyr_4.style.opacity = +(window.pageYOffset/11305);
-
+        var prlx_lyr_1 = document.getElementById('prlx_lyr_1'); // building
+        var prlx_lyr_2 = document.getElementById('prlx_lyr_2'); // logo
+        var prlx_lyr_3 = document.getElementById('prlx_lyr_3'); // logo text
+        var prlx_lyr_4 = document.getElementById('prlx_lyr_4'); // fish
+        //var prlx_lyr_5 = document.getElementById('prlx_lyr_5');
+        var prlx_lyr_6 = document.getElementById('prlx_lyr_6'); //dragon
+      
+        prlx_lyr_1.style.left = -(window.pageXOffset/1.5)+'px';
+        prlx_lyr_2.style.left = -(window.pageXOffset/4)+'px';
+        prlx_lyr_3.style.left = -(window.pageXOffset/1.5)+'px';
+        prlx_lyr_4.style.left = (window.pageXOffset/3.5)+'px';
+       // prlx_lyr_5.style.left = -(window.pageXOffset/2)+'px';
+        prlx_lyr_6.style.left = (window.pageXOffset/2)+'px';
 
 //EXAMPLES
-    //prlx_lyr_1.style.opacity = -(window.pageYOffset/30)+'%';              // right to left
+   prlx_lyr_1.style.left = -(window.pageXOffset/1.5)+'px';              // right to left
   //   prlx_lyr_2.style.marginBottom = -(window.pageXOffset/600)+'%';    // sink 
   //   prlx_lyr_3.style.marginBottom = -(window.pageXOffset/-95)+'%';   // pop up
   //   prlx_lyr_4.style.strokeDashoffset = -(window.pageXOffset/-20);  // vary stroke in svg 
@@ -109,8 +105,8 @@ function parallax(){
       window.addEventListener("scroll", parallax, false);
 
       var curYPos = 0,
-      curXPos = 0,
-      curDown = false;
+          curXPos = 0,
+          curDown = false;
 
 // END PARALLAX
 
@@ -147,6 +143,8 @@ var onClose = function() {
   document.getElementById("forModal0").addEventListener('click', function () {
   document.getElementById("button-modal-0").checked = true;
     onOpen();
+
+
   });
 
   document.getElementById("button-modal-0").addEventListener('click', function () {
@@ -162,6 +160,8 @@ var onClose = function() {
   document.getElementById("forModal1").addEventListener('click', function () {
   document.getElementById("button-modal-1").checked = true;
     onOpen();
+        // check/ OPEN 
+    document.getElementById("cb1").checked = true;
   });
 
   document.getElementById("button-modal-1").addEventListener('click', function () {
@@ -174,7 +174,21 @@ var onClose = function() {
 
 
   //OPEN MODAL 1.2 Menu
-  document.getElementById("forModal2").addEventListener('click', function () {
+  document.getElementById("forModal2-a").addEventListener('click', function () {
+  document.getElementById("button-modal-2").checked = true;
+    onOpen();
+  });
+
+  document.getElementById("button-modal-2").addEventListener('click', function () {
+    onClose();
+    // move back down when modal is closed 
+    var element2 = document.getElementById("unit1");
+    element2.scrollIntoView({behavior: "instant", block: "start"});
+  });
+
+
+  //OPEN MODAL 1.2 Menu
+  document.getElementById("forModal2-b").addEventListener('click', function () {
   document.getElementById("button-modal-2").checked = true;
     onOpen();
   });
@@ -191,6 +205,9 @@ var onClose = function() {
   document.getElementById("forModal3").addEventListener('click', function () {
   document.getElementById("button-modal-3").checked = true;
     onOpen();
+    // check/ OPEN 
+    document.getElementById("cb4").checked = true;
+
   });
 
   document.getElementById("button-modal-3").addEventListener('click', function () {
@@ -240,6 +257,21 @@ var onClose = function() {
     var element6 = document.getElementById("unit1");
     element6.scrollIntoView({behavior: "instant", block: "start"});
   });
+
+
+  document.getElementById("cb16").addEventListener('click', function () {
+    document.getElementById("button-modal-6").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-1").checked=true;
+   onOpen();
+   document.getElementById("cb3").checked = true;
+  });
+
+
+
+
+
 
   //OPEN MODAL 1.7.0 Social
   document.getElementById("forModal7").addEventListener('click', function () {
@@ -384,8 +416,6 @@ function cleanLazyPageA(){
 
 
 
-// check/ OPEN the 4th--heart-- elementon load
- // document.getElementById("cb4").checked = true;
 
 
 

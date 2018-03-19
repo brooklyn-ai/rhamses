@@ -17,8 +17,15 @@
 		transition: width 0.5s ease 0.5s, height 0.5s ease
 		width: 0
 		z-index: 10
+		background-image: none
 
-	input
+		::-webkit-scrollbar
+			width: 25px
+		article
+			margin: 2.5%
+	> label
+		display: none
+	> input
 		cursor: pointer
 		-webkit-appearance: none
 		-moz-appearance: none
@@ -30,8 +37,9 @@
 		border-radius: 50%
 		//left: calc(50% - 20px)
 		//top: 77.5vh
-		right: 0
-		top: 0
+		right: 30px
+		top: 5px
+		display: none
 
 		&:focus 
 			outline: none
@@ -42,6 +50,7 @@
 			-webkit-appearance: none
 			-moz-appearance: none
 			appearance: none
+			display: initial
 			&::after,
 			&:before 
 				border-top: 1px solid $dark_grey

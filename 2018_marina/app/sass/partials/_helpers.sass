@@ -14,10 +14,10 @@ html, body, .section-helper, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-trac
 		top: 0
 
 // SET UP ANIMATED ELEMENTS
-p, h2, h3, h4, h5, button, form, .graphic, .icons 
-	opacity: 0
-	-webkit-animation-fill-mode: forwards
-	animation-fill-mode: forwards
+//p, h2, h3, h4, h5, button, form, .graphic, .icons 
+	//opacity: 0
+	//-webkit-animation-fill-mode: forwards
+	//animation-fill-mode: forwards
 
 
 img, svg, p, h1, h2, h3, h4, h5
@@ -61,25 +61,3 @@ button
 		outline: none
 
 
-// DEVICE SPECIFIC RULES
-
-
-// // fix select text center issue for safari  (form > state > drop options )
-body.safari .modal-1-wrap .content form span:nth-of-type(1) select.state
-	text-indent: 25%
-	height: 33px
-body.safari.select .modal-1-wrap .content form span:nth-of-type(1) select.state
-	text-indent: 6.5%
-
-
-body.safari article section.unit-11 form span:nth-of-type(1) select.state
-	text-indent: 25%
-	height: 33px
-body.safari.select article section.unit-11 form span:nth-of-type(1) select.state
-	text-indent: 6.5%
-
-
-//section
-	//scroll-snap-align: center none
-//article
-	//scroll-snap-type: y mandatory
