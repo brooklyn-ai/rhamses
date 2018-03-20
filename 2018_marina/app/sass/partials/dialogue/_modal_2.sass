@@ -16,8 +16,8 @@
 
 		article 
 			background-color: white
-			width: 80%
-			margin-left: 10%
+			width: 94%
+			margin-left: 1%
 			box-shadow: 0 20px 10px -10px rgba(150, 150, 150, 0.8)
 			
 
@@ -63,29 +63,46 @@
 			
 
 			> details > summary 
-				font-size: 22px
-				margin-top: 16px
+				font-size: 5vw
+				margin-top: 3%
+				margin-bottom: 1%
 				font-family: serif
 
 
 			details
 				> p 
 					margin-left: 24px
+					font-size: 3vw
+					opacity: 0
+					animation-fill-mode: forwards
 					em 
 						font-weight: 700
+						margin-right: 10px
+						font-size: smaller
 			
 				details 
 					margin-left: 36px
-					span
+					span:not(.no-mobile)
 						float: right
-						padding-right: 40%
+						//padding-right: 40%
+					span.no-mobile
+						display: none
+					span.no-mobile.show-mobile
+						display: initial
 			
 					summary 
-						font-size: 19px
-						span
+						font-size: 3.5vw
+						margin-top: 1.2%
+						span:not(.no-mobile)
 							float: right
-							padding-right: 50%
-			
+							//padding-right: 50%
+							font-size: smaller
+						span.no-mobile
+							display: none
+						span.no-mobile.show-mobile
+							display: initial
+
+
 			p 
 				margin-bottom: 0.9em
 

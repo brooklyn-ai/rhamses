@@ -7,8 +7,13 @@
 
 		article.scene	
 			section.unit-1
+				img.background
+					height:  86vh
+					
 				img.building
-					width: 200%
+					width: 131%
+					margin-left: 19%
+					bottom: 10vh
 
 			section.unit-2
 				div.marina-text
@@ -31,15 +36,62 @@
 
 
 		//MODALS
-		.modal-1-wrap
-			article
-				
 
-		.modal-2-wrap
-			article
-				section 
-				
 
+
+
+
+
+
+		#modal2
+			.modal-inner
+				article
+					width: 80%
+					margin-left: 10%
+					summary::-webkit-details-marker 
+						color: #00ACF3
+						font-size: 125%
+						margin-right: 2px
+					
+					summary:focus 
+						outline-style: none
+					
+
+					> details > summary 
+						font-size: 3.2vw
+						margin-top: 16px
+						font-family: serif
+
+
+					details
+						> p 
+							font-size: 2vw
+							width: 80%
+							em 
+								font-weight: 700
+								margin-right: 10px
+								font-size: smaller
+					
+						details 
+							margin-left: 36px
+							span:not(.no-mobile)
+								float: right
+								padding-right: 40%
+								span.no-mobile
+									display: initial
+								span.no-mobile.show-mobile
+									display: none
+					
+							summary 
+								font-size: 2.5vw
+								span:not(.no-mobile)
+									float: right
+									padding-right: 50%
+									font-size: smaller
+									span.no-mobile
+										display: initial
+									span.no-mobile.show-mobile
+										display: none
 
 
 		// Modal button styles

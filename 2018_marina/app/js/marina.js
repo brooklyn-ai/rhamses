@@ -72,18 +72,18 @@ function parallax(){
         var prlx_lyr_2 = document.getElementById('prlx_lyr_2'); // logo
         var prlx_lyr_3 = document.getElementById('prlx_lyr_3'); // logo text
         var prlx_lyr_4 = document.getElementById('prlx_lyr_4'); // fish
-        //var prlx_lyr_5 = document.getElementById('prlx_lyr_5');
+      //  var prlx_lyr_5 = document.getElementById('prlx_lyr_5'); //background
         var prlx_lyr_6 = document.getElementById('prlx_lyr_6'); //dragon
       
-        prlx_lyr_1.style.left = -(window.pageXOffset/1.5)+'px';
+        prlx_lyr_1.style.left = -(window.pageXOffset*0.23)+'px';
         prlx_lyr_2.style.left = -(window.pageXOffset/4)+'px';
         prlx_lyr_3.style.left = -(window.pageXOffset/1.5)+'px';
         prlx_lyr_4.style.left = (window.pageXOffset/3.5)+'px';
-       // prlx_lyr_5.style.left = -(window.pageXOffset/2)+'px';
+       // prlx_lyr_5.style.left = (window.pageXOffset/1.92)+'px';
         prlx_lyr_6.style.left = (window.pageXOffset/2)+'px';
 
 //EXAMPLES
-   prlx_lyr_1.style.left = -(window.pageXOffset/1.5)+'px';              // right to left
+  // prlx_lyr_1.style.left = -(window.pageXOffset/1.5)+'px';              // right to left
   //   prlx_lyr_2.style.marginBottom = -(window.pageXOffset/600)+'%';    // sink 
   //   prlx_lyr_3.style.marginBottom = -(window.pageXOffset/-95)+'%';   // pop up
   //   prlx_lyr_4.style.strokeDashoffset = -(window.pageXOffset/-20);  // vary stroke in svg 
@@ -147,12 +147,105 @@ var onClose = function() {
 
   });
 
+
+
+// calendar
+  document.getElementById("forModal1-sitemap").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-1").checked=true;
+   onOpen();
+   document.getElementById("cb1").checked = true;
+  });
+
+
+// MENU
+  document.getElementById("forModal2-sitemap").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-2").checked=true;
+   onOpen();
+   
+  });
+
+// Map
+  document.getElementById("forModal3-sitemap").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-3").checked=true;
+   onOpen();
+   document.getElementById("cb4").checked = true;
+  });
+
+// Photos
+  document.getElementById("forModal4-sitemap").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-4").checked=true;
+   onOpen();
+
+  });
+
+  // Photos
+  document.getElementById("forModal5-sitemap").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-5").checked=true;
+   onOpen();
+
+  });
+
+
+  //discover bratteboro
+  document.getElementById("forModal6-sitemap").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-6").checked=true;
+   onOpen();
+
+  });
+
+
+    // social
+  document.getElementById("forModal7-sitemap").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-7").checked=true;
+   onOpen();
+
+  });
+
+  // ART
+  document.getElementById("forModal8-sitemap").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-8").checked=true;
+   onOpen();
+
+  });
+
+
+
+
   document.getElementById("button-modal-0").addEventListener('click', function () {
     onClose();
     // move back down when modal is closed 
     var element0= document.getElementById("unit1");
     element0.scrollIntoView({behavior: "instant", block: "start"});
   });
+
+
+
+
+
 
 
 
@@ -213,7 +306,7 @@ var onClose = function() {
   });
 
     document.getElementById("forModal3-b").addEventListener('click', function () {
-  document.getElementById("button-modal-3").checked = true;
+    document.getElementById("button-modal-3").checked = true;
     onOpen();
     // check/ OPEN 
     document.getElementById("cb4").checked = true;
@@ -237,6 +330,10 @@ var onClose = function() {
   });
 
 
+
+
+
+
   //OPEN MODAL 1.5.0 Information
   document.getElementById("forModal5").addEventListener('click', function () {
   document.getElementById("button-modal-5").checked = true;
@@ -249,6 +346,9 @@ var onClose = function() {
     var element5 = document.getElementById("unit1");
     element5.scrollIntoView({behavior: "instant", block: "start"});
   });
+
+
+
 
   //OPEN MODAL 1.6.0 Partners
   document.getElementById("forModal6").addEventListener('click', function () {
@@ -292,6 +392,9 @@ var onClose = function() {
   });
 
 
+
+
+
   //OPEN MODAL 1.8.0  Art/Gallery
   document.getElementById("forModal8").addEventListener('click', function () {
   document.getElementById("button-modal-8").checked = true;
@@ -326,7 +429,7 @@ function setLazyPageA(){
 
 function lazyLoadPageA(){
 
- document.getElementById("forModal2").addEventListener('click', function () {
+ document.getElementById("forModal2-b").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
         if (lazyPageA[i].getAttribute('data-src')){
@@ -338,7 +441,7 @@ function lazyLoadPageA(){
 
  });
 
-  document.getElementById("forModal3").addEventListener('click', function () {
+  document.getElementById("forModal3-b").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
         if (lazyPageA[i].getAttribute('data-src')){
@@ -1144,6 +1247,86 @@ document.getElementById("forModal5").onclick  = function(){document.getElementBy
 
 
 
+
+// details summary polyfill 
+
+//  https://github.com/rstacruz/details-polyfill
+
+
+
+// void (function (root, factory) {
+//   if (typeof define === 'function' && define.amd) define(factory)
+//   else if (typeof exports === 'object') module.exports = factory()
+//   else factory()
+// }(this, function () {
+//   var DETAILS = 'details'
+//   var SUMMARY = 'summary'
+
+//   var supported = checkSupport()
+//   if (supported) return
+
+//   // Add a classname
+//   document.documentElement.className += ' no-details'
+
+//   window.addEventListener('click', clickHandler)
+
+//   injectStyle('details-polyfill-style',
+//     'html.no-details ' + DETAILS + ':not([open]) > :not(' + SUMMARY + ') { display: none; }\n' +
+//     'html.no-details ' + DETAILS + ' > ' + SUMMARY + ':before { content: "\u25b6"; display: inline-block; font-size: .8em; width: 1.5em; }\n' +
+//     'html.no-details ' + DETAILS + '[open] > ' + SUMMARY + ':before { content: "\u25bc"; }')
+
+//   /*
+//    * Click handler for `<summary>` tags
+//    */
+
+//   function clickHandler (e) {
+//     if (e.target.nodeName.toLowerCase() === 'summary') {
+//       var details = e.target.parentNode
+//       if (!details) return
+
+//       if (details.getAttribute('open')) {
+//         details.open = false
+//         details.removeAttribute('open')
+//       } else {
+//         details.open = true
+//         details.setAttribute('open', 'open')
+//       }
+//     }
+//   }
+
+//   /*
+//    * Checks for support for `<details>`
+//    */
+
+//   function checkSupport () {
+//     var el = document.createElement(DETAILS)
+//     if (!('open' in el)) return false
+
+//     el.innerHTML = '<' + SUMMARY + '>a</' + SUMMARY + '>b'
+//     document.body.appendChild(el)
+
+//     var diff = el.offsetHeight
+//     el.open = true
+//     var result = (diff != el.offsetHeight)
+
+//     document.body.removeChild(el)
+//     return result
+//   }
+
+//   /*
+//    * Injects styles (idempotent)
+//    */
+
+//   function injectStyle (id, style) {
+//     if (document.getElementById(id)) return
+
+//     var el = document.createElement('style')
+//     el.id = id
+//     el.innerHTML = style
+
+//     document.getElementsByTagName('head')[0].appendChild(el)
+//   }
+// })); // eslint-disable-line semi
 
 
 

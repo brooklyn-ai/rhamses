@@ -66,12 +66,15 @@ body
 
 			img.background
 				position: absolute
-				height: 86vh
+				height: 92vh
+				margin-left: -18%
 
 			img.building
 				position: absolute
-				bottom: 10vh
-				width: 250%
+				bottom: 6vh
+				width: 149%
+				margin-left: 22%
+				border-bottom: 42px solid rgba(0, 0, 0, 0)
 
 			img.dragon
 				position: absolute
@@ -115,6 +118,18 @@ body
 				-webkit-animation: flight 150s infinite linear
 				-moz-animation: flight 150s infinite linear
 				animation: flight 150s infinite linear
+
+
+
+			.cloud-4
+				position: absolute
+				right: 17%
+				top: 37%
+				width: 469px
+				height: 254px
+				opacity: 0.5
+				background: transparent url(../img/raster/scene/cloud-1.png) no-repeat left top
+				//z-index: -6
 
 	
 			.cloud-1 
@@ -357,7 +372,33 @@ body
 @import partials/ios/iphone_6_7_8plus
 
 
+@media only screen and (max-width: 601px)
+	body
+		article.scene
+			section.unit-1
+				img.background
+					height: 90vh
+					margin-left: -39%
 
+				img.building
+					bottom: 5vh
+					width: 196%
+					margin-left: 9%
+
+@media only screen and (max-width: 540px)
+	body
+		#modal2
+			.modal-inner
+				article 
+					> details > summary 
+						font-size: 6vw
+					details
+						details
+							> p 
+								font-size: 4vw
+							summary 
+								font-size: 4.5vw
+							
 
 
 
