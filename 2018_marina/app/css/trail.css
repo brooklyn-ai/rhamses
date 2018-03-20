@@ -281,13 +281,6 @@ html, body, .section-helper, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-trac
   top: 0;
 }
 
-/* line 17, ../sass/partials/_helpers.sass */
-p, h2, h3, h4, h5, button, form, .graphic, .icons {
-  opacity: 0;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
 /* line 23, ../sass/partials/_helpers.sass */
 img, svg, p, h1, h2, h3, h4, h5 {
   -webkit-overflow-scrolling: touch;
@@ -339,28 +332,6 @@ button:active {
 button:focus {
   border: none;
   outline: none;
-}
-
-/* line 68, ../sass/partials/_helpers.sass */
-body.safari .modal-1-wrap .content form span:nth-of-type(1) select.state {
-  text-indent: 25%;
-  height: 33px;
-}
-
-/* line 71, ../sass/partials/_helpers.sass */
-body.safari.select .modal-1-wrap .content form span:nth-of-type(1) select.state {
-  text-indent: 6.5%;
-}
-
-/* line 75, ../sass/partials/_helpers.sass */
-body.safari article section.unit-11 form span:nth-of-type(1) select.state {
-  text-indent: 25%;
-  height: 33px;
-}
-
-/* line 78, ../sass/partials/_helpers.sass */
-body.safari.select article section.unit-11 form span:nth-of-type(1) select.state {
-  text-indent: 6.5%;
 }
 
 @media only screen and (min-width: 766px) {
