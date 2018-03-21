@@ -2,201 +2,74 @@
 
 
 footer
-	background-color: #474a50
-	z-index: 2
-	position: relative
-
-	div:nth-of-type(1)
-		.footer-logo
-			width: 45%
-			margin-left: 27.5%
-			margin-top: 7%
-			margin-bottom: 6%
-
-	div
-		vertical-align: top
-		h3
-			color: white
-			margin-top: 0
-			font-size: 4vw
-			margin-bottom: 3%
-		ul
-			padding: 0
-			margin-bottom: 10%
-			li
-				list-style: none
-				color: white
-				font-size: 3vw
-				a
-					text-decoration: none
-					font-size: 3vw
-
-	div:nth-of-type(2)
-		width: 60%
-		margin-left: 20%
-		h3
-			color: white
-		ul
-			li
-				a
-					color: white
-
-	div:nth-of-type(3)
-		width: 60%
-		margin-left: 20%
-		h3 
-			color: white
-		ul
-			li
-				a
-					color: white
-					svg 
-						fill: rgb(178, 179, 180)
-						width: 15px
-						margin-right: 9px
-						transition: all 1s
-					svg:hover > path
-						fill: $light_grey
-					svg.facebook-icon
-						width: 23px
-						margin-right: 3px
-						margin-left: -3px
-						margin-bottom: -5px
+	ul.buttons
+		position: absolute
+		bottom: 0
+		left: 0
+		z-index: 3
+		li 
 
 
-	div:nth-of-type(4)
-		width: 60%
-		margin-left: 20%
-		h3 
-			color: white
-		ul
-			li
-				a
-					color: white
-					cursor: pointer
-				address
-					color: white
-		ul
-			li:last-of-type
-				margin-top: 2vw
+		.button 
+			padding: 10px 25px
+			background: rgba(173, 247, 211, 0.4)
 
-	div:nth-of-type(5)
-		color: rgb(187, 187, 187)
-		text-align: center
-		width: 100%
-		padding-bottom: 40px
-		padding-top: 40px
-
-
-
-
-
-
-
-+respond(medium_screen)
-	footer
-		div
-			width: 17%
+			outline: none !important
+			cursor: pointer
+			transition: all 0.3s ease
+			position: relative
 			display: inline-block
-			margin-top: 40px
+			border: none
+			border-bottom: 2px solid #000
+			border-left: 2px solid #000
+			font-weight: 700
 
-		div
-			h3
-				font-size: 1.7vw
-				margin-bottom: initial
-			ul
-				margin-bottom: 0
-				li 
-					font-size: 1.5vw
-					margin-top: 0.5vw
-					a 
-						font-size: 1.5vw
+		.button:before, .button:after 
+			position: absolute
+			content: ""
+			right: 0
+			top: 0
+			background: #000
+			transition: all 0.3s ease
+				
+		.button:before 
+			height: 0%
+			width: 2px
+			
+		.button:after 
+			width: 0%
+			height: 2px
 
-
-
-		div:nth-of-type(1)
+		.button:hover:before 
+			height: 100%
+		.button:hover:after 
 			width: 100%
-			text-align: center
-			.footer-logo
-				width: 15%
-				margin-left: 0
-				margin-top: 0
-				margin-bottom: 6%
-
-		div:nth-of-type(2)
-			position: relative
-			left: 38%
-			border-right: 1px solid white
-			margin-left: 0
-			width: 17%
-			padding-bottom: 17px
-			ul 
-				margin-bottom: 13px
-
-		div:nth-of-type(3)
-			position: relative
-			left: -5%
-			border-right: 1px solid white
-			margin-left: 0
-			width: 17%
-
-		div:nth-of-type(4)
-			left: 30%
-			width: 29%
-			position: relative
-			margin-left: 0
-			ul
-				li:last-of-type
-					margin-top: 1vw
-
-		div:nth-of-type(5)
-			padding-bottom: 40px
-			padding-top: 0
-			font-size: 1vw
 
 
-+respond(large)
-	footer
-		div
-			width: 20%
-			margin-top: 5%
+		#forModal2-b
 
-		div:nth-of-type(1)
-			width: 20%
+			//background-color: rgb(255, 40, 20)
 
-			.footer-logo
-				width: 50%
-				margin-top: 19%
-				margin-left: 40%
-				user-select: none
+		#forModal3-b
 
-		div
-			h3
-				font-size: 1.2vw
-			ul
-				li 
-					font-size: 1vw
-					margin-top: 0.5vw
-					a 
-						font-size: 1vw
+			//background-color: rgb(255, 40, 20)
 
-		div:nth-of-type(2)
-			left: 27%
-			width: 14%
-			padding-bottom: 0
-			ul 
-				margin-bottom: 14px
 
-		div:nth-of-type(3)	
-			left: -7%
-			width: 12%
+		#forModal6
 
-		div:nth-of-type(4)
-			width: 17%
-			left: 21%
+			//background-color: rgb(255, 0, 0)
 
-		div:nth-of-type(5) 
-			font-size: 0.9vw
-			padding-bottom: 0
 
+		#forModal7
+
+			//background-color: rgb(0, 255, 0)
+
+
+		#forModal8
+
+			//background-color: rgb(0, 0, 255)
+
+		#forModal0
+
+			//background-color: rgb(0, 255, 255)
 

@@ -4,7 +4,8 @@
 	body
 
 		header
-			
+			background-color: rgba(255, 255, 255, 0.33)
+
 			img
 				width: 9%
 				left: calc(24% - 48px)
@@ -34,17 +35,32 @@
 				display: none
 
 
-		article
+		article.scene
 
 		
 			section.unit-1
 				img.building
-					width: 145%
+					//width: 145%
 
 
 			section.unit-2
 			
-
+				div.marina-text
+					width: 66%
+					height: 12vh
+					bottom: 82%
+					margin-left: 7%
+				
+				div.seafood-burgers
+					height: 10vh
+					bottom: 71%
+					margin-left: 13%
+				
+				div.fish
+					width: 12%
+					height: 7vh
+					bottom: 60%
+					margin-left: 21%
 
 
 
@@ -53,7 +69,7 @@
 		#modal2
 			.modal-inner
 				article 
-					width: 85%
+					
 					> details > summary 
 						font-size: 2.2vw
 					details
@@ -65,7 +81,11 @@
 							
 
 
-
+		//#modal4
+			//.modal-inner
+				//article
+					//div.gallery 
+						//margin-top: 5%
 			
 			
 		br.mobile
@@ -77,7 +97,16 @@
 
 
 	
-
+body.modal--opened
+	article.scene
+		section.unit-2
+			div.marina-text
+				width: 19%
+				height: 6vh
+				bottom: 0%
+				top: 0
+				margin-right: auto
+				margin-left: 36%
 
 
 //@media only screen and (min-width: 599px) and (max-width: 601px) and (min-height: 1023px) and (max-width: 1025px)

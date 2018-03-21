@@ -1,248 +1,50 @@
-/* line 4, ../sass/partials/_footer.sass */
-body footer {
-  background-color: #474a50;
-  z-index: 2;
-  position: relative;
+/* line 5, ../sass/partials/_footer.sass */
+body footer ul.buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
 }
-/* line 10, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(1) .footer-logo {
-  width: 45%;
-  margin-left: 27.5%;
-  margin-top: 7%;
-  margin-bottom: 6%;
-}
-/* line 16, ../sass/partials/_footer.sass */
-body footer div {
-  vertical-align: top;
-}
-/* line 18, ../sass/partials/_footer.sass */
-body footer div h3 {
-  color: white;
-  margin-top: 0;
-  font-size: 4vw;
-  margin-bottom: 3%;
-}
-/* line 23, ../sass/partials/_footer.sass */
-body footer div ul {
-  padding: 0;
-  margin-bottom: 10%;
-}
-/* line 26, ../sass/partials/_footer.sass */
-body footer div ul li {
-  list-style: none;
-  color: white;
-  font-size: 3vw;
-}
-/* line 30, ../sass/partials/_footer.sass */
-body footer div ul li a {
-  text-decoration: none;
-  font-size: 3vw;
-}
-/* line 34, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(2) {
-  width: 60%;
-  margin-left: 20%;
-}
-/* line 37, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(2) h3 {
-  color: white;
-}
-/* line 41, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(2) ul li a {
-  color: white;
-}
-/* line 44, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(3) {
-  width: 60%;
-  margin-left: 20%;
-}
-/* line 47, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(3) h3 {
-  color: white;
-}
-/* line 51, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(3) ul li a {
-  color: white;
-}
-/* line 53, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(3) ul li a svg {
-  fill: #b2b3b4;
-  width: 15px;
-  margin-right: 9px;
-  transition: all 1s;
-}
-/* line 58, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(3) ul li a svg:hover > path {
-  fill: #232323;
-}
-/* line 60, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(3) ul li a svg.facebook-icon {
-  width: 23px;
-  margin-right: 3px;
-  margin-left: -3px;
-  margin-bottom: -5px;
-}
-/* line 67, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(4) {
-  width: 60%;
-  margin-left: 20%;
-}
-/* line 70, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(4) h3 {
-  color: white;
-}
-/* line 74, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(4) ul li a {
-  color: white;
+/* line 13, ../sass/partials/_footer.sass */
+body footer ul.buttons .button {
+  padding: 10px 25px;
+  background: rgba(173, 247, 211, 0.4);
+  outline: none !important;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  font-weight: 700;
 }
-/* line 77, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(4) ul li address {
-  color: white;
+/* line 27, ../sass/partials/_footer.sass */
+body footer ul.buttons .button:before, body footer ul.buttons .button:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #000;
+  transition: all 0.3s ease;
 }
-/* line 80, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(4) ul li:last-of-type {
-  margin-top: 2vw;
+/* line 35, ../sass/partials/_footer.sass */
+body footer ul.buttons .button:before {
+  height: 0%;
+  width: 2px;
 }
-/* line 83, ../sass/partials/_footer.sass */
-body footer div:nth-of-type(5) {
-  color: #bbbbbb;
-  text-align: center;
+/* line 39, ../sass/partials/_footer.sass */
+body footer ul.buttons .button:after {
+  width: 0%;
+  height: 2px;
+}
+/* line 43, ../sass/partials/_footer.sass */
+body footer ul.buttons .button:hover:before {
+  height: 100%;
+}
+/* line 45, ../sass/partials/_footer.sass */
+body footer ul.buttons .button:hover:after {
   width: 100%;
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-@media only screen and (min-width: 766px) {
-  /* line 98, ../sass/partials/_footer.sass */
-  body footer div {
-    width: 17%;
-    display: inline-block;
-    margin-top: 40px;
-  }
-  /* line 104, ../sass/partials/_footer.sass */
-  body footer div h3 {
-    font-size: 1.7vw;
-    margin-bottom: initial;
-  }
-  /* line 107, ../sass/partials/_footer.sass */
-  body footer div ul {
-    margin-bottom: 0;
-  }
-  /* line 109, ../sass/partials/_footer.sass */
-  body footer div ul li {
-    font-size: 1.5vw;
-    margin-top: 0.5vw;
-  }
-  /* line 112, ../sass/partials/_footer.sass */
-  body footer div ul li a {
-    font-size: 1.5vw;
-  }
-  /* line 117, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(1) {
-    width: 100%;
-    text-align: center;
-  }
-  /* line 120, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(1) .footer-logo {
-    width: 15%;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 6%;
-  }
-  /* line 126, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(2) {
-    position: relative;
-    left: 38%;
-    border-right: 1px solid white;
-    margin-left: 0;
-    width: 17%;
-    padding-bottom: 17px;
-  }
-  /* line 133, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(2) ul {
-    margin-bottom: 13px;
-  }
-  /* line 136, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(3) {
-    position: relative;
-    left: -5%;
-    border-right: 1px solid white;
-    margin-left: 0;
-    width: 17%;
-  }
-  /* line 143, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(4) {
-    left: 30%;
-    width: 29%;
-    position: relative;
-    margin-left: 0;
-  }
-  /* line 149, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(4) ul li:last-of-type {
-    margin-top: 1vw;
-  }
-  /* line 152, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(5) {
-    padding-bottom: 40px;
-    padding-top: 0;
-    font-size: 1vw;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  /* line 160, ../sass/partials/_footer.sass */
-  body footer div {
-    width: 20%;
-    margin-top: 5%;
-  }
-  /* line 164, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(1) {
-    width: 20%;
-  }
-  /* line 167, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(1) .footer-logo {
-    width: 50%;
-    margin-top: 19%;
-    margin-left: 40%;
-    user-select: none;
-  }
-  /* line 174, ../sass/partials/_footer.sass */
-  body footer div h3 {
-    font-size: 1.2vw;
-  }
-  /* line 177, ../sass/partials/_footer.sass */
-  body footer div ul li {
-    font-size: 1vw;
-    margin-top: 0.5vw;
-  }
-  /* line 180, ../sass/partials/_footer.sass */
-  body footer div ul li a {
-    font-size: 1vw;
-  }
-  /* line 183, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(2) {
-    left: 27%;
-    width: 14%;
-    padding-bottom: 0;
-  }
-  /* line 187, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(2) ul {
-    margin-bottom: 14px;
-  }
-  /* line 190, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(3) {
-    left: -7%;
-    width: 12%;
-  }
-  /* line 194, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(4) {
-    width: 17%;
-    left: 21%;
-  }
-  /* line 198, ../sass/partials/_footer.sass */
-  body footer div:nth-of-type(5) {
-    font-size: 0.9vw;
-    padding-bottom: 0;
-  }
 }
 
 /* line 44, ../sass/partials/trail/__small-screen.sass */
@@ -280,13 +82,17 @@ body article.scene section.unit-1 img.building {
   position: fixed;
   left: 0;
   right: 0;
+  transition: all 2s;
+  transition-delay: 2s;
 }
-/* line 18, ../sass/partials/_helpers.sass */
+/* line 20, ../sass/partials/_helpers.sass */
 .modal--opened article {
   top: 0;
+  transition: all 2s;
+  transition-delay: 2s;
 }
 
-/* line 28, ../sass/partials/_helpers.sass */
+/* line 32, ../sass/partials/_helpers.sass */
 img, svg, p, h1, h2, h3, h4, h5 {
   -webkit-overflow-scrolling: touch;
   -webkit-user-drag: none;
@@ -297,7 +103,7 @@ img, svg, p, h1, h2, h3, h4, h5 {
   cursor: default;
 }
 
-/* line 38, ../sass/partials/_helpers.sass */
+/* line 42, ../sass/partials/_helpers.sass */
 img, h1, h2, button, header {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -306,34 +112,34 @@ img, h1, h2, button, header {
   user-select: none;
 }
 
-/* line 47, ../sass/partials/_helpers.sass */
+/* line 51, ../sass/partials/_helpers.sass */
 br.mobile {
   display: block;
 }
 
-/* line 49, ../sass/partials/_helpers.sass */
+/* line 53, ../sass/partials/_helpers.sass */
 br.tablet {
   display: none;
 }
 
-/* line 51, ../sass/partials/_helpers.sass */
+/* line 55, ../sass/partials/_helpers.sass */
 br.desktop {
   display: none;
 }
 
-/* line 56, ../sass/partials/_helpers.sass */
+/* line 60, ../sass/partials/_helpers.sass */
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
 }
-/* line 61, ../sass/partials/_helpers.sass */
+/* line 65, ../sass/partials/_helpers.sass */
 button:active {
   border: none;
   outline: none;
 }
-/* line 64, ../sass/partials/_helpers.sass */
+/* line 68, ../sass/partials/_helpers.sass */
 button:focus {
   border: none;
   outline: none;

@@ -158,6 +158,24 @@ var onClose = function() {
    onOpen();
    document.getElementById("cb1").checked = true;
   });
+  //music
+  document.getElementById("forModal1-sitemap-b").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-1").checked=true;
+   onOpen();
+   document.getElementById("cb2").checked = true;
+  });
+    //events
+  document.getElementById("forModal1-sitemap-c").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-1").checked=true;
+   onOpen();
+   document.getElementById("cb3").checked = true;
+  });
 
 
 // MENU
@@ -180,6 +198,27 @@ var onClose = function() {
    document.getElementById("cb4").checked = true;
   });
 
+    //video
+  document.getElementById("forModal3-sitemap-b").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-3").checked=true;
+   onOpen();
+   document.getElementById("cb5").checked = true;
+  });
+
+    //3d
+  document.getElementById("forModal3-sitemap-c").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-3").checked=true;
+   onOpen();
+   document.getElementById("cb6").checked = true;
+  });
+
+
 // Photos
   document.getElementById("forModal4-sitemap").addEventListener('click', function () {
     document.getElementById("button-modal-0").checked = false;
@@ -190,25 +229,45 @@ var onClose = function() {
 
   });
 
-  // Photos
-  document.getElementById("forModal5-sitemap").addEventListener('click', function () {
+
+
+//MODAL 5
+    //c0ntact us 
+  document.getElementById("forModal5-sitemap-a").addEventListener('click', function () {
     document.getElementById("button-modal-0").checked = false;
     onClose();
     // move back down when modal is closed 
    document.getElementById("button-modal-5").checked=true;
    onOpen();
-
+   document.getElementById("cb7").checked = true;
   });
 
-
-  //discover bratteboro
-  document.getElementById("forModal6-sitemap").addEventListener('click', function () {
+    //directins
+  document.getElementById("forModal5-sitemap-b").addEventListener('click', function () {
     document.getElementById("button-modal-0").checked = false;
     onClose();
     // move back down when modal is closed 
-   document.getElementById("button-modal-6").checked=true;
+   document.getElementById("button-modal-5").checked=true;
    onOpen();
-
+   document.getElementById("cb8").checked = true;
+  });
+    //about
+  document.getElementById("forModal5-sitemap-c").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-5").checked=true;
+   onOpen();
+   document.getElementById("cb9").checked = true;
+  });
+    //supppliers
+  document.getElementById("forModal5-sitemap-d").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-5").checked=true;
+   onOpen();
+   document.getElementById("cb10").checked = true;
   });
 
 
@@ -359,7 +418,7 @@ var onClose = function() {
   document.getElementById("button-modal-6").addEventListener('click', function () {
     onClose();
     // move back down when modal is closed 
-    var element6 = document.getElementById("unit1");
+    var element6 = document.getElementById("unit2");
     element6.scrollIntoView({behavior: "instant", block: "start"});
   });
 
@@ -368,13 +427,36 @@ var onClose = function() {
     document.getElementById("button-modal-6").checked = false;
     onClose();
     // move back down when modal is closed 
-   document.getElementById("button-modal-1").checked=true;
+   document.getElementById("button-modal-6").checked=true;
    onOpen();
    document.getElementById("cb3").checked = true;
   });
 
 
+//Sign Icons in scene
+  document.getElementById("forModal6-icon-kayak").addEventListener('click', function () {
 
+    // move back down when modal is closed 
+   document.getElementById("button-modal-6").checked=true;
+   onOpen();
+   document.getElementById("cb13").checked = true;
+  });
+
+  document.getElementById("forModal6-icon-trail").addEventListener('click', function () {
+
+    // move back down when modal is closed 
+   document.getElementById("button-modal-6").checked=true;
+   onOpen();
+   document.getElementById("cb15").checked = true;
+  });
+
+  document.getElementById("forModal6-icon-brattleboro").addEventListener('click', function () {
+
+    // move back down when modal is closed 
+   document.getElementById("button-modal-6").checked=true;
+   onOpen();
+   document.getElementById("cb11").checked = true;
+  });
 
 
 
@@ -401,12 +483,21 @@ var onClose = function() {
     onOpen();
   });
 
+
+  document.getElementById("forModal8-icon").addEventListener('click', function () {
+  document.getElementById("button-modal-8").checked = true;
+    onOpen();
+  });
+
+
+
   document.getElementById("button-modal-8").addEventListener('click', function () {
     onClose();
     // move back down when modal is closed 
     var element8 = document.getElementById("unit1");
     element8.scrollIntoView({behavior: "instant", block: "start"});
   });
+
 
 
 
