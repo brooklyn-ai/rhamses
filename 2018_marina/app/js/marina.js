@@ -372,7 +372,15 @@ var onClose = function() {
 
   });
 
-
+    //3d
+  document.getElementById("forModal3-tour").addEventListener('click', function () {
+    //document.getElementById("button-modal-0").checked = false;
+   // onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-3").checked=true;
+   onOpen();
+   document.getElementById("cb6").checked = true;
+  });
 
 
   //OPEN MODAL 1.4.0 Photos
@@ -520,6 +528,18 @@ function setLazyPageA(){
 
 function lazyLoadPageA(){
 
+ document.getElementById("forModal0").addEventListener('click', function () {
+
+    for(var i=0; i<lazyPageA.length; i++){
+        if (lazyPageA[i].getAttribute('data-src')){
+            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
+            lazyPageA[i].removeAttribute('data-src');
+        }
+    }
+    cleanLazyPageA();
+
+ });
+
  document.getElementById("forModal2-b").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
@@ -579,6 +599,52 @@ function lazyLoadPageA(){
     cleanLazyPageA();   //below after lazyPage
     
  });
+
+        document.getElementById("forModal6-icon-kayak").addEventListener('click', function () {
+
+    for(var i=0; i<lazyPageA.length; i++){
+        if (lazyPageA[i].getAttribute('data-src')){
+            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
+            lazyPageA[i].removeAttribute('data-src');
+        }
+    }
+    cleanLazyPageA();   //below after lazyPage
+    
+ });
+
+        document.getElementById("forModal6-icon-trail").addEventListener('click', function () {
+
+    for(var i=0; i<lazyPageA.length; i++){
+        if (lazyPageA[i].getAttribute('data-src')){
+            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
+            lazyPageA[i].removeAttribute('data-src');
+        }
+    }
+    cleanLazyPageA();   //below after lazyPage
+    
+ });
+
+
+
+        document.getElementById("forModal6-icon-brattleboro").addEventListener('click', function () {
+
+    for(var i=0; i<lazyPageA.length; i++){
+        if (lazyPageA[i].getAttribute('data-src')){
+            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
+            lazyPageA[i].removeAttribute('data-src');
+        }
+    }
+    cleanLazyPageA();   //below after lazyPage
+    
+ });
+
+
+
+
+
+
+
+       
           document.getElementById("forModal7").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
