@@ -72,14 +72,14 @@ function parallax(){
         var prlx_lyr_2 = document.getElementById('prlx_lyr_2'); // logo
         var prlx_lyr_3 = document.getElementById('prlx_lyr_3'); // logo text
         var prlx_lyr_4 = document.getElementById('prlx_lyr_4'); // fish
-      //  var prlx_lyr_5 = document.getElementById('prlx_lyr_5'); //background
+        var prlx_lyr_7 = document.getElementById('prlx_lyr_7'); //background
         var prlx_lyr_6 = document.getElementById('prlx_lyr_6'); //dragon
       
         prlx_lyr_1.style.left = -(window.pageXOffset*0.23)+'px';
         prlx_lyr_2.style.left = -(window.pageXOffset/4)+'px';
         prlx_lyr_3.style.left = -(window.pageXOffset/1.5)+'px';
         prlx_lyr_4.style.left = (window.pageXOffset/3.5)+'px';
-       // prlx_lyr_5.style.left = (window.pageXOffset/1.92)+'px';
+        prlx_lyr_7.style.left = (window.pageXOffset/1.5)+'px';
         prlx_lyr_6.style.left = (window.pageXOffset/2)+'px';
 
 //EXAMPLES
@@ -167,9 +167,24 @@ var onClose = function() {
    onOpen();
    document.getElementById("cb2").checked = true;
   });
+
+
+
+
     //events
   document.getElementById("forModal1-sitemap-c").addEventListener('click', function () {
     document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-1").checked=true;
+   onOpen();
+   document.getElementById("cb3").checked = true;
+  });
+
+
+
+  document.getElementById("cb16-a").addEventListener('click', function () {
+    document.getElementById("button-modal-6").checked = false;
     onClose();
     // move back down when modal is closed 
    document.getElementById("button-modal-1").checked=true;
@@ -265,10 +280,22 @@ var onClose = function() {
     document.getElementById("button-modal-0").checked = false;
     onClose();
     // move back down when modal is closed 
-   document.getElementById("button-modal-5").checked=true;
+   document.getElementById("button-modal-6").checked=true;
    onOpen();
-   document.getElementById("cb10").checked = true;
+   document.getElementById("cb12").checked = true;
   });
+
+
+  document.getElementById("cb10-a").addEventListener('click', function () {
+    document.getElementById("button-modal-5").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-6").checked=true;
+   onOpen();
+   document.getElementById("cb12").checked = true;
+  });
+
+
 
 
     // social
@@ -278,7 +305,17 @@ var onClose = function() {
     // move back down when modal is closed 
    document.getElementById("button-modal-7").checked=true;
    onOpen();
+document.getElementById("cb24").checked = true;
+  });
 
+
+    document.getElementById("forModal7-feed-sitemap").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-7").checked=true;
+   onOpen();
+document.getElementById("cb25").checked = true;
   });
 
   // ART
@@ -405,6 +442,7 @@ var onClose = function() {
   document.getElementById("forModal5").addEventListener('click', function () {
   document.getElementById("button-modal-5").checked = true;
     onOpen();
+    document.getElementById("cb7").checked = true;
   });
 
   document.getElementById("button-modal-5").addEventListener('click', function () {
@@ -421,6 +459,7 @@ var onClose = function() {
   document.getElementById("forModal6").addEventListener('click', function () {
   document.getElementById("button-modal-6").checked = true;
     onOpen();
+    document.getElementById("cb11").checked = true;
   });
 
   document.getElementById("button-modal-6").addEventListener('click', function () {
@@ -431,14 +470,14 @@ var onClose = function() {
   });
 
 
-  document.getElementById("cb16").addEventListener('click', function () {
-    document.getElementById("button-modal-6").checked = false;
-    onClose();
+  // document.getElementById("cb16").addEventListener('click', function () {
+  //   document.getElementById("button-modal-6").checked = false;
+  //   onClose();
     // move back down when modal is closed 
-   document.getElementById("button-modal-6").checked=true;
-   onOpen();
-   document.getElementById("cb3").checked = true;
-  });
+  //  document.getElementById("button-modal-6").checked=true;
+  //  onOpen();
+  //  document.getElementById("cb3").checked = true;
+  // });
 
 
 //Sign Icons in scene
@@ -472,6 +511,7 @@ var onClose = function() {
   document.getElementById("forModal7").addEventListener('click', function () {
   document.getElementById("button-modal-7").checked = true;
     onOpen();
+    document.getElementById("cb24").checked = true;
   });
 
   document.getElementById("button-modal-7").addEventListener('click', function () {
@@ -1395,8 +1435,8 @@ scrollTo = function scrollTo(element) {
 
 
 document.getElementById("forModal1").onclick = function(){document.getElementById("menu-btn").checked = false;};
-document.getElementById("forModal2").onclick = function(){document.getElementById("menu-btn").checked = false;};
-document.getElementById("forModal3").onclick = function(){document.getElementById("menu-btn").checked = false;};
+document.getElementById("forModal2-a").onclick = function(){document.getElementById("menu-btn").checked = false;};
+document.getElementById("forModal3-a").onclick = function(){document.getElementById("menu-btn").checked = false;};
 document.getElementById("forModal4").onclick = function(){document.getElementById("menu-btn").checked = false;};
 document.getElementById("forModal5").onclick  = function(){document.getElementById("menu-btn").checked = false;};
 

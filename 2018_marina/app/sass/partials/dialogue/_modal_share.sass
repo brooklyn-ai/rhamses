@@ -6,7 +6,7 @@
 		height: 1px
 		overflow: hidden
 		overflow-x: hidden
-		overflow-y: scroll
+		overflow-y: auto
 		-webkit-overflow-scrolling: touch
 		position: fixed
 		top: 100%
@@ -129,9 +129,10 @@
 				//color: white
 
 		.box-content 
-			width: calc(100% - 40px)
+			width: calc(100% - 20px)
 			font-size: 1.4vw
 			display: none
+			text-align: center
 
 		.box-close 
 			position: absolute
@@ -143,6 +144,7 @@
 
 		input:checked + .box 
 			height: auto
+
 			
 		input:checked + .box .box-content p 
 			opacity: 1
