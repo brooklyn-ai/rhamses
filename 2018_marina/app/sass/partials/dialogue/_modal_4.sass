@@ -2,9 +2,8 @@
 // MODAL 1.4.0 PHOTOS
 
 #modal4
-	//background-color: red
 	.modal-inner
-		//background-color: red
+
 		article
 			margin-top: 5%
 			div.gallery 
@@ -103,6 +102,42 @@
 			.gallery a:focus ~ .close 
 				display: block
 
+		// instagram button
+		.btn
+			padding: 10px 25px
+			background: rgba(173, 247, 211, 0.47)
+			margin-top: 5%
+			outline: none !important
+			cursor: pointer
+			transition: all 0.3s ease
+			position: relative
+			display: inline-block
+			border: none
+			border-bottom: 2px solid #000
+			border-left: 2px solid #000
+			font-weight: 700
+			font-size: 3.7vw
+			color: rgb(43, 164, 226)
 
+		.btn:before, .button:after 
+			position: absolute
+			content: ""
+			right: 0
+			top: 0
+			background: #000
+			transition: all 0.3s ease
+				
+		.btn:before 
+			height: 0%
+			width: 2px
+			
+		.btn:after 
+			width: 0%
+			height: 2px
+
+		.btn:hover:before 
+			height: 100%
+		.btn:hover:after 
+			width: 100%
 
 

@@ -167,7 +167,7 @@
 			<li><a id="forModal1">CALENDAR</a></li>
 			<li><a id="forModal2-a">MENU</a></li>
 			<li><a id="forModal3-a">MAP</a></li>
-			<li><a id="forModal4">PHOTOS</a></li>
+			<li><a id="forModal4" title="See Marina photos!">PHOTOS</a></li>
 			<li><a id="forModal5">INFO</a></li>
 		</ul>
 
@@ -175,26 +175,27 @@
 
 
 
+
+
+
+
 <article class="scene">
 
-<!-- //HERO -->
 
 	<section id="unit1" class="unit-1">
+
+
 		<img class="background" id="prlx_lyr_5" src="app/img/raster/scene/marina-background.jpg">
 
 		<img class="dragon" id="prlx_lyr_6" src="app/img/raster/scene/chomp-dragon.png">
 
 		<div class="cloud-4"></div>
 
-
-		<img class="building" id="prlx_lyr_1" src="app/img/svg/marina.svg">
-
-		<!-- <div class="marina"></div> -->
+		<img class="building" id="prlx_lyr_1" src="app/img/raster/scene/new-marina.png">
 
 		<div class="cloud cloud-1"></div>
 		<div class="cloud cloud-2"></div>
 		<div class="cloud cloud-3"></div>
-
 
 
 	</section>
@@ -204,24 +205,31 @@
 	<section id="unit2" class="unit-2">
 		<!-- LAZY LOAD IMAGES -->
 
+		<!-- logo lockup -->
 		<div class="marina-text" id="prlx_lyr_2"></div>
 		<div class="seafood-burgers" id="prlx_lyr_3"></div>
 		<div class="fish" id="prlx_lyr_4"></div>
 
 
-		<img class="gallery" id="forModal8-icon" src="app/img/raster/icons/gallery-sign.png">
-		<img class="kayak"  id="forModal6-icon-kayak" src="app/img/raster/icons/kayak-sign.png">
-		<img class="trail-sign" id="forModal6-icon-trail" src="app/img/raster/icons/trail-sign.png">
-		<img class="discover" id="forModal6-icon-brattleboro" src="app/img/raster/icons/brattleboro.png">
+		<img class="gallery" id="forModal8-icon" title="SEE our local Art!" src="app/img/raster/icons/gallery-sign.png">
+		
+		<img class="kayak"  id="forModal6-icon-kayak"  title="See information about kayak rentals" src="app/img/raster/icons/kayak-sign.png">
+		
+		<img class="trail-sign" id="forModal6-icon-trail" title="Go for a HIKE!" src="app/img/raster/icons/trail-sign.png">
+		
 		<img class="footprints" id="" src="app/img/raster/icons/trail-walk.png">
-		<img class="tour" id="forModal3-tour" src="app/img/raster/icons/tour.png">
+		
+		<img class="discover" id="forModal6-icon-brattleboro"  title="Local attractions" src="app/img/raster/icons/brattleboro.png">
+		
+		<img class="tour" id="forModal3-tour" title="See in 3d" src="app/img/raster/icons/tour.png">
+
+
 		<a href="./games/">Play A Game
 		<img class="game" src="app/img/raster/icons/game.png"></a>
 
 
 
 	</section>
-
 
 </article>
 
@@ -241,6 +249,7 @@
 		  		<h2>SITEMAP</h2>
 
 			  	<ul class="buttons">
+			  		<li>The Marina:<a href="tel:8022577563"> (802) 257-7563</a></li>
 					<li id="forModal1-sitemap">Calendar</li>
 					<li id="forModal1-sitemap-b">Open Mic</li>
 					<li id="forModal1-sitemap-c">Events</li>
@@ -249,23 +258,25 @@
 
 					<li id="forModal3-sitemap">Map</li>
 					<li id="forModal3-sitemap-b">Video</li>
-					<li id="forModal3-sitemap-c">3D Tour</li>
+					<li id="forModal3-sitemap-c" title="See in 3d">3D Tour</li>
 
-					<li id="forModal4-sitemap">Photos</li>
+					<li id="forModal4-sitemap" title="See Marina photos!">Photos</li>
 
 					<li id="forModal5-sitemap-a">Contact Us</li>
 					<li id="forModal5-sitemap-b">Directions</li>
 					<li id="forModal5-sitemap-c">About</li>
 					<li id="forModal5-sitemap-d">Supporting Local Community</li>
 
-					<li id="forModal6-sitemap-a">Discover Brattleboro</li>
-					<li id="forModal6-sitemap-b">Canoe and Kayak Rentals</li>
-					<li id="forModal6-sitemap-c">WTSA RADIO</li>
-					<li id="forModal6-sitemap-d">West River Trail </li>
+					<li id="forModal6-sitemap-a" title="Local attractions">Discover Brattleboro</li>
+					<li id="forModal6-sitemap-b" title="See information about kayak rentals">Canoe and Kayak Rentals</li>
+					<li id="forModal6-sitemap-c" title="Visit out local Radio!">WTSA RADIO</li>
+					<li id="forModal6-sitemap-d" title="Go for a HIKE!">West River Trail </li>
 
 					<li id="forModal7-sitemap">Social</li>
 					<li id="forModal7-feed-sitemap">Instagram Feed</li>
-					<li id="forModal8-sitemap">ART</li>
+
+					<li id="forModal8-sitemap" title="SEE our local Art!">ART</li>
+
 					<li><a href="./games/">Games</a></li>
 					
 				</ul>
@@ -275,1605 +286,1398 @@
 		</div>
 	</div> <!-- END MODAL 0.0 -->
 
-<!-- MODAL 1 CALENDAR -->
+
+
 	<div class="modal" id="modal1">
-		<input id="button-modal-1" type="checkbox" title="close"/>  
-		<label for="button-modal-1" id="modalBttn1">
-			Opan Modal 1
-		</label>
-
-		<div class="modal-inner">
-		  <article>
-		  	<section>
-				<!-- BEGIN INTERACTIVE INFO-GRAPHIC -->
-				<nav class="accordion">
-					<input type="radio" name="accordion" id="cb1" />
-					<div class="box">
-						<label class="box-title" for="cb1" id="summary1">
-							Calendar</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
-
-							<!-- // CALENDAR  -->
-							<iframe src="https://www.google.com/calendar/embed?title=The%20Marina&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%2399ffff&amp;src=6oshcnn51l1q7idgsbc8pvfa68%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FVermont" style=" border-width:0" frameborder="0" scrolling="no" class="google-calender"></iframe> 
-							<!-- <span class="calendar-helper"></span> -->
-						</div>
-					</div>
-
-					<input type="radio" name="accordion" id="cb2" />
-					<div class="box">
-						<label class="box-title" for="cb2" id="summary2">
-							Open Mic</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
-
-
-
-					 <div >
-                        <img src="app/img/raster/events/openmic.jpg"  alt="photo of Kevin Parry">
-                       
-                          <h3>OPEN MIC EVERY <u>THURSDAY</u> 7-10pm with KEVIN PARRY</h3>
-                          <h4>
-                          Performers are encouraged to sign up 20 minute in advance:<br> call the Marina:<br> 802-257-7563
-                          <a href="http://www.kevinparrymusic.com/openmic.php">
-                          	Performers Click Here</a>
-                          </h4>
-                        </div>
-
-
-<hr>
-
-						 <div>
-                        <img src="app/img/raster/events/music-draa-hobbs.jpg"  alt="photo of Draa Hobbs"  >
-                       
-                          <h3>EVERY <u>SUNDAY</u> BRUNCH</h3>
-                          <h4>
-                         The Marina presents guitarist Draa Hobbs performing a variety of standards and jazz classics.<br><br>
-                              Serving Brunch:<br>
-                              11AM-1PM<br>
-                              music starts at 11AM<br><br>
-                              For more info, please visit: 
-                            <a href="http://draahobbs.com/">draahobbs.com</a> 
-                          </h4>
-                        </div>
-
-
-            
- 	
-
-                     
-
-
-						</div>
-					</div>
-
-					<input type="radio" name="accordion" id="cb3" />
-					<div class="box">
-						<label class="box-title" for="cb3" id="summary3">
-							Events
-						</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
-
-
-
- 						<div>
-                        <img src="app/img/raster/events/art-night.jpg"  alt="photo of art night: people painting"  >
-                       
-                          <h3>Ask about regular Art Nights!</h3>
-                          <h4>
-                          Fun for everyone.
-                          </h4>
-                        </div>
-
-
-<hr>
-						<div >
-                        <img src="app/img/raster/events/plunge.jpg"  alt="photo of the plunge:  people jumping into the river on a boat" >
-                        
-                          <h3>The Plunge for Charity</h3>
-                          <h4>
-                    		Every Spring
-                          </h4>
-                        </div>
-             <hr>  
-
-						<div >
-                        <img src="app/img/raster/events/brattle-paddle.png"  alt="canoe race logo" >
-                        
-                          <h3>BrattlePaddle Canoe &amp; Kayak Races! -JULY </h3>
-                          <h4>
-
-                    		Proceeds benefit the West River Trail <br>
-                    		Racing distance: 9 miles <br>
-							Recreational distance: 3.5 miles
-                          </h4>
-
-                          <a href="https://westrivertrail.org/tag/kayak-and-canoe-race/"> More info Here</a>
-                        </div>
-               
-<hr>
-
-              			 <div >
-                        <img src="app/img/raster/events/strolling-of-the-heifers.png" alt="cows strolling" >
-                      
-                          <h3>Strolling of the Heifers</h3>
-                          <h4>
-                          <a href="http://www.strollingoftheheifers.com/">  SATURDAY, JUNE 6: The Parade  </a>
-                        </h4>
-                    	</div>
-    <hr>       
-
-
-                 		 <div>
-                        <img src="app/img/raster/events/marina-ville.jpg"  alt="marinaville partypeople"  >
-                        <img src="app/img/raster/partners/wtsa-radio.jpg" alt="the wtsa radio guys" >
-                        
-                          <h3>Marina-ville<br><u>SUMMER 2015</u></h3>
-                          <h4>
-                          Details of this summer's events and prises to come....
-                          </h4>
-                        </div>
-     
-<hr>
-  					<div>
-                        <img src="app/img/raster/events/gallery-walk.jpg"  alt="gallery walk logo" >
-                      
-
-                        <a href="http://www.gallerywalk.org/">
-                          <h3>Gallery Walk!</h3>
-                          <h4>
-                          The Marina is venue #1!  
-                          </h4>
-                         <a href="http://www.gallerywalk.org/GW_Map.html">Click here to see the MAP!</a>
-                        </div>
-      
-
-						
-					</div>
-				</nav>
-
-
-
-				
-		  	</section>
-
-			
-		  </article>
-		</div>
-	</div> <!-- END MODAL 1.0 -->
-
-
-
-
-
-
-<!-- // MODAL 2 MENU -->
-	<div class="modal" id="modal2">
-		<input id="button-modal-2" type="checkbox" title="close"/>
-		<label for="button-modal-2" id="modalBttn2">
-			Opan Modal 2
-		</label>
-		<div class="modal-inner">
-
-
-
-
-<!-- FOOD MENU -->
-            <article>
-              <details>
-                <summary>
-                  APPETIZERS
-                </summary>
-                <details>
-                  <summary>
-                    Chips &amp; Salsa <span><sup>$</sup>5</span>
-                  </summary>
-                  <p>Crunchy tortilla chips with delicious tomato sauce <br>
-                  <small>
-                  Add Guacamole <span><sup>$</sup>3</span></small></p>
-                </details>
-                <details>
-                  <summary>
-                    Spinach Artichoke Dip  <span class="no-mobile"> and Tortilla Chips</span> <span><sup>$</sup>9</span>
-                  </summary>
-                  <p>Hot and cheesy, served with pita bread </p>
-                </details>
-                <details>
-                  <summary>
-                    Crab Cakes <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Two hand-pattied crab cakes, served with mango salsa on baby greens </p>
-                </details>
-                <details>
-                  <summary>
-                    Crispy Fried Calamari <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Tender rings and tentacles, lightly breaded and served with a side of chipotle aioli </p>
-                </details>
-                <details>
-                  <summary>
-                    Smoked Trout <span><sup>$</sup>14</span>
-                  </summary>
-                  <p>A delicious chilled fillet, served with horseradish dill sauce, red onions, tomatoes and crackers </p>
-                </details>
-                <details>
-                  <summary>
-                    Shrimp Skewers <span><sup>$</sup>14</span>
-                  </summary>
-                  <p>Lime-marinated and grilled, eight large shrimp with chipolte aioli sauce </p>
-                </details>
-                <details>
-                  <summary>
-                    Mozzarella Sticks <span><sup>$</sup>8</span>
-                  </summary>
-                  <p>Breaded and crispy with a marinara dipping sauce </p>
-                </details>
-                <details>
-                  <summary>
-                    Buffalo Wings <span><sup>$</sup>10</span>
-                  </summary>
-                  <p>Jumbo, hot and spicy chicken wings, served with a side of bleu cheese dressing and celery sticks</p>
-                </details>
-                <details>
-                  <summary>
-                    Nachos <span><sup>$</sup>10</span>
-                  </summary>
-                  <p>Tortilla chips covered in cheese, scallions, <br> chopped tomatoes, and jalapenos with a side of salsa <br>
-                  Add Guacamole <span><sup>$</sup>3</span>  <br>
-                  Sour Cream <span><sup>$</sup>0.8</span> <br>
-                  Chili <span><sup>$</sup>3</span></p>
-                </details>
-                <details>
-                  <summary>
-                    Brie Plate <span><sup>$</sup>10</span>
-                  </summary>
-                  <p>A warm wedge of brie served with mango chutney and a locally baked baguettebr	<br><br> </p>
-                  <p></p> <!-- spacer -->
-                </details>
-              </details>
-            </article><!-- Lobster Bisque
-            New England Clam Chowder
-            Beef-and-Bean Chili
-            soup of the day -->
-            <article>
-              <details>
-                <summary>
-                  SOUPS <!--  <span><sup>$</sup>7</span> -->
-                </summary>
-                <details>
-                  <summary>
-                    Lobster Bisque  <span><sup>$</sup>6.5</span>
-                  </summary>
-                  <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
-                </details>
-                <details>
-                  <summary>
-                 <span class="no-mobile">New England</span> Clam Chowder <span><sup>$</sup>6.5</span>
-                  </summary>
-                  <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
-                </details>
-                <details>
-                  <summary>
-                    Beef-<span class="no-mobile">and</span><span class="no-mobile show-mobile">&amp;</span>-Bean Chili <span><sup>$</sup>6.5</span>
-                  </summary>
-                  <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
-                </details>
-                <details>
-                  <summary>
-                    soup of the day <span><sup>$</sup>6.5</span>
-                  </summary>
-                  <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
-                  <p></p>  <!-- spacer -->
-                </details>
-              </details>
-            </article><!-- Onion Rings
-            French Fries
-            Sweet Potato Fries 
-            Green Beans
-            Coleslaw
-            French Baguette
-            Garlic Bread  -->
-            <article>
-              <details>
-                <summary>
-                  SIDES
-                </summary>
-                <details>
-                  <summary>
-                    Onion Rings <span><sup>$</sup>8</span>
-                  </summary>
-                  <p>A basket full of beer-battered onion rings served with a honey mustard dipping sauce </p>
-                </details>
-                <details>
-                  <summary>
-                    French Fries <span><sup>$</sup>5</span>
-                  </summary>
-                  <p>Our great crispy coated fries <br> 
-                  <small>
-                  Large <span><sup>$</sup>7</span></small></p>
-                </details>
-                <details>
-                  <summary>
-                    Sweet Potato Fries <span><sup>$</sup>6</span>
-                  </summary>
-                  <p>Served with a side of honey mustard <br> 
-                  <small>
-                  Large <span><sup>$</sup>8</span></small></p>
-                </details>
-                <details>
-                  <summary>
-                    Green Beans <span><sup>$</sup>4</span>
-                  </summary>
-                  <p>Haricot verts with a touch of garlic butter </p>
-                </details>
-                <details>
-                  <summary>
-                    Coleslaw <span><sup>$</sup>3</span>
-                  </summary>
-                  <p>Traditional and crunchy cold </p>
-                </details>
-                <details>
-                  <summary>
-                    French Baguette  <span><sup>$</sup>3</span>
-                  </summary>
-                  <p>House Baked </p>
-                </details>
-                <details>
-                  <summary>
-                    Garlic Bread  <span><sup>$</sup>7</span>
-                  </summary>
-                  <p>Toasted ciabatta bread with homemade garlic butter, topped with parmesan cheese</p>
-                </details>
-              </details><!-- Prince Edward Island Mussels
-            Soup, Salad, Half Sandwich
-            Vegetable quiche
-            Middle East Plate
-            Bruschetta
-            Trio of Lamb Sliders
-            Shrimp & Chip Basket
-            Chicken Fingers -->
-              <details>
-                <summary>
-                  SMALL PLATES
-                </summary>
-                <details>
-                  <summary>
-                 <span class="no-mobile">Prince Edward Island</span> Mussels  <span><sup>$</sup>15</span>
-                  </summary>
-                  <p>A bowl full of mussels, steamed with garlic, white wine, and a touch of cream, served with toasted bread</p>
-                </details>
-                <details>
-                  <summary>
-                    Soup, Salad, <span class="no-mobile">Half</span><span class="no-mobile show-mobile"><small>1/2</small></span>Sandwich<span><sup>$</sup>14</span>
-                  </summary>
-                  <p>Pick Two  <span><sup>$</sup>11</span>| <br>Pick Three   Chili, Chowder, Lobster Bisque<br>
-                  House Salad, Caesar Salad<br>
-                  Turkey, Tuna, BLT, Roast beef</p>
-                </details>
-                <details>
-                  <summary>
-                    Vegetable Quiche  <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Eggs whipped with baby spinach, Fresh basil leaves, roasted red peppers mixed with feta and CT cheddar perfectly baked with a house green salad </p>
-                </details>
-                <details>
-                  <summary>
-                    Middle East Plate  <span><sup>$</sup>13</span>
-                  </summary>
-                  <p>Hummus, feta cheese, kalamata olives, cucumbers, tomatoes, with a side of pita bread </p>
-                </details>
-                <details>
-                  <summary>
-                    Bruschetta  <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Ciabatta brushed with olive oil and garlic, served with Tuscan white beans and onion, with a chopped tomato, basil, and garlic salsa, topped with parmesan cheese <br>
-                  <small>
-                  Add a skewer of shrimp  <span><sup>$</sup>7</span></small></p>
-                </details>
-                <details>
-                  <summary>
-                    Trio of Lamb Sliders  <span><sup>$</sup>15</span>
-                  </summary>
-                  <p>Savory ground lamb patties served on mini Portuguese rolls with baby spinach, topped with sauteed onions and feta cheese, served with green salad </p>
-                </details>
-                <details>
-                  <summary>
-                    Shrimp &amp; Chip Basket <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Breaded butterfiled shrimp and french fries, served with cocktail or tartar sauce </p>
-                </details>
-                <details>
-                  <summary>
-                    Chicken Fingers <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Whole chicken tenderloins lightly breaded with a side of BBQ or honey mustard sauce served with french fries <br>
-                  Half Basket <span><sup>$</sup>6</span></p>
-                </details>
-              </details>
-            </article><!-- House Salad
-            Caesar Salad
-            Grilled Salmon on Baby Greens
-            Grilled Chicken Breast and Blue Cheese Salad
-            Grilled Steak Salad
-            Spinach and Grilled Chicken Salad
-            Santa Fe Salad -->
-            <article>
-              <details>
-                <summary>
-                  SALADS
-                </summary>
-                <details>
-                  <summary>
-                    House Salad <span><sup>$</sup>7</span>
-                  </summary>
-                  <p>Mixed baby greens, shredded carrots, and grape tomatoes </p>
-                </details>
-                <details>
-                  <summary>
-                    Caesar Salad <span><sup>$</sup>10</span>
-                  </summary>
-                  <p>Crisp romaine hearts with a side of creamy caesar dressing and multi-grain croutons, sprinkled with shredded parmesan <br>
-                  <small>
-                  Add Grilled Chicken Breast <span><sup>$</sup>3</span><br>
-                  Add Shrimp Skewer <span><sup>$</sup>7</span><br>
-                  Add Steak <span><sup>$</sup>7</span><br>
-                  Add Salmon <span><sup>$</sup>7</span></small></p>
-                </details>
-                <details>
-                  <summary>
-                    Grilled Salmon <span class="no-mobile show-mobile">&amp;</span><span class="no-mobile">on  Baby</span> Greens <span><sup>$</sup>16</span>
-                  </summary>
-                  <p>Grilled Salmon finished with a hoisin and Vermont maple syrup glaze on baby greens with carrots, tri-colored peppers, red onion and tomatoes</p>
-                </details>
-                <details>
-                  <summary>
-                    Grilled Chicken <span class="no-mobile"> Breast and Blue Cheese</span> Salad <span><sup>$</sup>13</span>
-                  </summary>
-                  <p>Boneless breast of chicken on baby greens, topped with blue cheese crumbles, toasted almonds, crasins, carrots, tomato and red onion</p>
-                </details>
-                <details>
-                  <summary>
-                    Grilled Steak Salad <span><sup>$</sup>16</span>
-                  </summary>
-                  <p>Sliced flat iron steak grape tomatoes, carrots, feta cheese, kalamata olives and red onion on a bed of mixed greens</p>
-                </details>
-                <details>
-                  <summary>
-                    Spinach <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Grilled Chicken <span class="no-mobile"> Salad </span><span><sup>$</sup>14</span>
-                  </summary>
-                  <p>Baby spinach with chicken breast, applewood bacon, sliced apples, carrots, toasted almonds and shredded parmesan cheese</p>
-                </details>
-                <details>
-                  <summary>
-                    Santa Fe Salad <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Romaine lettuce topped with tortilla chips, chili, VT cheddar, tomatoes, scallions, jalapenos, and salsa <br>
-                  <small>
-                  Add Guacamole <span><sup>$</sup>3</span></small></p> 
-                </details>
-              </details>
-            </article><!-- B.L.T.
-            Tuna Melt
-            Artisanal Vegetarian Melt
-            Portabello Mushroom and Brie
-            Swordfish and Roasted Red Peppers
-            Chicken, Bacon and Apple Melt
-            Grilled Cajun Chicken
-            Roast Beef &amp; VT Cheddar  -->
-            <article>
-              <details>
-                <summary>
-                  SANDWICHES 
-                </summary>
-                <details>
-                  <summary>
-                   <strong>Details</strong>
-                  </summary>
-                  <p>Served with potato chips or coleslaw<br>
-
-                  <small>	
-                  Substitute french fries,<br>
-                  Sweet potato fries, onion rings, green salad,<br>
-                  Against the Grain gluten-free sandwich roll <span><sup>$</sup>1.5</span></small></p>
-                </details>
-                <details>
-                  <summary>
-                    B.L.T. <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>An all-time favorite with applesauce smoked bacon, crisp lettuce, juicy tomatoes, and mayo on toasted wheatberry bread </p>
-                </details>
-                <details>
-                  <summary>
-                    Tuna Melt <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Albacore tuna salad with onions and celery, topped with tomato and melted VT cheddar on ciabatta bread</p>
-                </details>
-                <details>
-                  <summary>
-                 <span class="no-mobile"> Artisanal</span> Vegetarian Melt <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>A layer of hummus, topped with tomato, spinach, sliced mushrooms, red onion, roasted red pepper and melted VT cheddar on ciabatta bread</p>
-                </details>
-                <details>
-                  <summary>
-                    Portabello <span class="no-mobile">Mushroom and</span> <span class="no-mobile show-mobile">&amp;</span> Brie <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Grilled marinated portobello mushroom, melted brie, and basil pesto, served on ciabatta bread</p>
-                </details>
-                <details>
-                  <summary> 
-                    Swordfish <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Roasted <span class="no-mobile"> Red </span>Peppers <span><sup>$</sup>14</span>
-                  </summary>
-                  <p>Grilled swordfish steak, roasted red peppers with pesto, mayo, lettuce, tomato and red onion on a country roll</p>
-                </details>
-                <details>
-                  <summary>
-                    Chicken, Bacon <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Apple Melt <span><sup>$</sup>12</span>
-                  </summary>
-                  <p>Grilled chicken, applewood smoked bacon, sliced apples, VT cheddar, lettuce, tomato and onion served on a country roll with a side of VT maple mayo</p>
-                </details>
-                <details>
-                  <summary>
-                    Grilled Cajun Chicken <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Boneless breast of chicken, rubbed with Cajun spices, topped with jalapenos and VT cheddar, served with lettuce, tomato, and onion on a soft country roll</p>
-                </details>
-                <details>
-                  <summary>
-                    Roast Beef &amp; VT Cheddar  <span><sup>$</sup>12</span>
-                  </summary>
-                  <p>Sliced roast beef, VT cheddar cheese, lettuce, tomato and red onion on wheatberry bread. With horseradish dill sauce served with chips or coleslaw</p>
-                </details>
-              </details><!--       </article> -->
-              <!-- Classic Cheese Burger
-            Mushroom Burger
-            North Fork Bison Burger
-            Turkey Fusion Burger
-            Salmon Burger
-            Baja Veggie Burger -->
-              <!-- <article> -->
-              <details>
-                <summary>
-                  BURGERS
-                </summary>
-<!--                 <details>
-                  <summary>
-                  <strong>Details</strong>
-                  </summary>
-                  <p>Half pound burgers, served on a soft country roll with lettuce, tomato, red onion, and our great crispy coated fries or coleslaw (and a pickle if you ask) <br><br>
-
-                  <small>Substitute sweet potato fries, onion rings or green salad
-                  <span><sup>$</sup>1</span></small></p>
-            	</details> -->
-                <details>
-                  <summary>
-                    Classic Cheese Burger <span><sup>$</sup>11</span>
-                </summary>
-                  <p>Cooked just the way you link it with VT cheddar<br>
-                  With applewood smoked bacon <span><sup>$</sup>12</span></p>
-                </details>
-                <details>
-                  <summary>
-                    Mushroom Burger <span><sup>$</sup>12</span>
-                  </summary>
-                  <p>Sauteed mushrooms and VT cheddar on top of our classic burger</p>
-                </details>
-                <details>
-                  <summary>
-                    North Fork Bison Burger <span><sup>$</sup>14</span>
-                  </summary>
-                  <p>An 8oz all natural grass-fed buffalo burger, low in fat, high in protein<br>
-     
-                  With VT cheddar <span><sup>$</sup>15</span></p>
-                </details>
-                <details>
-                  <summary>
-                    Turkey Fusion Burger <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Char-grilled all-natural turkey blended with spinach, roasted onions &amp; brown rice, topped with melted VT cheddar, with a side of cranberry mayonnaise</p>
-                </details>
-                <details>
-                  <summary>
-                    Salmon Burger <span><sup>$</sup>14</span>
-                  </summary>
-                  <p>Grilled wild Alaskan salmon patty, topped with a cucumber wasabi sauce</p>
-                </details>
-                <details>
-                  <summary>
-                    Baja Veggie Burger <span><sup>$</sup>12</span>
-                  </summary>
-                  <p>A vegetarian, chipotle-spiced, black bean burger, topped with VT cheddar, salsa, and guacamole</p>
-                </details>
-                <details>
-                  <summary>
-                  <strong>Details</strong>
-                  </summary>
-                  <p>Half pound burgers, served on a soft country roll with lettuce, tomato, red onion, and our great crispy coated fries or coleslaw (and a pickle if you ask) <br><br>
-
-                  <small>Substitute sweet potato fries, onion rings or green salad
-                  <span><sup>$</sup>1</span></small></p>
-            	</details>
-             </details>
-            
-            </article><!-- Lobster and Shrimp Farfalle
-            Seafood Fettuccine
-            Timothy’s New Favorite
-            Butternut Squash Ravioli
-            Lobster Mac and Cheese -->
-            <article>
-              <details>
-                <summary>
-                  PASTA
-                </summary>
-                <details>
-                  <summary>
-                    Lobster <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Shrimp Farfalle <span><sup>$</sup>23</span>
-                  </summary>
-                  <p>Lobster, shrimp, and rainbow peppers tossed with bow tie pasta in a garlic cream sauce</p>
-                </details>
-                <details>
-                  <summary>
-                    Seafood Fettuccine <span><sup>$</sup>24</span>
-                  </summary>
-                  <p>Sea scallops, shrimp, PEI mussels, and diced tomatoes in a white wine garlic sauce, topped with shredded parmesan over fettuccine</p>
-                </details>
-                <details>
-                  <summary>
-                    Timothy’s New Favorite <span><sup>$</sup>18</span>
-                  </summary>
-                  <p>Bow tie pasta with garlic chicken breast, sweet Italian sausage and spinach in a marinara sauce topped with shredded parmesan</p>
-                </details>
-                <details>
-                  <summary>
-                    Butternut Squash Ravioli <span><sup>$</sup>18</span>
-                  </summary>
-                  <p>Ravioli filled with butternut squash sauteed in butter and fresh sage, a little cream and VT maple syrup and finished with a balsamic drizzle</p>
-                </details>
-                <details>
-                  <summary>
-                    Lobster Mac <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Cheese <span><sup>$</sup>22</span>
-                  </summary>
-                  <p>Macaroni and Grafton VT cheddar cheese and chunks of lobster topped with panko bread crumbs. Baked to a golden brown, served with a green salad</p>
-                </details>
-              </details><!--     </article>
-             -->
-              <!-- Broiled Sea Scallops
-            Norwegian Salmon
-            New England Haddock
-            Flat Iron Steak
-            Lobster and Scallop Pie
-            New York Strip Steak
-            BBQ Ribs -->
-              <!-- <article> -->
-              <details>
-                <summary>
-                  DOCKSIDE FAVORITES
-                </summary>
-                <details>
-                  <summary>
-                    Broiled Sea Scallops <span><sup>$</sup>25</span>
-                  </summary>
-                  <p>Plump scallops in a light lemon garlic sauce garnished with chopped tomatoes</p>
-                </details>
-                <details>
-                  <summary>
-                    Norwegian Salmon  <span><sup>$</sup>22</span>
-                  </summary>
-                  <p>Grilled salmon fillet, glazed with VT maple syrup, hoisin sauce, and a hint of ginger</p>
-                </details>
-                <details>
-                  <summary>
-                    New England Haddock <span><sup>$</sup>19</span>
-                  </summary>
-                  <p>Haddock baked with a little garlic, white wine, and a light panko topping. Truly a classic dish </p>
-                </details>
-                <details>
-                  <summary>
-                    Flat Iron Steak <span><sup>$</sup>20</span>
-                  </summary>
-                  <p>Flat iron steak, char-grilled and topped with sauteed onions and crumbled blue cheese </p>
-                </details>
-                <details>
-                  <summary>
-                    Lobster <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Scallop Pie <span><sup>$</sup>25</span>
-                  </summary>
-                  <p>Lobster, scallops, and mushrooms in a buttery cream sauce, flavored with dill , and tucked under puff pastry </p>
-                </details>
-                <details>
-                  <summary>
-                    New York Strip Steak <span><sup>$</sup>25</span>
-                  </summary>
-                  <p>10oz. Lightly seasoned char-grilled NY strip steak </p>
-                </details>
-                <details>
-                  <summary>
-                    BBQ Ribs <span><sup>$</sup>25</span>
-                  </summary>
-                  <p>Pork ribs with a sweet and spicy glaze served with fries and coleslaw. <br> half rack <span><sup>$</sup>17</span></p>
-                </details>
-                <details>
-                  <summary>
-                   <strong>Details</strong>
-                  </summary>
-                  <p>The following entrées are served with french fries, coleslaw, wild rice or roasted potatoes, and green beans.<br><br>
-
-                  <small>Substitute sweet potato fries, onion rings or green salad
-                  <span><sup>$</sup>1</span></small></p>
-
-                </details>
-              </details><!--       </article>
-             -->
-              <!-- Whole-Belly Clams
-            Fish and Chips
-            Fried Scallops -->
-              <!-- <article> -->
-              <details>
-                <summary>
-                  FRIED SEAFOOD PLATES
-                </summary>
-                <details>
-                  <summary>
-                    Whole-Belly Clams <span><sup>$</sup>25</span>
-                  </summary>
-                  <p>Served with french fries, coleslaw, and tartar sauce.<br>
-
-                  <small>Substitute sweet potato fries, onion rings or green salad
-                  <span><sup>$</sup>1</span></small></p>
-
-                </details>
-                <details>
-                  <summary>
-                    Fish <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Chips <span><sup>$</sup>18</span>
-                  </summary>
-                  <p>Haddock, served with french fries, coleslaw, and tartar sauce. <br>
-                  <small>Substitute sweet potato fries, onion rings or green salad
-                  <span><sup>$</sup>1</span></small></p>
-                </details>
-                <details>
-                  <summary>
-                    Fried Scallops <span><sup>$</sup>24</span>
-                  </summary>
-                  <p>Served with french fries, coleslaw, and tartar sauce.<br>
-                
-                  <small>Substitute sweet potato fries, onion rings or green salad
-                  <span><sup>$</sup>1</span></small></p>
-
-                </details>
-              </details>
-            </article><!-- Chocolate Torte
-            Tollhouse Cookie Sunday
-            New York Style Cheesecake
-            Very Chocolate Cake
-            Paradise Farm Pies
-            Chelsea Royal Ice Cream
-            Marina Madness Ice Cream -->
-            <article>
-              <details>
-                <summary>
-                  DESSERTS
-                </summary>
-                <details>
-                  <summary>
-                    Chocolate Torte <span><sup>$</sup>6.5</span>
-                  </summary>
-                  <p>Flourless chocolate torte (gluten-free)</p>
-                </details>
-                <details>
-                  <summary>
-                    Tollhouse Cookie Sundae<span><sup>$</sup>6.5</span>
-                  </summary>
-                  <p>A square of Tollhouse cookie tipped with Chelsea Royal vanilla ice cream, drizzled with chocolate and topped with whipped cream</p>
-                </details>
-                <details>
-                  <summary>
-                    New York <span class="no-mobile"> Style</span> Cheesecake  <span><sup>$</sup>6.5</span>
-                  </summary>
-                  <p>Try it with mixed berries or a raspberry drizzle</p>
-                </details>
-                <details>
-                  <summary>
-                    Very Chocolate Cake  <span><sup>$</sup>6.5</span>
-                  </summary>
-                  <p>Moist, dark, and delicious</p>
-                </details>
-                <details>
-                  <summary>
-                    Paradise Farm Pies  <span><sup>$</sup>6.5</span>
-                  </summary>
-                  <p>Blueberry Crumb Pie </p>
-                  <p>Vermont Maple Walnut Pie </p>
-                  <p>Add a Scoop of Ice Cream <span><sup>$</sup>1.25</span></p>
-                </details>
-                <details>
-                  <summary>
-                    Chelsea Royal Ice Cream  <span><sup>$</sup>5</span>
-                  </summary>
-                  <p>Vanilla, Coffee, Royal Special </p>
-                </details>
-                <details>
-                  <summary>
-                    Marina Madness Ice Cream <span><sup>$</sup>6</span>
-                  </summary>
-                  <p>Chocolate ice cream mixed with toasted coconut, toasted almonds, and chocolate chunks Make It a Sunday <span><sup>$</sup>7.5</span></p>
-                </details>
-              </details>
-            </article>
-            <!-- WINE -->
-            <article>
-              <details>
-                <summary>
-                 Wine List
-                </summary>
-             
-                	<h4>Sparkling</h4>
-				  <p> 
-					<em>La Marca ~ prosecco</em> classic from Italy <br>
-					<em>Le Gruet ~ brut</em> New Mexico <br>
-					<em>Stella pinot grigio</em> Italy-- aroma of pear, fresh and easy going Stella pinot grigio
-				  </p>
-
-
-				  	<h4>White</h4>
-				  <p>
-
-					<em>S.A. Prum Essence riesling</em> Germany-- <i>sweet</i> peach and ctrus<br>
-					<em> The Crossings sauvignon blanc</em> New Zealand-- <i>crisp</i>fruit, classic Marlborough taste<br>
-					<em>Pannonica pinot blanc, chard, gruner</em> Austria -- light, easy-drinking, <i>dry body</i> <br>
-					<em> Joel Gott pinot gris</em> Oregon-- smooth and sophisticated, floral notes<br>
-					<em>Red Tail Ridge chardonnay</em> New York--  un-oaked and refreshing from the Finger Lakes<br>
-					<em>Storypoint chardonnay</em> California-- plush with fruit and <i>toasted oak</i>
-				  </p>
-
-				  <h4>Red</h4>
-				  <p>
-					<em>Chateau de Pizay gamay </em> France-- <i>beaujolais</i>, a bright red <br>
-					<em>Ontanon Ecologico tempranillo</em> Spain-- <i>rioja,</i> rustic and savory <br>
-					<em>Lincourt Estate pinot noir </em> California   --perfectly balanced, world-class pinot, truly elegant <br>
-					<em>Septima malbec </em> Argentina-- plum perfect<br>
-					<em>Wente merlot </em> California-- velvet black cherry with a clear, dry finish<br>
-					<em>Joel Gott cabernet sauvignon </em> California-- mocha and spice with a touch of tannin <br>
-					<em>Hall cabernet sauvignon</em> California--  impressive, <i>ripe tannins</i>, succulent  <br>
-					<em>Hook &amp; Ladder zin, petite sirah blend</em> California-- Russian River luscious
-				  </p>
-				  <p></p> <!-- spacer -->
-             
-              </details>
-
-            </article>
-
-
-            <!-- BRUNCH
-            Eggs Benedict
-            Lobster Bearnaise
-            Scrambled Trios
-            Huevos Rancheros
-            Smoked Salmon &amp; Cream Cheese Bagel
-            Brunch Quiche
-            Buffet -->
-            <article>
-              <details>
-                <summary>
-                  BRUNCH (Sunday)
-                </summary>
-                <details>
-                  <summary>
-                    Eggs Benedict  <span><sup>$</sup>10</span>
-                  </summary>
-                  <p>Two poached eggs with smoked ham on an English muffin, smothered in Hollandaise sauce.<br>
-                  Served with homefries</p>
-                </details>
-                <details>
-                  <summary>
-                    Lobster Bearnaise <span><sup>$</sup>17</span>
-                  </summary>
-                  <p>Two poached eggs with lobster meat on an English muffin, topped with Bearnaise sauce.<br>
-                  Served with homefries</p>
-                </details>
-                <details>
-                  <summary>
-                    Scrambled Trios <span><sup>$</sup>10</span>
-                  </summary>
-                  <p>Open faced, with Hollandaise sauce &amp; homefries with Smoked Ham<br>
-                  with Artichoke Hearts and Baby Spinach<br>
-                  with thinly sliced smoked Salmon and Red Onion<br>
-                  (Choose a set of 3 or 1 of each)</p>
-                </details>
-                <details>
-                  <summary>
-                    Huevos Rancheros <span><sup>$</sup>10</span>
-                  </summary>
-                  <p>Scrambled eggs on a flour tortilla with refried beans, chopped tomato, tri colored peppers and jalapenos, topped with melted cheese. Served with a side of salsa and homefries <br>
-                   Add: Sour Cream <span><sup>$</sup>1</span> Guacamole <span><sup>$</sup>3</span></p>
-                </details>
-                <details>
-                  <summary>
-                    Smoked Salmon &amp; Cream Cheese Bagel <span><sup>$</sup>11</span>
-                  </summary>
-                  <p>Toasted plain bagel, cream cheese, tomato, red onion and thinly sliced smoked salmon. Served with homefries</p>
-                </details>
-                <details>
-                  <summary>
-                    Brunch Quiche <span><sup>$</sup>10</span>
-                  </summary>
-                  <p>Broccoli, tomato and Vermont cheddar cheese. Served with homefries</p>
-                </details>
-                <details>
-                  <summary>
-                    Buffet <span><sup>$</sup>16</span>
-                  </summary>
-                  <p>All you can eat buffet includes salads, pastries, desserts and much more!  <br> Add an omelet for an addition <span><sup>$</sup>2</span></p>
-                </details>
-              </details>
-            </article>
-
-
-            <article>
-              <details>
-                <summary>
-                  KIDS MENU
-                </summary>
-                <details>
-                  <summary>
-                    Starter  <span><sup>$</sup>3</span>
-                  </summary>
-                  <p>CLAM CHOWDER,<br> CHILI, <br>VEGGIES AND DIP, <br>CHIPS AND SALSA <br> FRENCH FRIES, <br> ONION RINGS, <br> CEASER SALAD, OR<br>MOZZARELLA STICKS</p>
-                </details>
-
-                <details>
-                  <summary>
-                    “KIDS COME IN FOR DINNER“ <span><sup>$</sup>6</span>
-                  </summary>
-                   <p>INCLUDES FRIES AND
-                    CARROT STICKS<br>
-                    CHICKEN FINGERS<br>
-                    CHICKEN WINGS<br>
-                    CHEESE BURGER<br>
-                    GRILLED CHEESE SANDWICH<br>
-                    GRILLED HOT DOG<br>
-                    FRIED FISH BITES CHEESE PIZZA PEPPERONI PIZZA<br>
-                    CHEESE QUESIDILLA<br>
-                    BBQ PULLED PORK SLIDER<br>
-                    BOW TIE PASTA PLAIN WITH BUTTER OR WITH MARINARA SAUCE<br>
-                    GRAFTON CHEDDAR MAC AND CHEESE (WHEN AVAILABLE) <i>CREAMY CHEESEY AND DELICIOUS</i></p>
-                </details>
-
-                <details>
-                  <summary>
-                    IF YOU CLEAN YOUR PLATE <span><sup>$</sup>1</span>
-                  </summary>
-                  <p>
-                    TEENY WEENY ICE CREAMY ONE SMALL SCOOP $1 <br>or <br>MAKE IT A SUNDAE TWO SMALL SCOOPS, CHOCOLATE SAUCE, WHIP CREAM AND SPRINKLES $2 
-                  </p>
-                </details>
-
-                <details>
-                  <summary>
-                    SOMETHING TO WET YOUR WHISTLE
-                  </summary>
-                  <p>OJ <br> CRANBERRY<br> APPLE OR PINEAPPLE JUICE<br> LEMONADE<br> MARINA BREEZE<br> PLAIN MILK, CHOCOLATE MILK <br>OR SODA <span><sup>$</sup>1</span> (SORRY NO FREEREFILLS) <br>
-                  ORANGE SAN PELLEGRINO IN A CAN <span><sup>$</sup>2.5</span> <br>BOTTLE VIRGILS
-                  ROOTBEER <span><sup>$</sup>2.5</span></p><br>
-                </details>
-
-
-              </details>
-
-            </article>
-            <br><br>
-
-            <article></article>
-
-
-
-            
-
-      
-
-
-		</div>
-	</div><!-- END MODAL 2-->
-
-
-
-<!-- // MODAL 1.3.0 Map-->
-	<div class="modal" id="modal3">
-		<input id="button-modal-3" type="checkbox" title="close"/>
-		<label for="button-modal-3" id="modalBttn3">
-			Opan Modal 3
-		</label>
+		<input id="button-modal-1" title="close" type="checkbox"> <label for="button-modal-1" id="modalBttn1">Opan Modal 1</label>
 		<div class="modal-inner">
 			<article>
+				<section>
+					<nav class="accordion">
+						<input id="cb1" name="accordion" type="radio">
+						<div class="box">
+							<label class="box-title" for="cb1" id="summary1">Calendar</label> <label class="box-close" for="acc-close"></label>
+							<div class="box-content">
+								<!-- // CALENDAR  -->
+								<iframe class="google-calender" frameborder="0" scrolling="no" src="https://www.google.com/calendar/embed?title=The%20Marina&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%2399ffff&amp;src=6oshcnn51l1q7idgsbc8pvfa68%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FVermont" style=" border-width:0"></iframe> <!-- <span class="calendar-helper"></span> -->
+							</div>
+						</div>
 
+						<input id="cb2" name="accordion" type="radio">
+						<div class="box">
+							<label class="box-title" for="cb2" id="summary2">Open Mic</label> <label class="box-close" for="acc-close"></label>
+							<div class="box-content">
+								<div>
+									<img alt="photo of Kevin Parry" src="app/img/raster/events/openmic.jpg">
+									<h3>OPEN MIC EVERY <u>THURSDAY</u> 7&mdash;10<small>PM</small> with KEVIN PARRY</h3>
+									<h4>Performers are encouraged to sign up 20 minute in advance:<br>
+									call the Marina:<br>
+									<a href="tel:8022577563">802-257-7563</a><br>
 
+									<a href="http://www.kevinparrymusic.com/openmic.php">Performers Click Here</a></h4>
+								</div>
+								<hr>
+								<div>
+									<img alt="photo of Draa Hobbs" src="app/img/raster/events/music-draa-hobbs.jpg">
+									<h3>EVERY SUNDAY BRUNCH</h3>
+									<h4>The Marina presents guitarist Draa Hobbs performing a variety of standards and jazz classics.<br>
+									<br>
+									Serving Brunch:<br>
+									11<small>AM</small>&mdash;1<small>PM</small><br>
+									music starts at 11<small>AM</small><br>
+									<br>
+									For more info, please visit: <a href="http://draahobbs.com/">draahobbs.com</a></h4>
+								</div>
+								<hr>
+							</div>
+						</div>
+
+						<input id="cb3" name="accordion" type="radio">
+						<div class="box">
+							<label class="box-title" for="cb3" id="summary3">Events</label> <label class="box-close" for="acc-close"></label>
+							<div class="box-content">
+								<div>
+									<img alt="photo of art night: people painting" src="app/img/raster/events/art-night.jpg">
+									<h3>Ask about regular Art Nights!</h3>
+									<h4>Fun for everyone.</h4>
+								</div>
+								<hr>
+								<div>
+									<img alt="photo of the plunge: people jumping into the river on a boat" src="app/img/raster/events/plunge.jpg">
+									<h3>The Plunge for Charity</h3>
+									<h4>Every Spring</h4>
+								</div>
+								<hr>
+								<div>
+									<img alt="canoe race logo" src="app/img/raster/events/brattle-paddle.png">
+									<h3>BrattlePaddle Canoe &amp; Kayak Races! -JULY</h3>
+									<h4>Proceeds benefit the West River Trail<br>
+									Racing distance: 9 miles<br>
+									Recreational distance: 3.5 miles</h4><a href="https://westrivertrail.org/tag/kayak-and-canoe-race/">More info Here</a>
+								</div>
+								<hr>
+								<div>
+									<img alt="cows strolling" src="app/img/raster/events/strolling-of-the-heifers.png">
+									<h3>Strolling of the Heifers</h3>
+									<h4><a href="http://www.strollingoftheheifers.com/">SATURDAY, JUNE 6</a></h4>
+								</div>
+								<hr>
+								<div>
+									<img alt="marinaville partypeople" src="app/img/raster/events/marina-ville.jpg"> <img alt="the wtsa radio guys" src="app/img/raster/partners/wtsa-radio.jpg">
+									<h3>Marina-ville<br>
+									<u>SUMMER 2015</u></h3>
+									<h4>Details of this summer's events and prises to come....</h4>
+								</div>
+								<hr>
+								<div>
+									<img alt="gallery walk logo" src="app/img/raster/events/gallery-walk.jpg"> <a href="http://www.gallerywalk.org/">
+									<h3>Gallery Walk! is the first Friday of each month</h3>
+									<h4>The Marina is venue #1!</h4></a><a href="http://www.gallerywalk.org/GW_Map.html">Click here to see the MAP!</a>
+								</div>
+							</div>
+						</div>
+
+					</nav>
+				</section>
+			</article>
+		</div>
+	</div><!-- END MODAL 1.0 -->
+
+	<!-- // MODAL 2 MENU -->
+	<div class="modal" id="modal2">
+		<input id="button-modal-2" title="close" type="checkbox"> <label for="button-modal-2" id="modalBttn2">Opan Modal 2</label>
+		<div class="modal-inner">
+			<!-- FOOD MENU -->
+			<article>
+				<details>
+					<summary>
+						APPETIZERS
+					</summary>
+					<details>
+						<summary>
+							Chips &amp; Salsa <span><sup>$</sup>5</span>
+						</summary>
+						<p>Crunchy tortilla chips with delicious tomato sauce<br>
+						<small>Add Guacamole <span><sup>$</sup>3</span></small></p>
+					</details>
+					<details>
+						<summary>
+							Spinach Artichoke Dip <span class="no-mobile">and Tortilla Chips</span> <span><sup>$</sup>9</span>
+						</summary>
+						<p>Hot and cheesy, served with pita bread</p>
+					</details>
+					<details>
+						<summary>
+							Crab Cakes <span><sup>$</sup>11</span>
+						</summary>
+						<p>Two hand-pattied crab cakes, served with mango salsa on baby greens</p>
+					</details>
+					<details>
+						<summary>
+							Crispy Fried Calamari <span><sup>$</sup>11</span>
+						</summary>
+						<p>Tender rings and tentacles, lightly breaded and served with a side of chipotle aioli</p>
+					</details>
+					<details>
+						<summary>
+							Smoked Trout <span><sup>$</sup>14</span>
+						</summary>
+						<p>A delicious chilled fillet, served with horseradish dill sauce, red onions, tomatoes and crackers</p>
+					</details>
+					<details>
+						<summary>
+							Shrimp Skewers <span><sup>$</sup>14</span>
+						</summary>
+						<p>Lime-marinated and grilled, eight large shrimp with chipolte aioli sauce</p>
+					</details>
+					<details>
+						<summary>
+							Mozzarella Sticks <span><sup>$</sup>8</span>
+						</summary>
+						<p>Breaded and crispy with a marinara dipping sauce</p>
+					</details>
+					<details>
+						<summary>
+							Buffalo Wings <span><sup>$</sup>10</span>
+						</summary>
+						<p>Jumbo, hot and spicy chicken wings, served with a side of bleu cheese dressing and celery sticks</p>
+					</details>
+					<details>
+						<summary>
+							Nachos <span><sup>$</sup>10</span>
+						</summary>
+						<p>Tortilla chips covered in cheese, scallions,<br>
+						chopped tomatoes, and jalapenos with a side of salsa<br>
+						Add Guacamole <span><sup>$</sup>3</span><br>
+						Sour Cream <span><sup>$</sup>0.8</span><br>
+						Chili <span><sup>$</sup>3</span></p>
+					</details>
+					<details>
+						<summary>
+							Brie Plate <span><sup>$</sup>10</span>
+						</summary>
+						<p>A warm wedge of brie served with mango chutney and a locally baked baguettebr<br>
+						<br></p>
+						<p></p><!-- spacer -->
+					</details>
+				</details>
+			</article><!-- Lobster Bisque
+	            New England Clam Chowder
+	            Beef-and-Bean Chili
+	            soup of the day -->
+			<article>
+				<details>
+					<summary>
+						SOUPS <!--  <span><sup>$</sup>7</span> -->
+					</summary>
+					<details>
+						<summary>
+							Lobster Bisque <span><sup>$</sup>6.5</span>
+						</summary>
+						<p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
+					</details>
+					<details>
+						<summary>
+							<span class="no-mobile">New England</span> Clam Chowder <span><sup>$</sup>6.5</span>
+						</summary>
+						<p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
+					</details>
+					<details>
+						<summary>
+							Beef-<span class="no-mobile">and</span><span class="no-mobile show-mobile">&amp;</span>-Bean Chili <span><sup>$</sup>6.5</span>
+						</summary>
+						<p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
+					</details>
+					<details>
+						<summary>
+							soup of the day <span><sup>$</sup>6.5</span>
+						</summary>
+						<p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
+						<p></p><!-- spacer -->
+					</details>
+				</details>
+			</article><!-- Onion Rings
+	            French Fries
+	            Sweet Potato Fries 
+	            Green Beans
+	            Coleslaw
+	            French Baguette
+	            Garlic Bread  -->
+			<article>
+				<details>
+					<summary>
+						SIDES
+					</summary>
+					<details>
+						<summary>
+							Onion Rings <span><sup>$</sup>8</span>
+						</summary>
+						<p>A basket full of beer-battered onion rings served with a honey mustard dipping sauce</p>
+					</details>
+					<details>
+						<summary>
+							French Fries <span><sup>$</sup>5</span>
+						</summary>
+						<p>Our great crispy coated fries<br>
+						<small>Large <span><sup>$</sup>7</span></small></p>
+					</details>
+					<details>
+						<summary>
+							Sweet Potato Fries <span><sup>$</sup>6</span>
+						</summary>
+						<p>Served with a side of honey mustard<br>
+						<small>Large <span><sup>$</sup>8</span></small></p>
+					</details>
+					<details>
+						<summary>
+							Green Beans <span><sup>$</sup>4</span>
+						</summary>
+						<p>Haricot verts with a touch of garlic butter</p>
+					</details>
+					<details>
+						<summary>
+							Coleslaw <span><sup>$</sup>3</span>
+						</summary>
+						<p>Traditional and crunchy cold</p>
+					</details>
+					<details>
+						<summary>
+							French Baguette <span><sup>$</sup>3</span>
+						</summary>
+						<p>House Baked</p>
+					</details>
+					<details>
+						<summary>
+							Garlic Bread <span><sup>$</sup>7</span>
+						</summary>
+						<p>Toasted ciabatta bread with homemade garlic butter, topped with parmesan cheese</p>
+					</details>
+				</details><!-- Prince Edward Island Mussels
+	            Soup, Salad, Half Sandwich
+	            Vegetable quiche
+	            Middle East Plate
+	            Bruschetta
+	            Trio of Lamb Sliders
+	            Shrimp & Chip Basket
+	            Chicken Fingers -->
+				<details>
+					<summary>
+						SMALL PLATES
+					</summary>
+					<details>
+						<summary>
+							<span class="no-mobile">Prince Edward Island</span> Mussels <span><sup>$</sup>15</span>
+						</summary>
+						<p>A bowl full of mussels, steamed with garlic, white wine, and a touch of cream, served with toasted bread</p>
+					</details>
+					<details>
+						<summary>
+							Soup, Salad, <span class="no-mobile">Half</span><span class="no-mobile show-mobile"><small>1/2</small></span>Sandwich<span><sup>$</sup>14</span>
+						</summary>
+						<p>Pick Two <span><sup>$</sup>11</span>|<br>
+						Pick Three Chili, Chowder, Lobster Bisque<br>
+						House Salad, Caesar Salad<br>
+						Turkey, Tuna, BLT, Roast beef</p>
+					</details>
+					<details>
+						<summary>
+							Vegetable Quiche <span><sup>$</sup>11</span>
+						</summary>
+						<p>Eggs whipped with baby spinach, Fresh basil leaves, roasted red peppers mixed with feta and CT cheddar perfectly baked with a house green salad</p>
+					</details>
+					<details>
+						<summary>
+							Middle East Plate <span><sup>$</sup>13</span>
+						</summary>
+						<p>Hummus, feta cheese, kalamata olives, cucumbers, tomatoes, with a side of pita bread</p>
+					</details>
+					<details>
+						<summary>
+							Bruschetta <span><sup>$</sup>11</span>
+						</summary>
+						<p>Ciabatta brushed with olive oil and garlic, served with Tuscan white beans and onion, with a chopped tomato, basil, and garlic salsa, topped with parmesan cheese<br>
+						<small>Add a skewer of shrimp <span><sup>$</sup>7</span></small></p>
+					</details>
+					<details>
+						<summary>
+							Trio of Lamb Sliders <span><sup>$</sup>15</span>
+						</summary>
+						<p>Savory ground lamb patties served on mini Portuguese rolls with baby spinach, topped with sauteed onions and feta cheese, served with green salad</p>
+					</details>
+					<details>
+						<summary>
+							Shrimp &amp; Chip Basket <span><sup>$</sup>11</span>
+						</summary>
+						<p>Breaded butterfiled shrimp and french fries, served with cocktail or tartar sauce</p>
+					</details>
+					<details>
+						<summary>
+							Chicken Fingers <span><sup>$</sup>11</span>
+						</summary>
+						<p>Whole chicken tenderloins lightly breaded with a side of BBQ or honey mustard sauce served with french fries<br>
+						Half Basket <span><sup>$</sup>6</span></p>
+					</details>
+				</details>
+			</article><!-- House Salad
+	            Caesar Salad
+	            Grilled Salmon on Baby Greens
+	            Grilled Chicken Breast and Blue Cheese Salad
+	            Grilled Steak Salad
+	            Spinach and Grilled Chicken Salad
+	            Santa Fe Salad -->
+			<article>
+				<details>
+					<summary>
+						SALADS
+					</summary>
+					<details>
+						<summary>
+							House Salad <span><sup>$</sup>7</span>
+						</summary>
+						<p>Mixed baby greens, shredded carrots, and grape tomatoes</p>
+					</details>
+					<details>
+						<summary>
+							Caesar Salad <span><sup>$</sup>10</span>
+						</summary>
+						<p>Crisp romaine hearts with a side of creamy caesar dressing and multi-grain croutons, sprinkled with shredded parmesan<br>
+						<small>Add Grilled Chicken Breast <span><sup>$</sup>3</span><br>
+						Add Shrimp Skewer <span><sup>$</sup>7</span><br>
+						Add Steak <span><sup>$</sup>7</span><br>
+						Add Salmon <span><sup>$</sup>7</span></small></p>
+					</details>
+					<details>
+						<summary>
+							Grilled Salmon <span class="no-mobile show-mobile">&amp;</span><span class="no-mobile">on Baby</span> Greens <span><sup>$</sup>16</span>
+						</summary>
+						<p>Grilled Salmon finished with a hoisin and Vermont maple syrup glaze on baby greens with carrots, tri-colored peppers, red onion and tomatoes</p>
+					</details>
+					<details>
+						<summary>
+							Grilled Chicken <span class="no-mobile">Breast and Blue Cheese</span> Salad <span><sup>$</sup>13</span>
+						</summary>
+						<p>Boneless breast of chicken on baby greens, topped with blue cheese crumbles, toasted almonds, crasins, carrots, tomato and red onion</p>
+					</details>
+					<details>
+						<summary>
+							Grilled Steak Salad <span><sup>$</sup>16</span>
+						</summary>
+						<p>Sliced flat iron steak grape tomatoes, carrots, feta cheese, kalamata olives and red onion on a bed of mixed greens</p>
+					</details>
+					<details>
+						<summary>
+							Spinach <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Grilled Chicken <span class="no-mobile">Salad</span> <span><sup>$</sup>14</span>
+						</summary>
+						<p>Baby spinach with chicken breast, applewood bacon, sliced apples, carrots, toasted almonds and shredded parmesan cheese</p>
+					</details>
+					<details>
+						<summary>
+							Santa Fe Salad <span><sup>$</sup>11</span>
+						</summary>
+						<p>Romaine lettuce topped with tortilla chips, chili, VT cheddar, tomatoes, scallions, jalapenos, and salsa<br>
+						<small>Add Guacamole <span><sup>$</sup>3</span></small></p>
+					</details>
+				</details>
+			</article><!-- B.L.T.
+	            Tuna Melt
+	            Artisanal Vegetarian Melt
+	            Portabello Mushroom and Brie
+	            Swordfish and Roasted Red Peppers
+	            Chicken, Bacon and Apple Melt
+	            Grilled Cajun Chicken
+	            Roast Beef &amp; VT Cheddar  -->
+			<article>
+				<details>
+					<summary>
+						SANDWICHES
+					</summary>
+					<details>
+						<summary>
+							<strong>Details</strong>
+						</summary>
+						<p>Served with potato chips or coleslaw<br>
+						<small>Substitute french fries,<br>
+						Sweet potato fries, onion rings, green salad,<br>
+						Against the Grain gluten-free sandwich roll <span><sup>$</sup>1.5</span></small></p>
+					</details>
+					<details>
+						<summary>
+							B.L.T. <span><sup>$</sup>11</span>
+						</summary>
+						<p>An all-time favorite with applesauce smoked bacon, crisp lettuce, juicy tomatoes, and mayo on toasted wheatberry bread</p>
+					</details>
+					<details>
+						<summary>
+							Tuna Melt <span><sup>$</sup>11</span>
+						</summary>
+						<p>Albacore tuna salad with onions and celery, topped with tomato and melted VT cheddar on ciabatta bread</p>
+					</details>
+					<details>
+						<summary>
+							<span class="no-mobile">Artisanal</span> Vegetarian Melt <span><sup>$</sup>11</span>
+						</summary>
+						<p>A layer of hummus, topped with tomato, spinach, sliced mushrooms, red onion, roasted red pepper and melted VT cheddar on ciabatta bread</p>
+					</details>
+					<details>
+						<summary>
+							Portabello <span class="no-mobile">Mushroom and</span> <span class="no-mobile show-mobile">&amp;</span> Brie <span><sup>$</sup>11</span>
+						</summary>
+						<p>Grilled marinated portobello mushroom, melted brie, and basil pesto, served on ciabatta bread</p>
+					</details>
+					<details>
+						<summary>
+							Swordfish <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Roasted <span class="no-mobile">Red</span> Peppers <span><sup>$</sup>14</span>
+						</summary>
+						<p>Grilled swordfish steak, roasted red peppers with pesto, mayo, lettuce, tomato and red onion on a country roll</p>
+					</details>
+					<details>
+						<summary>
+							Chicken, Bacon <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Apple Melt <span><sup>$</sup>12</span>
+						</summary>
+						<p>Grilled chicken, applewood smoked bacon, sliced apples, VT cheddar, lettuce, tomato and onion served on a country roll with a side of VT maple mayo</p>
+					</details>
+					<details>
+						<summary>
+							Grilled Cajun Chicken <span><sup>$</sup>11</span>
+						</summary>
+						<p>Boneless breast of chicken, rubbed with Cajun spices, topped with jalapenos and VT cheddar, served with lettuce, tomato, and onion on a soft country roll</p>
+					</details>
+					<details>
+						<summary>
+							Roast Beef &amp; VT Cheddar <span><sup>$</sup>12</span>
+						</summary>
+						<p>Sliced roast beef, VT cheddar cheese, lettuce, tomato and red onion on wheatberry bread. With horseradish dill sauce served with chips or coleslaw</p>
+					</details>
+				</details><!--       </article> -->
+				<!-- Classic Cheese Burger
+	            Mushroom Burger
+	            North Fork Bison Burger
+	            Turkey Fusion Burger
+	            Salmon Burger
+	            Baja Veggie Burger -->
+				<!-- <article> -->
+				<details>
+					<summary>
+						BURGERS
+					</summary><!--                 <details>
+	                  <summary>
+	                  <strong>Details</strong>
+	                  </summary>
+	                  <p>Half pound burgers, served on a soft country roll with lettuce, tomato, red onion, and our great crispy coated fries or coleslaw (and a pickle if you ask) <br><br>
+
+	                  <small>Substitute sweet potato fries, onion rings or green salad
+	                  <span><sup>$</sup>1</span></small></p>
+	                </details> -->
+					<details>
+						<summary>
+							Classic Cheese Burger <span><sup>$</sup>11</span>
+						</summary>
+						<p>Cooked just the way you link it with VT cheddar<br>
+						With applewood smoked bacon <span><sup>$</sup>12</span></p>
+					</details>
+					<details>
+						<summary>
+							Mushroom Burger <span><sup>$</sup>12</span>
+						</summary>
+						<p>Sauteed mushrooms and VT cheddar on top of our classic burger</p>
+					</details>
+					<details>
+						<summary>
+							North Fork Bison Burger <span><sup>$</sup>14</span>
+						</summary>
+						<p>An 8oz all natural grass-fed buffalo burger, low in fat, high in protein<br>
+						With VT cheddar <span><sup>$</sup>15</span></p>
+					</details>
+					<details>
+						<summary>
+							Turkey Fusion Burger <span><sup>$</sup>11</span>
+						</summary>
+						<p>Char-grilled all-natural turkey blended with spinach, roasted onions &amp; brown rice, topped with melted VT cheddar, with a side of cranberry mayonnaise</p>
+					</details>
+					<details>
+						<summary>
+							Salmon Burger <span><sup>$</sup>14</span>
+						</summary>
+						<p>Grilled wild Alaskan salmon patty, topped with a cucumber wasabi sauce</p>
+					</details>
+					<details>
+						<summary>
+							Baja Veggie Burger <span><sup>$</sup>12</span>
+						</summary>
+						<p>A vegetarian, chipotle-spiced, black bean burger, topped with VT cheddar, salsa, and guacamole</p>
+					</details>
+					<details>
+						<summary>
+							<strong>Details</strong>
+						</summary>
+						<p>Half pound burgers, served on a soft country roll with lettuce, tomato, red onion, and our great crispy coated fries or coleslaw (and a pickle if you ask)<br>
+						<br>
+						<small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small></p>
+					</details>
+				</details>
+			</article><!-- Lobster and Shrimp Farfalle
+	            Seafood Fettuccine
+	            Timothy’s New Favorite
+	            Butternut Squash Ravioli
+	            Lobster Mac and Cheese -->
+			<article>
+				<details>
+					<summary>
+						PASTA
+					</summary>
+					<details>
+						<summary>
+							Lobster <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Shrimp Farfalle <span><sup>$</sup>23</span>
+						</summary>
+						<p>Lobster, shrimp, and rainbow peppers tossed with bow tie pasta in a garlic cream sauce</p>
+					</details>
+					<details>
+						<summary>
+							Seafood Fettuccine <span><sup>$</sup>24</span>
+						</summary>
+						<p>Sea scallops, shrimp, PEI mussels, and diced tomatoes in a white wine garlic sauce, topped with shredded parmesan over fettuccine</p>
+					</details>
+					<details>
+						<summary>
+							Timothy’s New Favorite <span><sup>$</sup>18</span>
+						</summary>
+						<p>Bow tie pasta with garlic chicken breast, sweet Italian sausage and spinach in a marinara sauce topped with shredded parmesan</p>
+					</details>
+					<details>
+						<summary>
+							Butternut Squash Ravioli <span><sup>$</sup>18</span>
+						</summary>
+						<p>Ravioli filled with butternut squash sauteed in butter and fresh sage, a little cream and VT maple syrup and finished with a balsamic drizzle</p>
+					</details>
+					<details>
+						<summary>
+							Lobster Mac <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Cheese <span><sup>$</sup>22</span>
+						</summary>
+						<p>Macaroni and Grafton VT cheddar cheese and chunks of lobster topped with panko bread crumbs. Baked to a golden brown, served with a green salad</p>
+					</details>
+				</details><!--     </article>
+	             -->
+				<!-- Broiled Sea Scallops
+	            Norwegian Salmon
+	            New England Haddock
+	            Flat Iron Steak
+	            Lobster and Scallop Pie
+	            New York Strip Steak
+	            BBQ Ribs -->
+				<!-- <article> -->
+				<details>
+					<summary>
+						DOCKSIDE FAVORITES
+					</summary>
+					<details>
+						<summary>
+							Broiled Sea Scallops <span><sup>$</sup>25</span>
+						</summary>
+						<p>Plump scallops in a light lemon garlic sauce garnished with chopped tomatoes</p>
+					</details>
+					<details>
+						<summary>
+							Norwegian Salmon <span><sup>$</sup>22</span>
+						</summary>
+						<p>Grilled salmon fillet, glazed with VT maple syrup, hoisin sauce, and a hint of ginger</p>
+					</details>
+					<details>
+						<summary>
+							New England Haddock <span><sup>$</sup>19</span>
+						</summary>
+						<p>Haddock baked with a little garlic, white wine, and a light panko topping. Truly a classic dish</p>
+					</details>
+					<details>
+						<summary>
+							Flat Iron Steak <span><sup>$</sup>20</span>
+						</summary>
+						<p>Flat iron steak, char-grilled and topped with sauteed onions and crumbled blue cheese</p>
+					</details>
+					<details>
+						<summary>
+							Lobster <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Scallop Pie <span><sup>$</sup>25</span>
+						</summary>
+						<p>Lobster, scallops, and mushrooms in a buttery cream sauce, flavored with dill , and tucked under puff pastry</p>
+					</details>
+					<details>
+						<summary>
+							New York Strip Steak <span><sup>$</sup>25</span>
+						</summary>
+						<p>10oz. Lightly seasoned char-grilled NY strip steak</p>
+					</details>
+					<details>
+						<summary>
+							BBQ Ribs <span><sup>$</sup>25</span>
+						</summary>
+						<p>Pork ribs with a sweet and spicy glaze served with fries and coleslaw.<br>
+						half rack <span><sup>$</sup>17</span></p>
+					</details>
+					<details>
+						<summary>
+							<strong>Details</strong>
+						</summary>
+						<p>The following entrées are served with french fries, coleslaw, wild rice or roasted potatoes, and green beans.<br>
+						<br>
+						<small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small></p>
+					</details>
+				</details><!--       </article>
+	             -->
+				<!-- Whole-Belly Clams
+	            Fish and Chips
+	            Fried Scallops -->
+				<!-- <article> -->
+				<details>
+					<summary>
+						FRIED SEAFOOD PLATES
+					</summary>
+					<details>
+						<summary>
+							Whole-Belly Clams <span><sup>$</sup>25</span>
+						</summary>
+						<p>Served with french fries, coleslaw, and tartar sauce.<br>
+						<small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small></p>
+					</details>
+					<details>
+						<summary>
+							Fish <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Chips <span><sup>$</sup>18</span>
+						</summary>
+						<p>Haddock, served with french fries, coleslaw, and tartar sauce.<br>
+						<small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small></p>
+					</details>
+					<details>
+						<summary>
+							Fried Scallops <span><sup>$</sup>24</span>
+						</summary>
+						<p>Served with french fries, coleslaw, and tartar sauce.<br>
+						<small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small></p>
+					</details>
+				</details>
+			</article><!-- Chocolate Torte
+	            Tollhouse Cookie Sunday
+	            New York Style Cheesecake
+	            Very Chocolate Cake
+	            Paradise Farm Pies
+	            Chelsea Royal Ice Cream
+	            Marina Madness Ice Cream -->
+			<article>
+				<details>
+					<summary>
+						DESSERTS
+					</summary>
+					<details>
+						<summary>
+							Chocolate Torte <span><sup>$</sup>6.5</span>
+						</summary>
+						<p>Flourless chocolate torte (gluten-free)</p>
+					</details>
+					<details>
+						<summary>
+							Tollhouse Cookie Sundae<span><sup>$</sup>6.5</span>
+						</summary>
+						<p>A square of Tollhouse cookie tipped with Chelsea Royal vanilla ice cream, drizzled with chocolate and topped with whipped cream</p>
+					</details>
+					<details>
+						<summary>
+							New York <span class="no-mobile">Style</span> Cheesecake <span><sup>$</sup>6.5</span>
+						</summary>
+						<p>Try it with mixed berries or a raspberry drizzle</p>
+					</details>
+					<details>
+						<summary>
+							Very Chocolate Cake <span><sup>$</sup>6.5</span>
+						</summary>
+						<p>Moist, dark, and delicious</p>
+					</details>
+					<details>
+						<summary>
+							Paradise Farm Pies <span><sup>$</sup>6.5</span>
+						</summary>
+						<p>Blueberry Crumb Pie</p>
+						<p>Vermont Maple Walnut Pie</p>
+						<p>Add a Scoop of Ice Cream <span><sup>$</sup>1.25</span></p>
+					</details>
+					<details>
+						<summary>
+							Chelsea Royal Ice Cream <span><sup>$</sup>5</span>
+						</summary>
+						<p>Vanilla, Coffee, Royal Special</p>
+					</details>
+					<details>
+						<summary>
+							Marina Madness Ice Cream <span><sup>$</sup>6</span>
+						</summary>
+						<p>Chocolate ice cream mixed with toasted coconut, toasted almonds, and chocolate chunks Make It a Sunday <span><sup>$</sup>7.5</span></p>
+					</details>
+				</details>
+			</article><!-- WINE -->
+			<article>
+				<details>
+					<summary>
+						Wine List
+					</summary>
+					<h4>Sparkling</h4>
+					<p><em>La Marca ~ prosecco</em> classic from Italy<br>
+					<em>Le Gruet ~ brut</em> New Mexico<br>
+					<em>Stella pinot grigio</em> Italy-- aroma of pear, fresh and easy going Stella pinot grigio</p>
+					<h4>White</h4>
+					<p><em>S.A. Prum Essence riesling</em> Germany-- <i>sweet</i> peach and ctrus<br>
+					<em>The Crossings sauvignon blanc</em> New Zealand-- <i>crisp</i>fruit, classic Marlborough taste<br>
+					<em>Pannonica pinot blanc, chard, gruner</em> Austria -- light, easy-drinking, <i>dry body</i><br>
+					<em>Joel Gott pinot gris</em> Oregon-- smooth and sophisticated, floral notes<br>
+					<em>Red Tail Ridge chardonnay</em> New York-- un-oaked and refreshing from the Finger Lakes<br>
+					<em>Storypoint chardonnay</em> California-- plush with fruit and <i>toasted oak</i></p>
+					<h4>Red</h4>
+					<p><em>Chateau de Pizay gamay</em> France-- <i>beaujolais</i>, a bright red<br>
+					<em>Ontanon Ecologico tempranillo</em> Spain-- <i>rioja,</i> rustic and savory<br>
+					<em>Lincourt Estate pinot noir</em> California --perfectly balanced, world-class pinot, truly elegant<br>
+					<em>Septima malbec</em> Argentina-- plum perfect<br>
+					<em>Wente merlot</em> California-- velvet black cherry with a clear, dry finish<br>
+					<em>Joel Gott cabernet sauvignon</em> California-- mocha and spice with a touch of tannin<br>
+					<em>Hall cabernet sauvignon</em> California-- impressive, <i>ripe tannins</i>, succulent<br>
+					<em>Hook &amp; Ladder zin, petite sirah blend</em> California-- Russian River luscious</p>
+					<p></p><!-- spacer -->
+				</details>
+			</article><!-- BRUNCH
+	            Eggs Benedict
+	            Lobster Bearnaise
+	            Scrambled Trios
+	            Huevos Rancheros
+	            Smoked Salmon &amp; Cream Cheese Bagel
+	            Brunch Quiche
+	            Buffet -->
+			<article>
+				<details>
+					<summary>
+						BRUNCH (Sunday)
+					</summary>
+					<details>
+						<summary>
+							Eggs Benedict <span><sup>$</sup>10</span>
+						</summary>
+						<p>Two poached eggs with smoked ham on an English muffin, smothered in Hollandaise sauce.<br>
+						Served with homefries</p>
+					</details>
+					<details>
+						<summary>
+							Lobster Bearnaise <span><sup>$</sup>17</span>
+						</summary>
+						<p>Two poached eggs with lobster meat on an English muffin, topped with Bearnaise sauce.<br>
+						Served with homefries</p>
+					</details>
+					<details>
+						<summary>
+							Scrambled Trios <span><sup>$</sup>10</span>
+						</summary>
+						<p>Open faced, with Hollandaise sauce &amp; homefries with Smoked Ham<br>
+						with Artichoke Hearts and Baby Spinach<br>
+						with thinly sliced smoked Salmon and Red Onion<br>
+						(Choose a set of 3 or 1 of each)</p>
+					</details>
+					<details>
+						<summary>
+							Huevos Rancheros <span><sup>$</sup>10</span>
+						</summary>
+						<p>Scrambled eggs on a flour tortilla with refried beans, chopped tomato, tri colored peppers and jalapenos, topped with melted cheese. Served with a side of salsa and homefries<br>
+						Add: Sour Cream <span><sup>$</sup>1</span> Guacamole <span><sup>$</sup>3</span></p>
+					</details>
+					<details>
+						<summary>
+							Smoked Salmon &amp; Cream Cheese Bagel <span><sup>$</sup>11</span>
+						</summary>
+						<p>Toasted plain bagel, cream cheese, tomato, red onion and thinly sliced smoked salmon. Served with homefries</p>
+					</details>
+					<details>
+						<summary>
+							Brunch Quiche <span><sup>$</sup>10</span>
+						</summary>
+						<p>Broccoli, tomato and Vermont cheddar cheese. Served with homefries</p>
+					</details>
+					<details>
+						<summary>
+							Buffet <span><sup>$</sup>16</span>
+						</summary>
+						<p>All you can eat buffet includes salads, pastries, desserts and much more!<br>
+						Add an omelet for an addition <span><sup>$</sup>2</span></p>
+					</details>
+				</details>
+			</article>
+			<article>
+				<details>
+					<summary>
+						KIDS MENU
+					</summary>
+					<details>
+						<summary>
+							Starter <span><sup>$</sup>3</span>
+						</summary>
+						<p>CLAM CHOWDER,<br>
+						CHILI,<br>
+						VEGGIES AND DIP,<br>
+						CHIPS AND SALSA<br>
+						FRENCH FRIES,<br>
+						ONION RINGS,<br>
+						CEASER SALAD, OR<br>
+						MOZZARELLA STICKS</p>
+					</details>
+					<details>
+						<summary>
+							“KIDS COME IN FOR DINNER“ <span><sup>$</sup>6</span>
+						</summary>
+						<p>INCLUDES FRIES AND CARROT STICKS<br>
+						CHICKEN FINGERS<br>
+						CHICKEN WINGS<br>
+						CHEESE BURGER<br>
+						GRILLED CHEESE SANDWICH<br>
+						GRILLED HOT DOG<br>
+						FRIED FISH BITES CHEESE PIZZA PEPPERONI PIZZA<br>
+						CHEESE QUESIDILLA<br>
+						BBQ PULLED PORK SLIDER<br>
+						BOW TIE PASTA PLAIN WITH BUTTER OR WITH MARINARA SAUCE<br>
+						GRAFTON CHEDDAR MAC AND CHEESE (WHEN AVAILABLE) <i>CREAMY CHEESEY AND DELICIOUS</i></p>
+					</details>
+					<details>
+						<summary>
+							IF YOU CLEAN YOUR PLATE <span><sup>$</sup>1</span>
+						</summary>
+						<p>TEENY WEENY ICE CREAMY ONE SMALL SCOOP $1<br>
+						or<br>
+						MAKE IT A SUNDAE TWO SMALL SCOOPS, CHOCOLATE SAUCE, WHIP CREAM AND SPRINKLES $2</p>
+					</details>
+					<details>
+						<summary>
+							SOMETHING TO WET YOUR WHISTLE
+						</summary>
+						<p>OJ<br>
+						CRANBERRY<br>
+						APPLE OR PINEAPPLE JUICE<br>
+						LEMONADE<br>
+						MARINA BREEZE<br>
+						PLAIN MILK, CHOCOLATE MILK<br>
+						OR SODA <span><sup>$</sup>1</span> (SORRY NO FREEREFILLS)<br>
+						ORANGE SAN PELLEGRINO IN A CAN <span><sup>$</sup>2.5</span><br>
+						BOTTLE VIRGILS ROOTBEER <span><sup>$</sup>2.5</span></p><br>
+					</details>
+				</details>
+			</article><br>
+			<br>
+			<article></article>
+		</div>
+	</div><!-- END MODAL 2-->
+	
+	<!-- // MODAL 1.3.0 Map-->
+	<div class="modal" id="modal3">
+		<input id="button-modal-3" title="close" type="checkbox"> <label for="button-modal-3" id="modalBttn3">Opan Modal 3</label>
+		<div class="modal-inner">
+			<article>
 				<nav class="accordion">
-					<input type="radio" name="accordion" id="cb4" />
-					<div class="box">
-						<label class="box-title" for="cb4" id="summary1">
-							MAP
-						</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
 
-							 <div>
-							 	<!-- MAP -->
-	    			            <iframe frameborder="0" class="center-block directions-map" src="https://www.bing.com/maps/embed/viewer.aspx?v=3&cp=42.867764~-72.557524&lvl=13&w=100%&h=100%&sty=r&typ=d&pp=The%20Marina~28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%3Cbr%2F%3E(802)%20257-7563~42.867764~-72.557524&ps=&dir=0&mkt=en-us&src=O365&form=BMEMJS"></iframe>
-	    			            <!-- MAP BUTTONS -->
-	                			<div style="margin: 12px 0 0 0;">
-	                				<a target="_blank" href="https://www.bing.com/maps/?cp=42.867764~-72.557524&sty=r&lvl=17&sp=point.42.867764_-72.557524_The%20Marina_28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%0A(802)%20257-7563&mm_embed=map">View larger map</a>
-	                					&nbsp; |&nbsp;
-	                				<a target="_blank" href="https://www.bing.com/maps/?cp=42.867764~-72.557524&sty=r&lvl=17&rtp=~pos.42.867764_-72.557524_The%20Marina%2C%2028%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301_&mm_embed=dir">Get directions</a>
-	                					&nbsp; |&nbsp;
-	                				<a target="_blank" href="https://www.bing.com/maps/?cp=r4b4y38ym5k4&sty=b&lvl=18&sp=point.42.867764_-72.557524_The%20Marina_28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%0A(802)%20257-7563&mm_embed=be">View bird's eye</a>
-	                			</div>
-	               			</div>
+					<input id="cb4" name="accordion" type="radio">
+					<div class="box">
+						<label class="box-title" for="cb4" id="summary1">MAP</label> <label class="box-close" for="acc-close"></label>
+						<div class="box-content">
+							<div>
+								<!-- MAP -->
+								<iframe class="center-block directions-map" frameborder="0" src="https://www.bing.com/maps/embed/viewer.aspx?v=3&cp=42.867764~-72.557524&lvl=13&w=100%&h=100%&sty=r&typ=d&pp=The%20Marina~28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%3Cbr%2F%3E(802)%20257-7563~42.867764~-72.557524&ps=&dir=0&mkt=en-us&src=O365&form=BMEMJS"></iframe> <!-- MAP BUTTONS -->
+								
+								<div style="margin: 12px 0 0 0;">
+									<a href="https://www.bing.com/maps/?cp=42.867764~-72.557524&sty=r&lvl=17&sp=point.42.867764_-72.557524_The%20Marina_28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%0A(802)%20257-7563&mm_embed=map" target="_blank">View larger map</a> &nbsp; |&nbsp; <a href="https://www.bing.com/maps/?cp=42.867764~-72.557524&sty=r&lvl=17&rtp=~pos.42.867764_-72.557524_The%20Marina%2C%2028%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301_&mm_embed=dir" target="_blank">Get directions</a> &nbsp; |&nbsp; <a href="https://www.bing.com/maps/?cp=r4b4y38ym5k4&sty=b&lvl=18&sp=point.42.867764_-72.557524_The%20Marina_28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%0A(802)%20257-7563&mm_embed=be" target="_blank">View bird's eye</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<input id="cb5" name="accordion" type="radio">
+					<div class="box">
+						<label class="box-title" for="cb5" id="summary2">VIDEO</label> <label class="box-close" for="acc-close"></label>
+						<div class="box-content">
+							<!-- Video -->
+
+							<div style="position:relative;height:0;padding-bottom:56.6%">
+								<iframe allowfullscreen frameborder="0" height="360" src="https://www.youtube.com/embed/W9WmBHkj2H8?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="636"></iframe>
+							</div>
 
 						</div>
 					</div>
 
-					<input type="radio" name="accordion" id="cb5" />
+					<input id="cb6" name="accordion" type="radio">
 					<div class="box">
-						<label class="box-title" for="cb5" id="summary2">
-							VIDEO
-						</label>
-						<label class="box-close" for="acc-close"></label>
+						<label class="box-title" for="cb6" id="summary3">3D TOUR</label> <label class="box-close" for="acc-close"></label>
 						<div class="box-content">
 
-							<div style="position:relative;height:0;padding-bottom:56.6%"><iframe src="https://www.youtube.com/embed/W9WmBHkj2H8?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="636" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-
-
-						</div>
-					</div>
-
-					<input type="radio" name="accordion" id="cb6" />
-					<div class="box">
-						<label class="box-title" for="cb6" id="summary3">
-							3D TOUR
-						</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
-
-							<iframe src="https://www.google.com/maps/embed?pb=!4v1521414043467!6m8!1m7!1sfdHwgBMfufoAAAQvvnLaxQ!2m2!1d42.86761767025292!2d-72.55804854299464!3f220.36675191815857!4f-12.071125319693095!5f0.4000000000000002" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<!-- 3D view -->
+							<iframe allowfullscreen frameborder="0" height="600" src="https://www.google.com/maps/embed?pb=!4v1521414043467!6m8!1m7!1sfdHwgBMfufoAAAQvvnLaxQ!2m2!1d42.86761767025292!2d-72.55804854299464!3f220.36675191815857!4f-12.071125319693095!5f0.4000000000000002" style="border:0" width="800"></iframe>
 						
 						</div>
 					</div>
+
 				</nav>
-
-
-
 			</article>
 		</div>
 	</div><!-- END MODAL 3-->
 
 
-<!-- // MODAL 1.4.0 Photos-->
+	<!-- // MODAL 1.4.0 Photos-->
 	<div class="modal" id="modal4">
-		<input id="button-modal-4" type="checkbox" title="close"/>
-		<label for="button-modal-4" id="modalBttn4">
-			Open Modal 4
-		</label>
+		<input id="button-modal-4" title="close" type="checkbox"> <label for="button-modal-4" id="modalBttn4">Open Modal 4</label>
 		<div class="modal-inner">
 			<article>
+				<div class="gallery">
 
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/boats.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/deck.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/docks.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/dragon-night.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/marina.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/music.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/night-marina.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/night-water.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/party.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/summer.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/sunset-sky.jpg"></a>
+					<a tabindex="1"><img alt="sunset" src="app/img/raster/currated-photos/sunset.jpg"></a> 
 
+					<span class="close"></span>
 
-			<div class="gallery">
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/boats.jpg"  alt="sunset" /></a>
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/deck.jpg"  alt="sunset" /></a>
+				</div>
 
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/docks.jpg"  alt="sunset" /></a>
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/dragon-night.jpg"  alt="sunset" /></a>
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/marina.jpg"  alt="sunset" /></a>
+				<hr>
+				<button class="btn" id="forModal7-fromPhotos">Load Our Instagram Feed</button>	
 
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/music.jpg"  alt="sunset" /></a>
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/night-marina.jpg"  alt="sunset" /></a>
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/night-water.jpg" alt="sunset" /></a>
-
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/party.jpg"  alt="sunset" /></a>
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/summer.jpg"  alt="sunset" /></a>
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/sunset-sky.jpg"  alt="sunset" /></a>
-
-                <a tabindex="1">
-                	<img src="app/img/raster/currated-photos/sunset.jpg"  alt="sunset" /></a>
-
-
-                <span class="close"></span>
-            </div>
-
-
-
-	<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazya" 
-            data-src="app/img/raster/marina/marina.png"
-            alt=""
-            width="100" /
-            style="display: none">
-
-
+				<img alt="" class="lazya" data-src="app/img/raster/marina/marina.png" src="app/img/raster/place.holder.gif" style="display: none" width="100">
+			
 			</article>
 		</div>
 	</div><!-- END MODAL 4-->
 
 
-
 	<!-- // MODAL 1.5.0 Information-->
 	<div class="modal" id="modal5">
-		<input id="button-modal-5" type="checkbox" title="close"/>
-		<label for="button-modal-5" id="modalBttn5">
-			Opan Modal 5
-		</label>
+		<input id="button-modal-5" title="close" type="checkbox"> <label for="button-modal-5" id="modalBttn5">Opan Modal 5</label>
 		<div class="modal-inner">
 			<article>
-
-
 				<nav class="accordion">
-					<input type="radio" name="accordion" id="cb7" />
+
+					<input id="cb7" name="accordion" type="radio">
 					<div class="box">
-						<label class="box-title" for="cb7" id="summary1">
-							Contact Us
-						</label>
-						<label class="box-close" for="acc-close"></label>
+						<label class="box-title" for="cb7">Contact Us</label> <label class="box-close" for="acc-close"></label>
 						<div class="box-content">
 
-				        <address>
-		                  <strong class="animated pulse">The Marina</strong><br>
-		                    28 Spring Tree Road<br>
-		                    Brattleboro, Vermont<br>
-		                  <span style="font-size: 18px;">(802) 257-7563</span>
-		                </address>
-		                <address>
-		                  <a href="mailto:westrivermarina@gmail.com "><span class="glyphicon glyphicon-envelope"></span>
-		                    westrivermarina@gmail.com </a> <br> <br>
-		                    <strong class="animated pulse address-2">Our Restaurant and Gallery are Open:</strong><br>
-		                    Every Day <br>
-		                    Sunday Brunch: 10am to 1pm<br><br>
-		                    Hours: Sun: 10am-9pm  <br>  M-W: 11:30am-9pm <br>  Th-Sat: 11:30am-10pm  <br>   <br>         
-		                    <em>Comments, Suggestions &amp; Inquiries are most welcome.</em>
-		                      <script src="https://apis.google.com/js/platform.js" async defer></script>
-		                    <g:plusone></g:plusone>
-		                </address>
+							<address>
 
+								<strong>The Marina</strong><br>
+
+								28 Spring Tree Road<br>
+								Brattleboro, Vermont 05301<br>
+
+								<span><a href="tel:8022577563" title="Questions?">(802) 257-7563</a></span>
+							
+							</address>
+
+							<address>
+
+								<a href="mailto:westrivermarina@gmail.com" title="Email Us">westrivermarina@gmail.com</a><br>
+								<br>
+								<strong>Our Restaurant and Gallery are Open:</strong><br>
+								Every Day<br>
+								Sunday Brunch: 10<small>AM</small>&mdash;1<small>PM</small><br>
+								<br>
+								Hours: Sun: 10<small>AM</small>&mdash;9<small>PM</small><br>
+								M&mdash;W: 11:30<small>AM</small>&mdash;9<small>PM</small><br>
+								Th&mdash;Sat: 11:30<small>AM</small>&mdash;10<small>PM</small><br>
+								<br>
+								<em>Comments, Suggestions &amp; Inquiries are most welcome.</em> 
+								
+								<script async defer src="https://apis.google.com/js/platform.js">
+								</script> <g:plusone></g:plusone>
+
+							</address>
 						</div>
 					</div>
 
-					<input type="radio" name="accordion" id="cb8" />
+					<input id="cb8" name="accordion" type="radio">
 					<div class="box">
-						<label class="box-title" for="cb8" id="summary2">
-							Find Us: Get Directions
-						</label>
-						<label class="box-close" for="acc-close"></label>
+						<label class="box-title" for="cb8">Find Us: Get Directions</label> <label class="box-close" for="acc-close"></label>
 						<div class="box-content">
-							 <div>
-							 	<!-- MAP -->
-	    			            <iframe frameborder="0" class="center-block directions-map" src="https://www.bing.com/maps/embed/viewer.aspx?v=3&cp=42.867764~-72.557524&lvl=13&w=100%&h=100%&sty=r&typ=d&pp=The%20Marina~28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%3Cbr%2F%3E(802)%20257-7563~42.867764~-72.557524&ps=&dir=0&mkt=en-us&src=O365&form=BMEMJS"></iframe>
-	    			            <!-- MAP BUTTONS -->
-	                			<div style="margin: 12px 0 0 0;">
-	                				<a target="_blank" href="https://www.bing.com/maps/?cp=42.867764~-72.557524&sty=r&lvl=17&sp=point.42.867764_-72.557524_The%20Marina_28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%0A(802)%20257-7563&mm_embed=map">View larger map</a>
-	                					&nbsp; |&nbsp;
-	                				<a target="_blank" href="https://www.bing.com/maps/?cp=42.867764~-72.557524&sty=r&lvl=17&rtp=~pos.42.867764_-72.557524_The%20Marina%2C%2028%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301_&mm_embed=dir">Get directions</a>
-	                					&nbsp; |&nbsp;
-	                				<a target="_blank" href="https://www.bing.com/maps/?cp=r4b4y38ym5k4&sty=b&lvl=18&sp=point.42.867764_-72.557524_The%20Marina_28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%0A(802)%20257-7563&mm_embed=be">View bird's eye</a>
-	                			</div>
-	               			</div>
+							<div>
+
+								<!-- MAP -->
+								<iframe class="center-block directions-map" frameborder="0" src="https://www.bing.com/maps/embed/viewer.aspx?v=3&cp=42.867764~-72.557524&lvl=13&w=100%&h=100%&sty=r&typ=d&pp=The%20Marina~28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%3Cbr%2F%3E(802)%20257-7563~42.867764~-72.557524&ps=&dir=0&mkt=en-us&src=O365&form=BMEMJS"></iframe> <!-- MAP BUTTONS -->
+								
+								<div style="margin: 12px 0 0 0;">
+									<a href="https://www.bing.com/maps/?cp=42.867764~-72.557524&sty=r&lvl=17&sp=point.42.867764_-72.557524_The%20Marina_28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%0A(802)%20257-7563&mm_embed=map" target="_blank">View larger map</a> &nbsp; |&nbsp; <a href="https://www.bing.com/maps/?cp=42.867764~-72.557524&sty=r&lvl=17&rtp=~pos.42.867764_-72.557524_The%20Marina%2C%2028%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301_&mm_embed=dir" target="_blank">Get directions</a> &nbsp; |&nbsp; <a href="https://www.bing.com/maps/?cp=r4b4y38ym5k4&sty=b&lvl=18&sp=point.42.867764_-72.557524_The%20Marina_28%20Spring%20Tree%20Rd%2C%20Brattleboro%2C%20VT%2005301%0A(802)%20257-7563&mm_embed=be" target="_blank">View bird's eye</a>
+								</div>
+
+							</div>
 						</div>
 					</div>
 
-					<input type="radio" name="accordion" id="cb9" />
+					<input id="cb9" name="accordion" type="radio">
 					<div class="box">
-						<label class="box-title" for="cb9" id="summary3">
-							About
-						</label>
-						<label class="box-close" for="acc-close"></label>
+						<label class="box-title" for="cb9">About</label> <label class="box-close" for="acc-close"></label>
+						
 						<div class="box-content">
 
-						<h4>
-		                  ~ The Marina Restaurant in Brattleboro
-		                  sits on the water and offers beautiful views all year round. 
-		                  Amazing sunsets are a specialty! Great for large groups and bus tours.
-		                    <br><br>
-		                  Seafood, burgers and steaks, pasta, kid’s menu, homemade desserts are the best! 
-		                  We serve Lunch and Dinner seven days a week along with the always popular Sunday Brunch Buffet, accompanied by Live Jazz guitar with Draa Hobbs.
-		                    <br><br>
-		                  A beautiful view of the water is enjoyed from almost every seat in the restaurant.  Amazing sunsets can be appreciated from the fabulous first floor and mezzanine dining spots or from an outdoor, dockside seating area. The bar and lounge have been greatly expanded and are a fun destination every day of the week.
-		                    <br><br>
-		                  The new restaurant design keeps everything that regulars know and love - the deck, the menu, and the staff - and added new features for better cooking and serving, comfort, and efficiency.
-		                    <br><br>
-		                  Located where the Connecticut and West Rivers meet, The Marina is a memorable, casual dining experience for everyone.
-		                  </h4>
-
+							<h4>~ The Marina Restaurant in Brattleboro sits on the water and offers beautiful views all year round. Amazing sunsets are a specialty! Great for large groups and bus tours.<br>
+							
+							<br>
+							Seafood, burgers and steaks, pasta, kid’s menu, homemade desserts are the best! We serve Lunch and Dinner seven days a week along with the always popular Sunday Brunch Buffet, accompanied by Live Jazz guitar with Draa Hobbs.<br>
+							<br>
+							A beautiful view of the water is enjoyed from almost every seat in the restaurant. Amazing sunsets can be appreciated from the fabulous first floor and mezzanine dining spots or from an outdoor, dockside seating area. The bar and lounge have been greatly expanded and are a fun destination every day of the week.<br>
+							<br>
+							The new restaurant design keeps everything that regulars know and love - the deck, the menu, and the staff - and added new features for better cooking and serving, comfort, and efficiency.<br>
+							<br>
+							Located where the Connecticut and West Rivers meet, The Marina is a memorable, casual dining experience for everyone.</h4>
+						
 						</div>
+
 					</div>
 
-					
 					<div class="box">
-						<label class="box-title" id="cb10-a" >
-							Supporting Local Community
-						</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
-
-	
-
-						</div>
+						<label class="box-title" id="cb10-a">Supporting Local Community</label> <label class="box-close" for="acc-close"></label>
+						<div class="box-content"></div>
 					</div>
-
 
 				</nav>
-
-
-
 			</article>
 		</div>
 	</div><!-- END MODAL 5-->
 
-		<!-- // MODAL 1.6.0 Partners-->
+
+	<!-- // MODAL 1.6.0 Partners-->
 	<div class="modal" id="modal6">
-		<input id="button-modal-6" type="checkbox" title="close"/>
-		<label for="button-modal-6" id="modalBttn6">
-			Opan Modal 6
-		</label>
+		<input id="button-modal-6" title="close" type="checkbox"> <label for="button-modal-6" id="modalBttn6">Opan Modal 6</label>
 		<div class="modal-inner">
 			<article>
-
-
 				<nav class="accordion">
-					<input type="radio" name="accordion" id="cb11" />
+
+					<input id="cb11" name="accordion" type="radio">
 					<div class="box">
-						<label class="box-title" for="cb11" id="summary1">
-							Discover Brattleboro and our Partners
-						</label>
-						<label class="box-close" for="acc-close"></label>
+						<label class="box-title" for="cb11" id="summary1">Discover Brattleboro and our Partners</label> <label class="box-close" for="acc-close"></label>
+						<div class="box-content">
+							<!--        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/40-putney-road.png"
+	            alt=""
+	            width="100" />
+	            <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/big-brothers-sisters-logo.jpg"
+	            alt=""
+	            width="100" />
+	                        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/chamber-logo.png"
+	            alt=""
+	            width="100" />
+	                        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/hampton-inn.png"
+	            alt=""
+	            width="100" />
+	                        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/outing-club.jpg"
+	            alt=""
+	            width="100" />
+	                        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/quality-inn.png"
+	            alt=""
+	            width="100" />
+	                        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/riverside-hotel.png"
+	            alt=""
+	            width="100" />
+	                        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/trip-advisor-award.png"
+	            alt=""
+	            width="100" />
+	                        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/vt-life.gif"
+	            alt=""
+	            width="100" />
+	                        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/west-river-inn.png"
+	            alt=""
+	            width="100" />
+	                        <img 
+	            src="app/img/raster/place.holder.gif"
+	            class="lazy-page-a" 
+	            data-src="app/img/raster/partners/wtsa-radio.jpg"
+	            alt=""
+	            width="100" /> -->
+
+	            			<a  href="http://westriverinn.com/" target="_blank">
+								<img class="partner" src="app/img/raster/partners/40-putney-road.png"></a>
+
+							<img class="partner" src="app/img/raster/partners/big-brothers-sisters-logo.jpg">
+							
+							<a  href="http://brattleborochamber.org/" target="_blank">
+								<img class="partner" src="app/img/raster/partners/chamber-logo.png"></a>
+							
+							<img class="partner" src="app/img/raster/partners/hampton-inn.png">
+
+							<img class="partner" src="app/img/raster/partners/outing-club.jpg">
+
+							<a  href="http://www.qualityinn.com/hotel-brattleboro-vermont-VT027" target="_blank">
+								<img class="partner" src="app/img/raster/partners/quality-inn.png"></a>
+							
+							<img class="partner" src="app/img/raster/partners/riverside-hotel.png">
+
+							<img class="partner" src="app/img/raster/partners/trip-advisor-award.png">
+
+							<a  href="http://vermontlife.com/" target="_blank">							
+								<img class="partner" src="app/img/raster/partners/vt-life.gif"></a>
+
+							<a  href="http://westriverinn.com/" target="_blank">
+							<img class="partner" src="app/img/raster/partners/west-river-inn.png"></a>
+
+							<a href="http://www.wtsa.net/" target="_blank" title="Visit out local Radio!">
+								<img class="partner" src="app/img/raster/partners/wtsa-radio.jpg"></a>
+							
+							<a href="http://www.historicalsocietyofwindhamcounty.org/about-us/west-river-railroad-museum-newfane-railroad-station/">
+								<img class="partner" src="app/img/raster/partners/historical.png">
+								The Historical Society of Windham County</a>
+						</div>
+					</div>
+
+					<input id="cb12" name="accordion" type="radio">
+					<div class="box">
+						<label class="box-title" for="cb12">Local Vendor Sources and Suppliers</label> <label class="box-close" for="acc-close"></label>
 						<div class="box-content">
 
-				
+							<h4>We use Vermont-based companies for our primary suppliers, and are committed to buy Local and Regional products whenever possible...</h4>
+							
+							<div class="partner-links">
+								<a href="https://www.blackriverproduce.com/" target="_blank">Black River Seafood and Produce</a><br>
+								<a href="http://againstthegraingourmet.com/" target="_blank">Against the Grain</a><br>
+								<a href="http://www.chelsearoyaldiner.com/" target="_blank">Chelsea Royal Diner</a><br>
+								<a href="http://www.graftonvillagecheese.com/" target="_blank">Grafton Cheese</a><br>
+								<a href="http://mochajoes.com/" target="_blank">Mocha Joe’s Coffee</a><br>
+								<a href="http://oldathensfarm.com/" target="_blank">Old Athens Farm</a><br>
+								<a href="http://paradisefarmsugarhouse.com/" target="_blank">Paradise Farm Sugar House</a><br>
+								<a href="https://www.airbnb.com/rooms/655446" target="_blank">Sweet Pond Maple Farm</a><br>
+								<a href="https://www.vermontcountrydeli.com/ordereze/default.aspx" target="_blank">Vermont Country Deli</a><br>
+								<br>
+								<a href="http://www.windhamsolidwaste.org/index.php/programs-resources" target="_blank">
+									<img alt="project cow logo " src="app/img/raster/partners/project-cow.jpg"></a><br>
+							</div>
 
-	<!-- 		<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/40-putney-road.png"
-            alt=""
-            width="100" />
-			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/big-brothers-sisters-logo.jpg"
-            alt=""
-            width="100" />
-            			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/chamber-logo.png"
-            alt=""
-            width="100" />
-            			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/hampton-inn.png"
-            alt=""
-            width="100" />
-            			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/outing-club.jpg"
-            alt=""
-            width="100" />
-            			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/quality-inn.png"
-            alt=""
-            width="100" />
-            			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/riverside-hotel.png"
-            alt=""
-            width="100" />
-            			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/trip-advisor-award.png"
-            alt=""
-            width="100" />
-            			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/vt-life.gif"
-            alt=""
-            width="100" />
-            			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/west-river-inn.png"
-            alt=""
-            width="100" />
-            			<img 
-            src="app/img/raster/place.holder.gif"
-            class="lazy-page-a" 
-            data-src="app/img/raster/partners/wtsa-radio.jpg"
-            alt=""
-            width="100" /> -->
-
-
-<img class="partner" src="app/img/raster/partners/40-putney-road.png">
-<img class="partner" src="app/img/raster/partners/big-brothers-sisters-logo.jpg">
-<img class="partner" src="app/img/raster/partners/chamber-logo.png">
-<img class="partner" src="app/img/raster/partners/hampton-inn.png">
-<img class="partner" src="app/img/raster/partners/outing-club.jpg">
-<img class="partner" src="app/img/raster/partners/quality-inn.png">
-<img class="partner" src="app/img/raster/partners/riverside-hotel.png">
-<img class="partner" src="app/img/raster/partners/trip-advisor-award.png">
-<img class="partner" src="app/img/raster/partners/vt-life.gif">
-<img class="partner" src="app/img/raster/partners/west-river-inn.png">
-<img class="partner" src="app/img/raster/partners/wtsa-radio.jpg">
-
-
-
-<a href="http://www.historicalsocietyofwindhamcounty.org/about-us/west-river-railroad-museum-newfane-railroad-station/">
-<img class="partner" src="app/img/raster/partners/historical.png">
-	The Historical Society of Windham County</a>
-
-
-
-
-
-
-
-
-
-				
+							<h4>-The Marina Restaurant in Brattleboro, Vermont</h4>
+							<hr>
 
 						</div>
 					</div>
 
-					<input type="radio" name="accordion" id="cb12" />
+					<input id="cb13" name="accordion" type="radio">
 					<div class="box">
-						<label class="box-title" for="cb12" id="summary2">
-							Local Vendor Sources and Suppliers
-						</label>
-						<label class="box-close" for="acc-close"></label>
+						<label class="box-title" for="cb13">Canoe and Kayak Rentals</label> <label class="box-close" for="acc-close"></label>
 						<div class="box-content">
 
-						  <h4>We use Vermont-based companies for our primary suppliers, and are committed to buy Local and Regional products whenever possible...</h4>
-						                  <div class="animated fadeInUp text-center community-links">
+							<h3><a href="http://www.vermontcanoetouringcenter.com/" target="_blank">Vermont Canoe Touring Center</a></h3>
+							
+							<h4 class="text-center"><em class="dark-txt">Canoeing Kayaking &amp; River Adventures for<br class="desktop">
+							Individuals Couples, Families, Small and Large Groups</em><br>
+							<br>
+							<br>
+							OPEN MAY THROUGH OCTOBER<br>
+							<br>
+							Hours of Operation<br>
 
-						                    <a href="https://www.blackriverproduce.com/" target="_blank">Black River Seafood and Produce</a> <br>
-						                    <a href="http://againstthegraingourmet.com/" target="_blank">Against the Grain</a> <br>
-						                    <a href="http://www.chelsearoyaldiner.com/" target="_blank">Chelsea Royal Diner</a> <br>
-						                    <a href="http://www.graftonvillagecheese.com/" target="_blank">Grafton Cheese</a> <br>
-						                    <a href="http://mochajoes.com/" target="_blank">Mocha Joe’s Coffee</a> <br>
-						                    <a href="http://oldathensfarm.com/" target="_blank">Old Athens Farm</a> <br>
-						                    <a href="http://paradisefarmsugarhouse.com/" target="_blank">Paradise Farm Sugar House</a> <br>
-						                    <a href="https://www.airbnb.com/rooms/655446" target="_blank">Sweet Pond Maple Farm</a> <br>
-						                    <a href="https://www.vermontcountrydeli.com/ordereze/default.aspx" target="_blank">Vermont Country Deli</a> <br> <br>
-						                    <a href="http://www.windhamsolidwaste.org/index.php/programs-resources" target="_blank">
-						                      <img src="app/img/raster/partners/project-cow.jpg"  alt="project cow logo " >
-						                    </a><br>
-						                  </div>
-						                  <h4>-The Marina Restaurant in Brattleboro, Vermont </h4>
+							Open 7 Day <em>Memorial Day though Labor Day</em><br>
+							Weekdays:<br>
+							10 am - 6 pm<br>
+
+							Weekends:<br>
+							9 am - 6 pm<br>
+							<br>
+							Spring and Fall<br>
+
+							Open weekends and anytime by chance, always by appointment<br>
+							
+
+							<a href="tel:8022575008">(Call: 802-257-5008)</a>
+
+							<br></h4>
+
+							<hr>
 
 						</div>
 					</div>
 
-					<input type="radio" name="accordion" id="cb13" />
+					<input id="cb14" name="accordion" type="radio">
 					<div class="box">
-						<label class="box-title" for="cb13" >
-							Canoe and Kayak Rentals
-						</label>
-						<label class="box-close" for="acc-close"></label>
+						<label class="box-title" for="cb14">WTSA radio</label> <label class="box-close" for="acc-close"></label>
+						<div class="box-content">
+							<h3><a href="http://www.wtsa.net/">WTSA 96.7 FM &amp; 1450 AM</a>, Brattleboro, VT</h3>
+							<p>For over 50 years WTSA has been serving the Brattleboro area. Signing on for the first time in 1950 as WTSA-AM, and then adding WTSA-FM in the mid-'70s, we have become a mainstay in the Brattleboro community.</p>
+						</div>
+					</div>
+
+					<input id="cb15" name="accordion" type="radio">
+					<div class="box">
+						<label class="box-title" for="cb15">West River Trail</label> <label class="box-close" for="acc-close"></label>
 						<div class="box-content">
 
-				            <h3>
-			              		<a href="http://www.vermontcanoetouringcenter.com/" target="_blank">Vermont Canoe Touring Center</a>
-			           		</h3>
-
-				            <h4 class="text-center">
-				              <em class="dark-txt">Canoeing Kayaking &amp; River Adventures for <br class="desktop"> Individuals Couples, Families, Small and Large Groups</em>
-				                <br><br><br>
-				                OPEN MAY THROUGH OCTOBER<br>
-				                <br>
-				                Hours of Operation<br>
-				                Open 7 Days Memorial Day though Labor Day<br>
-				                Weekdays:<br>
-				                10 am - 6 pm<br>
-				                Weekends:<br>
-				                9 am - 6 pm<br>
-				                <br>
-				                Spring and Fall<br>
-				                Open weekends and anytime by chance, always by appointment<br>
-				                (Call: 802-257-5008)<br>
-				              </h4>
+							<iframe frameborder="0" height="400" src="https://www.bing.com/maps/embed/viewer.aspx?v=3&cp=42.871515~-72.565877&lvl=16&w=500&h=400&sty=h&typ=d&pp=west%20river%20trail%2C%20brattleboro%20vermont%2005301~~42.871515~-72.565877&ps=&dir=0&mkt=en-us&src=O365&form=BMEMJS" width="500"></iframe>
+							
+							<h4>Local Hiking along the <a href="http://westrivertrail.org/" target="_blank">West River Trail</a></h4>
+							<h4><a href="http://westrivertrail.org/2015/02/13/riverstone-preserve-presentation/" target="_blank">Check out this Presentation on the Trail!</a></h4>
+							<p>16 miles<br>
+							<br>
+							The trail ends on West River Street (South Londonderry) and begins, here, at the Marina, on Spring Tree Road (Brattleboro) (We have plenty of parking)</p>
+							<hr>
 
 						</div>
 					</div>
 
-					<input type="radio" name="accordion" id="cb14" />
-					<div class="box">
-						<label class="box-title" for="cb14" >
-							WTSA radio 
- 
-
-						</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
-
-	
-							<h3> <a href="http://www.wtsa.net/">WTSA 96.7 FM &amp; 1450 AM</a>, Brattleboro, VT</h3>
-
-
-							<p>For over 50 years WTSA has been serving the Brattleboro area. Signing on for the first time in 1950 as WTSA-AM, and then adding WTSA-FM in the mid-'70s, we have become a mainstay in the Brattleboro community. </p>
-						
-						</div>
+					<div class="box" id="cb16-a">
+						<label class="box-title">Events!</label> <label class="box-close" for="acc-close"></label>
+						<div class="box-content"></div>
 					</div>
 
-
-					<input type="radio" name="accordion" id="cb15" />
-					<div class="box">
-						<label class="box-title" for="cb15" >
-							West River Trail
-						</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
-
-	
-							<iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed/viewer.aspx?v=3&cp=42.871515~-72.565877&lvl=16&w=500&h=400&sty=h&typ=d&pp=west%20river%20trail%2C%20brattleboro%20vermont%2005301~~42.871515~-72.565877&ps=&dir=0&mkt=en-us&src=O365&form=BMEMJS"></iframe>
-                 	
-			                  <h4>Local Hiking along the  <a href="http://westrivertrail.org/" target="_blank"> West River Trail</a>  </h4>
-			                  <h4>  <a href="http://westrivertrail.org/2015/02/13/riverstone-preserve-presentation/" target="_blank">Check out this Presentation on the Trail!</a>  </h4>
-			                  <p>16 miles<br><br>The trail ends on West River Street (South Londonderry) and begins, here, at the Marina, on Spring Tree Road (Brattleboro) (We have plenty of parking)</p>
-						
-					</div>
-				</div>
-
-					
-					<div class="box" id="cb16-a" >
-						<label class="box-title"  >
-							Events!
-						</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
-
-	
-
-						</div>
+					<div class="box" id="cb17-a">
+						<label class="box-title">About The Marina</label> <label class="box-close" for="acc-close"></label>
+						<div class="box-content"></div>
 					</div>
 
 				</nav>
-
-
-
 			</article>
 		</div>
 	</div><!-- END MODAL 6-->
 
-		<!-- // MODAL 1.7.0 Social-->
+
+	<!-- // MODAL 1.7.0 Social-->
 	<div class="modal" id="modal7">
-		<input id="button-modal-7" type="checkbox" title="close"/>
-		<label for="button-modal-7" id="modalBttn7">
-			Opan Modal 7
-		</label>
+		<input id="button-modal-7" title="close" type="checkbox"> <label for="button-modal-7" id="modalBttn7">Opan Modal 7</label>
 		<div class="modal-inner">
-
 			<article>
-
-
 				<nav class="accordion">
-					<input type="radio" name="accordion" id="cb24" />
+
+					<input id="cb24" name="accordion" type="radio">
 					<div class="box">
-						<label class="box-title" for="cb24" >
-							Social Media
-						</label>
-						<label class="box-close" for="acc-close"></label>
+						<label class="box-title" for="cb24">Social Media</label> <label class="box-close" for="acc-close"></label>
 						<div class="box-content">
+							<div class="social-media">
 
+								<a href="https://facebook.com/vermontmarina" target="_blank" title="See out Facebook!">
+									<img src="app/img/raster/icons/social/facebook.png"><br>
+								Facebook</a>
 
-					     <div class="social-media">
+								<a href="https://www.youtube.com/playlist?list=PLrImkXjL1hSsfz4QrL2M-PmzvyjbPqxpy" target="_blank" title="Watch our Videos!">
+									<img src="app/img/raster/icons/social/youtube.png"><br>
+								YouTube</a>
 
-					        <a href="https://facebook.com/vermontmarina" title="See out Facebook!" target="_blank">
-					     	<img src="app/img/raster/icons/social/facebook.png">
-					     	<br>Facebook
-					        </a>
+								<a href="https://twitter.com/vermontmarina" target="_blank" title="Go to our Twitter page!">
+									<img src="app/img/raster/icons/social/twitter.png"><br>
+								Twitter</a>
 
-					        <a href="https://www.youtube.com/playlist?list=PLrImkXjL1hSsfz4QrL2M-PmzvyjbPqxpy" title="Watch our Videos!" target="_blank">
-					     	<img src="app/img/raster/icons/social/youtube.png">
-					     	<br>YouTube
-					        </a>
+								<a href="https://www.tripadvisor.com/Restaurant_Review-g57192-d2259865-Reviews-The_Marina-Brattleboro_Vermont.html" target="_blank" title="see Reviews on Trip Advisor">
+									<img src="app/img/raster/icons/social/tripadvisor.png"><br>
+								TRIP ADVISOR</a>
 
-					        <a href="https://twitter.com/vermontmarina" title="Go to our Twitter page!" target="_blank">
-					     	<img src="app/img/raster/icons/social/twitter.png">
-					     	<br>Twitter
-					        </a>
+								<a href="https://www.yelp.com/biz/the-marina-brattleboro-2" target="_blank" title="See us on Yelp">
+									<img src="app/img/raster/icons/social/yelp.png"><br>
+								YELP</a>
 
-					        <a href="https://www.tripadvisor.com/Restaurant_Review-g57192-d2259865-Reviews-The_Marina-Brattleboro_Vermont.html" target="_blank" title="see Reviews on Trip Advisor">
-					  		   <img src="app/img/raster/icons/social/tripadvisor.png">
-					  		   <br>TRIP ADVISOR
-					        </a>
-					        <a href="https://www.yelp.com/biz/the-marina-brattleboro-2"target="_blank" title="See us on Yelp">
-					       		<img src="app/img/raster/icons/social/yelp.png">
-					       		<br>YELP
-					        </a>
-					        <a  href="mailto:westrivermarina@gmail.com" title="Email the Marina">
-					        	<img src="app/img/raster/icons/social/email.png">
-					        	<br>EMAIL US
-					        </a>
-					        <a href="http://www.foodnetwork.com/restaurants/vt/brattleboro/the-marina-restaurant-restaurant.html" title="See the Matina on the Food Network!" target="_blank">
-					        	<img src="app/img/raster/icons/social/foodnetwork.png">
-					        	<br>Food Network
-					        </a>
-					       <a href="" title="See the Matina on the Food Network!" target="_blank">
-					
-					        	<img src="app/img/raster/icons/social/insta.png">
-					        <br>	Instagram
-					        </a>
-						</div>
+								<a href="mailto:westrivermarina@gmail.com" title="Email the Marina">
+									<img src="app/img/raster/icons/social/email.png"><br>
+								EMAIL US</a>
 
-						</div>
-					</div>
+								<a href="http://www.foodnetwork.com/restaurants/vt/brattleboro/the-marina-restaurant-restaurant.html" target="_blank" title="See the Matina on the Food Network!"><img src="app/img/raster/icons/social/foodnetwork.png"><br>
+								Food Network</a>
 
-					<input type="radio" name="accordion" id="cb25" />
-					<div class="box">
-						<label class="box-title" for="cb25" >
-							Our Instagram Feed
-						</label>
-						<label class="box-close" for="acc-close"></label>
-						<div class="box-content">
-							<div class="modal-body" class="embed-responsive embed-responsive-4by3">
-								<div id="tags" class="well well-sm"></div>
+								<a href="" target="_blank" title="See the Matina on the Food Network!">
+									<img src="app/img/raster/icons/social/insta.png"><br>
+								Instagram</a>
+
 							</div>
 						</div>
 					</div>
+
+					<input id="cb25" name="accordion" type="radio">
+					<div class="box">
+						<label class="box-title" for="cb25">Our Instagram Feed</label> <label class="box-close" for="acc-close"></label>
+						<div class="box-content">
+							<div class="embed-responsive embed-responsive-4by3">
+								<div class="well well-sm" id="tags"></div>
+							</div>
+						</div>
+					</div>
+
 				</nav>
 			</article>
 		</div>
 	</div><!-- END MODAL 7-->
 
 
-		<!-- // MODAL 1.8.0  Art/Gallery -->
+	<!-- // MODAL 1.8.0  Art/Gallery -->
 	<div class="modal" id="modal8">
-		<input id="button-modal-8" type="checkbox" title="close"/>
-		<label for="button-modal-8" id="modalBttn8">
-			Opan Modal 8
-		</label>
+		<input id="button-modal-8" title="close" type="checkbox"> <label for="button-modal-8" id="modalBttn8">Opan Modal 8</label>
 		<div class="modal-inner">
 			<article>
-			<img 
-            src="app/img/place.holder.gif"
-            class="lazya" 
-            data-src="app/img/raster/marina/marina.png"
-            alt=""
-            width="100" />
 
-               <a href="http://www.tiffanyheerema.com/" target="_blank">Tiffany Heerema</a><br>
-              <a href="http://www.picardart.com" target="blank"> Janet Picard </a><br>
-              <a href="http://www.deborahlazar.com" target="blank"> Deborah Lazar</a><br>
-              <a href="http://www.carynking.com" target="blank">Caryn King</a><br>
-              <a href="http://www.RockRiverArtists.com" target="blank"> Georgie Runkle</a><br>
-              <a href="http://www.henry-ireland.artistwebsites.com" target="blank">Henry Ireland</a>
+				<img alt="" class="lazya" data-src="app/img/raster/marina/marina.png" src="app/img/place.holder.gif" width="100">
+				
+				<h3>Visit our Gallery and support local artist</h3>
+
+				<img alt="gallery walk art" src="app/img/raster/art/marina-painting.jpg" width="100"><br>
+				
+				<hr>
+
+				<a href="http://www.tiffanyheerema.com/" target="_blank">
+					<img alt="gallery walk art" src="app/img/raster/art/shell-motel.jpg" width="100"><br>
+					Tiffany Heerema</a><br>
+
+				<a href="http://www.picardart.com" target="blank">
+					<img alt="gallery walk art" src="app/img/raster/art/art1.jpg" width="100"><br>
+					Janet Picard</a><br>
+
+				<a href="http://www.deborahlazar.com" target="blank">
+					<img alt="gallery walk art" src="app/img/raster/art/art3.jpg" width="100"><br>
+					Deborah Lazar</a><br>
+
+				<a href="http://www.carynking.com" target="blank">
+					<img alt="gallery walk art" src="app/img/raster/art/art2.jpg" width="100"><br>
+					Caryn King</a><br>
 
 
+				<h4>More Artists</h4>
 
+				<a href="http://www.RockRiverArtists.com" target="blank">
+					Georgie Runkle</a><br>
+				
+				<a href="http://www.henry-ireland.artistwebsites.com" target="blank">
+					Henry Ireland</a> 
 
-				<img clas="art" src="app/img/raster/art/art1.jpg" width="100" alt="gallery walk art">
-				<img clas="art" src="app/img/raster/art/art2.jpg" width="100" alt="gallery walk art">
-				<img clas="art" src="app/img/raster/art/art3.jpg" width="100" alt="gallery walk art">
-				<img clas="art" src="app/img/raster/art/marina-painting.jpg" width="100" alt="gallery walk art">
-				<img clas="art" src="app/img/raster/art/shell-motel.jpg" width="100" alt="gallery walk art">
+				<br>
+				<br>
+				<hr>
 
+				<div>
+					<img alt="gallery walk logo" src="app/img/raster/events/gallery-walk.jpg">
+					
+					<a href="http://www.gallerywalk.org/">
+					<h3>First Friday of each Month</h3>
+					<h4>The Marina is venue #1!</h4></a>
 
-
-
+					<a href="http://www.gallerywalk.org/GW_Map.html">Click here to see the MAP!</a>
+				</div>
 
 			</article>
 		</div>
@@ -1913,6 +1717,8 @@
             width="100" 
             style="display:none"/>
 
+
+
 <!-- // FOOTER -->
 	<footer>
 
@@ -1923,33 +1729,40 @@
 			<li class="button" id="forModal3-b">Map</li>
 			<li class="button" id="forModal6">Discover Brattleboro</li>
 			<li class="button" id="forModal7">Social</li>
-			<li class="button" id="forModal8">ART</li>
+			<li class="button" id="forModal8" title="SEE our local Art!">ART</li>
 			<li class="button"id="forModal0">Site Map</li>
+
 		</ul>
+
+
 	</footer><!-- // END  -->
 
 
 	<!-- //  SCRIPTS -->
 
-<script type="text/javascript" src="app/js/marina.js"></script>
+	<script type="text/javascript" src="app/js/marina.js"></script>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <script src="app/js/pongstagr.am.min.js"></script>  
-  <script>
-$(document).ready(function () {
- 
-  $('#tags').pongstgrm({
-    accessId:     '2212761002',
-    accessToken:  '2212761002.e0a9b36.40aef0d92d2f4cd78e6eafd3f6810fa3'
-  });
- 
-});
-</script>
+	<script src="app/js/pongstagr.am.min.js"></script>  
+
+	<script>
+
+	$(document).ready(function () {
+	 
+	  $('#tags').pongstgrm({
+	    accessId:     '2212761002',
+	    accessToken:  '2212761002.e0a9b36.40aef0d92d2f4cd78e6eafd3f6810fa3'
+	  });
+	 
+	});
+
+	</script>
+
+	<script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=115775298685772509610"></script>
 
 
-<script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=115775298685772509610">
 </body>
 </html>                                                                                                                                                                   

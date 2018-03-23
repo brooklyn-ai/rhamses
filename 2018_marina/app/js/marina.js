@@ -193,6 +193,16 @@ var onClose = function() {
   });
 
 
+  document.getElementById("cb17-a").addEventListener('click', function () {
+    document.getElementById("button-modal-6").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-5").checked=true;
+   onOpen();
+   document.getElementById("cb7").checked = true;
+  });
+
+
 // MENU
   document.getElementById("forModal2-sitemap").addEventListener('click', function () {
     document.getElementById("button-modal-0").checked = false;
@@ -308,8 +318,19 @@ var onClose = function() {
 document.getElementById("cb24").checked = true;
   });
 
+  //instagram
+    document.getElementById("forModal7-fromPhotos").addEventListener('click', function () {
+    document.getElementById("button-modal-4").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-7").checked=true;
+   onOpen();
+document.getElementById("cb25").checked = true;
+  });
 
-    document.getElementById("forModal7-feed-sitemap").addEventListener('click', function () {
+
+//instagram
+        document.getElementById("forModal7-feed-sitemap").addEventListener('click', function () {
     document.getElementById("button-modal-0").checked = false;
     onClose();
     // move back down when modal is closed 
@@ -317,6 +338,10 @@ document.getElementById("cb24").checked = true;
    onOpen();
 document.getElementById("cb25").checked = true;
   });
+
+
+
+
 
   // ART
   document.getElementById("forModal8-sitemap").addEventListener('click', function () {

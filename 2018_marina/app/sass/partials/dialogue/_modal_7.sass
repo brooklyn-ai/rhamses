@@ -2,56 +2,104 @@
 // MODAL 7 Social
 
 #modal7
-
-
 	.modal-inner
+	
 		article
 			margin-top: 5%
-			div.social-media
-				margin-top: 5%
-				a
-					display: block
-					margin-top: 2%
-					text-align: center
-					font-size: 2vw
-					text-decoration: none
-					img 
-						width: 8%
-
 			nav
 				div
-					
 					div
-						//text-align: center
-						a 
-							text-decoration: none
-							font-size: 2.7vw
-						address
-							font-size: 2.6vw
-						img
-							max-width: 84vw
-							//margin-top: 6%
-						h3
-							font-size: 3vw
-						h4
-							font-size: 3.7vw
+						div
+							//text-align: center
+							a 
+								text-decoration: none
+								font-size: 2.7vw
+							address
+								font-size: 2.6vw
+							img
+								max-width: 84vw
+								//margin-top: 6%
+							h3
+								font-size: 3vw
+							h4
+								font-size: 3.7vw
 
-							
+							.btn
+								padding: 10px 25px
+								background: rgba(173, 247, 211, 0.47)
 
-			div.modal-body				
-				#tags
-					> div
-						width: 25%
-						float: left
-						.thumbnail 
-							text-align: center
-							display: block
-							padding: 4px
-							margin-bottom: 20px
-							line-height: 1.42857143
-							background-color: rgb(255, 255, 255)
-							border: 1px solid rgb(221, 221, 221)
-							border-radius: 4px
-							-webkit-transition: all .2s ease-in-out
-							-o-transition: all .2s ease-in-out
-							transition: all .2s ease-in-out
+								outline: none !important
+								cursor: pointer
+								transition: all 0.3s ease
+								position: relative
+								display: inline-block
+								border: none
+								border-bottom: 2px solid #000
+								border-left: 2px solid #000
+								font-weight: 700
+								font-size: 3.7vw
+								color: rgb(43, 164, 226)
+
+							.btn:before, .button:after 
+								position: absolute
+								content: ""
+								right: 0
+								top: 0
+								background: #000
+								transition: all 0.3s ease
+									
+							.btn:before 
+								height: 0%
+								width: 2px
+								
+							.btn:after 
+								width: 0%
+								height: 2px
+
+							.btn:hover:before 
+								height: 100%
+							.btn:hover:after 
+								width: 100%
+
+
+
+
+						div.social-media
+							margin-top: 5%
+							a
+								display: block
+								margin-top: 2%
+								text-align: center
+								font-size: 2vw
+								text-decoration: none
+								img 
+									width: 8%
+
+
+
+						div			
+							#tags
+								margin-left: 3%
+								> div
+									width: 45%
+									float: left
+
+									.thumbnail 
+										text-align: center
+										display: block
+										padding: 4px
+										margin-bottom: 20px
+										line-height: 1.42857143
+										background-color: rgb(255, 255, 255)
+										border: 1px solid rgb(221, 221, 221)
+										border-radius: 4px
+										-webkit-transition: all .2s ease-in-out
+										-o-transition: all .2s ease-in-out
+										transition: all .2s ease-in-out
+										font-size: 2.2vw
+
+
+
+
+
+
