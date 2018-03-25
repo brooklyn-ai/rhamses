@@ -188,10 +188,19 @@
 						font-size: 2.2vw
 					details
 						details
+							span:not(.no-mobile)
+								padding-right: 40%
 							> p 
 								font-size: 1.22vw
 							summary 
 								font-size: 1.66vw
+								span:not(.no-mobile)
+									padding-right: 49%
+								.no-tablet
+									display: initial
+								
+								
+
 							
 
 		#modal3
@@ -247,25 +256,36 @@
 					nav
 						div
 							div
-								a 
+								a
+									font-size: 1.3vw
 								address
 								img
 								h3
-								h4
-
+									font-size: 2vw
+								h4, p
+									font-size: 1.7vw
+								h4.text-center
+									text-align: left
+									width: 50%
 
 								img.partner
 									width: 10%
 
+							div:nth-child(8) > div > p
+								text-align: left
+								width: 50%
 
 					nav > div:nth-child(6) > div
 						background: transparent url(../img/raster/partners/canoe.jpg) no-repeat right top
 						background-size: contain
+						background-position-x: 115%
+						background-repeat: no-repeat
 
 					nav > div:nth-child(8) > div
 						background: transparent url(../img/raster/partners/wtsa-radio.jpg) no-repeat right top
 						background-size: contain					
-		
+						
+						background-repeat: no-repeat
 
 
 
@@ -280,8 +300,13 @@
 			.modal-inner
 				article
 
-
-
+body .modal input:checked ~ .modal-inner input:checked + .box .box-title
+	font-size: 3.3vw
+	
+body .modal input:checked ~ .modal-inner .box-title
+	font-size: 3vw
+	&:hover
+		font-size: 3.3vw
 
 		//END MODALS
 

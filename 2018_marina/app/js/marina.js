@@ -307,6 +307,43 @@ var onClose = function() {
 
 
 
+  document.getElementById("forModal6-sitemap-a").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-6").checked=true;
+   onOpen();
+   document.getElementById("cb11").checked = true;
+  });
+  
+  document.getElementById("forModal6-sitemap-b").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-6").checked=true;
+   onOpen();
+   document.getElementById("cb13").checked = true;
+  });
+
+  document.getElementById("forModal6-sitemap-c").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-6").checked=true;
+   onOpen();
+   document.getElementById("cb14").checked = true;
+  });
+
+
+  document.getElementById("forModal6-sitemap-d").addEventListener('click', function () {
+    document.getElementById("button-modal-0").checked = false;
+    onClose();
+    // move back down when modal is closed 
+   document.getElementById("button-modal-6").checked=true;
+   onOpen();
+   document.getElementById("cb15").checked = true;
+  });
+
 
     // social
   document.getElementById("forModal7-sitemap").addEventListener('click', function () {

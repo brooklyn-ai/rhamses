@@ -139,7 +139,7 @@
 							margin-left: 36px
 							span:not(.no-mobile)
 								float: right
-								padding-right: 40%
+								padding-right: 22%
 							span.no-mobile
 								display: initial
 							span.no-mobile.show-mobile
@@ -149,10 +149,12 @@
 								font-size: 2.5vw
 								span:not(.no-mobile)
 									float: right
-									padding-right: 50%
+									padding-right: 33%
 									font-size: smaller
 								span.no-mobile
 									display: initial
+								span.no-tablet
+									display: none
 								span.no-mobile.show-mobile
 									display: none
 
@@ -282,9 +284,10 @@
 								//text-align: center
 								a 
 									text-decoration: none
-									font-size: 3.7vw
+									font-size: 3vw
 									color: rgb(43, 164, 226)
 									font-weight: 700
+									cursor: pointer
 								address
 									font-size: 2.6vw
 								img
@@ -292,23 +295,18 @@
 									//margin-top: 6%
 								h3
 									font-size: 3vw
-								h4
-									font-size: 3.7vw
+								h4, p
+									font-size: 2.6vw
 
 
 
 
 								img.partner
 									width: 10%
+									display: block
+									cursor: pointer
 
 
-					nav > div:nth-child(6) > div
-						background: transparent url(../img/raster/partners/canoe.jpg) no-repeat right top
-						background-size: contain
-
-					nav > div:nth-child(8) > div
-						background: transparent url(../img/raster/partners/wtsa-radio.jpg) no-repeat right top
-						background-size: contain
 
 
 
@@ -328,6 +326,7 @@
 							text-align: center
 							font-size: 2vw
 							text-decoration: none
+							line-height: 1.25
 							img 
 								width: 8%
 
