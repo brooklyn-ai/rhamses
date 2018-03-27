@@ -521,7 +521,7 @@ document.getElementById("cb25").checked = true;
   document.getElementById("forModal6").addEventListener('click', function () {
   document.getElementById("button-modal-6").checked = true;
     onOpen();
-    document.getElementById("cb11").checked = true;
+    //document.getElementById("cb11").checked = true;
   });
 
   document.getElementById("button-modal-6").addEventListener('click', function () {
@@ -618,19 +618,20 @@ document.getElementById("cb25").checked = true;
 var lazyPageA = [];
 registerListener('load', setLazyPageA);
 registerListener('load', lazyLoadPageA);
+registerListener('scroll', lazyLoadA);
 
 function setLazyPageA(){
    // document.getElementById('listing').removeChild(document.getElementById('viewMore'));
    // document.getElementById('nextPage').removeAttribute('class');
     
-    lazyPageA = document.getElementsByClassName('lazy-page-a');
-    console.log('Found ' + lazyPageA.length + ' lazy high priority page images: dialogue  2.0, 3.0');
+    lazyPageA = document.getElementsByClassName('lazy-a');
+    console.log('Found ' + lazyPageA.length + ' lazy load inner page');
 } 
 
 
 function lazyLoadPageA(){
 
- document.getElementById("forModal0").addEventListener('click', function () {
+ document.getElementById("forModal8").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
         if (lazyPageA[i].getAttribute('data-src')){
@@ -642,7 +643,7 @@ function lazyLoadPageA(){
 
  });
 
- document.getElementById("forModal2-b").addEventListener('click', function () {
+  document.getElementById("forModal8-sitemap").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
         if (lazyPageA[i].getAttribute('data-src')){
@@ -654,7 +655,7 @@ function lazyLoadPageA(){
 
  });
 
-  document.getElementById("forModal3-b").addEventListener('click', function () {
+ document.getElementById("forModal8-icon").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
         if (lazyPageA[i].getAttribute('data-src')){
@@ -662,11 +663,11 @@ function lazyLoadPageA(){
             lazyPageA[i].removeAttribute('data-src');
         }
     }
-    cleanLazyPageA();   //below after lazyPage
-    
+    cleanLazyPageA();
+
  });
 
-    document.getElementById("forModal4").addEventListener('click', function () {
+ document.getElementById("forModal4").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
         if (lazyPageA[i].getAttribute('data-src')){
@@ -674,11 +675,12 @@ function lazyLoadPageA(){
             lazyPageA[i].removeAttribute('data-src');
         }
     }
-    cleanLazyPageA();   //below after lazyPage
-    
+    cleanLazyPageA();
+
  });
 
-      document.getElementById("forModal5").addEventListener('click', function () {
+
+ document.getElementById("forModal4-sitemap").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
         if (lazyPageA[i].getAttribute('data-src')){
@@ -686,11 +688,11 @@ function lazyLoadPageA(){
             lazyPageA[i].removeAttribute('data-src');
         }
     }
-    cleanLazyPageA();   //below after lazyPage
-    
+    cleanLazyPageA();
+
  });
 
-        document.getElementById("forModal6").addEventListener('click', function () {
+  document.getElementById("menu-btn").addEventListener('click', function () {
 
     for(var i=0; i<lazyPageA.length; i++){
         if (lazyPageA[i].getAttribute('data-src')){
@@ -698,77 +700,10 @@ function lazyLoadPageA(){
             lazyPageA[i].removeAttribute('data-src');
         }
     }
-    cleanLazyPageA();   //below after lazyPage
-    
+    cleanLazyPageA();
+
  });
 
-        document.getElementById("forModal6-icon-kayak").addEventListener('click', function () {
-
-    for(var i=0; i<lazyPageA.length; i++){
-        if (lazyPageA[i].getAttribute('data-src')){
-            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
-            lazyPageA[i].removeAttribute('data-src');
-        }
-    }
-    cleanLazyPageA();   //below after lazyPage
-    
- });
-
-        document.getElementById("forModal6-icon-trail").addEventListener('click', function () {
-
-    for(var i=0; i<lazyPageA.length; i++){
-        if (lazyPageA[i].getAttribute('data-src')){
-            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
-            lazyPageA[i].removeAttribute('data-src');
-        }
-    }
-    cleanLazyPageA();   //below after lazyPage
-    
- });
-
-
-
-        document.getElementById("forModal6-icon-brattleboro").addEventListener('click', function () {
-
-    for(var i=0; i<lazyPageA.length; i++){
-        if (lazyPageA[i].getAttribute('data-src')){
-            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
-            lazyPageA[i].removeAttribute('data-src');
-        }
-    }
-    cleanLazyPageA();   //below after lazyPage
-    
- });
-
-
-
-
-
-
-
-       
-          document.getElementById("forModal7").addEventListener('click', function () {
-
-    for(var i=0; i<lazyPageA.length; i++){
-        if (lazyPageA[i].getAttribute('data-src')){
-            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
-            lazyPageA[i].removeAttribute('data-src');
-        }
-    }
-    cleanLazyPageA();   //below after lazyPage
-    
- });
-            document.getElementById("forModal8").addEventListener('click', function () {
-
-    for(var i=0; i<lazyPageA.length; i++){
-        if (lazyPageA[i].getAttribute('data-src')){
-            lazyPageA[i].src = lazyPageA[i].getAttribute('data-src');
-            lazyPageA[i].removeAttribute('data-src');
-        }
-    }
-    cleanLazyPageA();   //below after lazyPage
-    
- });
 }
 
 
