@@ -1,46 +1,67 @@
 +respond(medium_screen)
 
-	body
-		header
-			font-size: 1em
-			padding-bottom: 0
+	article
 
-		article	
-			section.unit-1
-			
+		width: 80%
+		margin-left: 10%
+		summary::-webkit-details-marker 
+			color: #00ACF3
+			font-size: 125%
+			margin-right: 2px
+		
+		summary:focus 
+			outline-style: none
+		
 
-			section.unit-2
-			
-
-
-		//MODALS
-		.modal-1-wrap
-			article
-				
-
-		.modal-2-wrap
-			article
-				section 
-				
+		> details > summary 
+			font-size: 3.2vw
+			margin-top: 16px
+			font-family: serif
 
 
+		details
+			> p 
+				font-size: 2vw
+				width: 80%
+				span.no-mobile
+					display: initial
+				em 
+					font-weight: 700
+					margin-right: 10px
+					font-size: smaller
+		
+			details 
+				margin-left: 36px
+				span:not(.no-mobile)
+					float: right
+					padding-right: 22%
+				span.no-mobile
+					display: initial
+				span.no-mobile.show-mobile
+					display: none
+		
+				summary 
+					font-size: 2.5vw
+					span:not(.no-mobile)
+						float: right
+						padding-right: 33%
+						font-size: smaller
+					span.no-mobile
+						display: initial
+					span.no-tablet
+						display: none
+					span.no-mobile.show-mobile
+						display: none
 
-		// Modal button styles
-		div > input 
-			width:  46px 
-			height: 46px 
-			background-color: rgba(255, 255, 255, 0.7)
-			left: calc(50% - 23px)
-			top: 90vh
+		
 
-
-		// LINE BREAK HELPERS  
-		br.mobile
-			display: none
-		br.tablet
-			display: block
-		br.desktop
-			display: none
+	// LINE BREAK HELPERS  
+	br.mobile
+		display: none
+	br.tablet
+		display: block
+	br.desktop
+		display: none
 
 
 

@@ -1,885 +1,1811 @@
+<html>
+<head>
 
-<link rel="stylesheet" type="text/css" href="https://system.computer/press/press.min.css">
-<style>
- summary::-webkit-details-marker {
- color: #00ACF3;
- font-size: 125%;
- margin-right: 2px;
+      <script> // enforce https encryption 
+           var loc = window.location.href+'';
+           if (loc.indexOf('http://')==0){
+               window.location.href = loc.replace('http://','https://');
+           }
+      </script>
+
+  <title>Marina Menu</title>
+
+  <link href="https://plus.google.com/+Vermontmarina" rel="publisher" />
+
+  <link href="https://marina.restaurant/menu" rel="canonical">
+
+  <meta name="title" content="The Marina - Brattleboro, VT Waterfront Dining">
+
+  <meta name="description" content="Marina Restaurant, a fresh food restaurant with an extensive menu of American cuisine vegetarian &amp; seafood. Enjoy waterfront dining and outdoor seating with an amazing sunset view and a casual dining atmosphere in Brattleboro, Vermont.">
+  <meta name="keywords" content="Marina Restaurant, Waterfront Dining, Outdoor Dining, Vegetarian, Seafood, Live Music, Family Dining, Take Out, Lunch, Brunch, Burgers, Bar, Local, Beer, Brattleboro, Vermont">
+
+  <!--  adjust for specific support needs  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+  <!--  Vendor data -->
+  <!--  Microsoft -->
+  <meta name="msvalidate.01" content="E787930B8989BC8DADBB4F88F2711DAB" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="no"      name="msapplication-tap-highlight"><!-- Disable tap highlight on IE -->
+  <meta content="#ffffff"   name="msapplication-TileColor"> 
+
+  <!--  Apple -->
+  <meta content="Marina" name="apple-mobile-web-app-title">
+  <meta content="yes"    name="apple-mobile-web-app-capable"><!-- Add to home for Safari on iOS -->
+  <meta content="#ffffff"  name="apple-mobile-web-app-status-bar-style">
+  <meta content="#ffffff"  name="theme-color">
+
+  <!--  Google -->
+  <meta content="Marina" name="application-name">
+  <meta content="yes"    name="mobile-web-app-capable"><!-- Add to home for Chrome on Android -->
+
+  <!--  FB Open Graph meta tags -->
+  <meta content="Come into The Marina!" property="og:title">
+  <meta content="summary" property="og:type">
+  <meta content="Marina.Restaurant" property="og:site_name">
+  <meta content="Enjoy waterfront dining and outdoor seating with an amazing sunset view and a casual dining atmosphere in Brattleboro, Vermont" property="og:description">
+  <meta content="https://marina.restaurant" property="og:url">
+  <!-- <meta content="your-id-123456789"  property="fb:app_id"> -->
+
+  <!--  Twitter Card meta tags -->
+  <meta content="summary" property="twitter:card"><!--  important : cards-dev.twitter.com/validator -->
+
+  <meta name="twitter:creator" content="@VermontMarina"><!-- turn on tracking -->
+  <meta name="twitter:site" content="@VermontMarina">  
+  <meta content="Come into The Marina!"    property="twitter:title">
+  <meta content="Enjoy waterfront dining and outdoor seating with an amazing sunset view and a casual dining atmosphere in Brattleboro, Vermont" name="twitter:description">
+
+
+  <meta content="https://marina.restaurant" name="twitter:url">
+  <!-- EXTRA -->
+  <meta property="place:location:latitude"  content="40.9999"> <!-- NEW YORK -->
+  <meta property="place:location:longitude" content="-73.9999"> 
+  <meta property="place:location:altitude"  content="23"> <!-- feet -->
+
+
+
+  <link rel="stylesheet" type="text/css" href="../app/css/menu.css">
+
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5ZT4ZL');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "image": "https://marina.restaurant/images/social_card_vermont_marina.png",
+  "@id": "https://marina.restaurant",
+  "name": "The Marina",
+  "foundingDate": "1988",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "28 Spring Tree Road",
+    "addressLocality": "Brattleboro",
+    "addressRegion": "VT",
+    "postalCode": "05301",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.9174800,
+    "longitude": -72.6735460
+  },
+  "url": "https://marina.restaurant",
+  "telephone": "+1802-257-7563",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "opens": "11:30",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Thursday",
+        "Friday",
+        "Saturday"
+        ],
+      "opens": "11:30",
+      "closes": "22:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "10:00",
+      "closes": "21:00"
+    }
+  ],
+  "priceRange": "$$",
+  "servesCuisine": [
+    "Seafood",
+    "Burgers",
+    "Vegetarian",
+    "American cuisine"
+  ],
+  "Menu": {
+      "@type":"Menu",
+      "hasMenuSection": [
+{
+"@type": "MenuSection",
+"name": "Appetizers",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Chips and Salsa",
+"description": "Crunchy tortilla chips with delicious tomato sauce",
+"offers": {
+"@type": "Offer",
+"price": "5",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Spinach Artichoke Dip and Tortilla Chips",
+"description": "Hot and cheesy, served with pita bread",
+"offers": {
+"@type": "Offer",
+"price": "9",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Crab Cakes",
+"description": "Two hand-pattied crab cakes, served with mango salsa on baby greens",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Smoked Trout",
+"description": "A delicious chilled fillet, served with horseradish dill sauce, red onions, tomatoes and crackers",
+"offers": {
+"@type": "Offer",
+"price": "14",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Shrimp Skewers",
+"description": "Lime-marinated and grilled, eight large shrimp with chipotle aioli sauce",
+"offers": {
+"@type": "Offer",
+"price": "14",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Mozzarella Sticks",
+"description": "Breaded and crispy with a marinara dipping sauce",
+"offers": {
+"@type": "Offer",
+"price": "8",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Buffalo Wings",
+"description": "Jumbo, hot and spicy chicken wings, served with a side of bleu cheese dressing and celery sticks",
+"offers": {
+"@type": "Offer",
+"price": "10",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Nachos",
+"description": "Tortilla chips covered in cheese, scallions, chopped tomatoes, and jalapenos with a side of salsa",
+"offers": {
+"@type": "Offer",
+"price": "10",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Brie Plate",
+"description": "A warm wedge of brie served with mango chutney and a locally baked baguette",
+"offers": {
+"@type": "Offer",
+"price": "10",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "Soups",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Lobster Bisque",
+"description": "All soups are served in a big mug with all natural Westminster Vermont oyster crackers",
+"offers": {
+"@type": "Offer",
+"price": "6",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "New England Clam Chowder",
+"description": "All soups are served in a big mug with all natural Westminster Vermont oyster crackers",
+"offers": {
+"@type": "Offer",
+"price": "6",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Beef-and-Bean Chili",
+"description": "All soups are served in a big mug with all natural Westminster Vermont oyster crackers",
+"offers": {
+"@type": "Offer",
+"price": "6",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "soup of the day",
+"description": "All soups are served in a big mug with all natural Westminster Vermont oyster crackers",
+"offers": {
+"@type": "Offer",
+"price": "6",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "Sides",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Onion Rings",
+"description": "A basket full of beer-battered onion rings served with a honey mustard dipping sauce",
+"offers": {
+"@type": "Offer",
+"price": "8",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "French Fries",
+"description": "Our great crispy coated fries",
+"offers": {
+"@type": "Offer",
+"price": "5",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Sweet Potato Fries",
+"description": "Served with a side of honey mustard",
+"offers": {
+"@type": "Offer",
+"price": "6",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Green Beans",
+"description": "Haricot verts with a touch of garlic butter",
+"offers": {
+"@type": "Offer",
+"price": "4",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Coleslaw",
+"description": "Traditional and crunchy cold",
+"offers": {
+"@type": "Offer",
+"price": "3",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "French Baguette",
+"description": "House baked",
+"offers": {
+"@type": "Offer",
+"price": "3",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Garlic Bread",
+"description": "Toasted ciabatta bread with homemade garlic butter, topped with parmesan cheese",
+"offers": {
+"@type": "Offer",
+"price": "7",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "SMALL PLATES",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Prince Edward Island Mussels",
+"description": "A bowl full of mussels, steamed with garlic, white wine, and a touch of cream, served with toasted bread",
+"offers": {
+"@type": "Offer",
+"price": "15",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Soup, Salad, Half Sandwich",
+"description": "Pick Two 11 | Pick Three 14 Chili, Chowder, Lobster Bisque House Salad, Caesar Salad Turkey, Tuna, BLT, Roast beef",
+"offers": {
+"@type": "Offer",
+"price": "11 or 14",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Vegetable Quiche",
+"description": "Eggs whipped with baby spinach, Fresh basil leaves, roasted red peppers mixed with feta and CT cheddar perfectly baked with a house green salad",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Middle East Plate",
+"description": "Hummus, feta cheese, kalamata olives, cucumbers, tomatoes, with a side of pita bread",
+"offers": {
+"@type": "Offer",
+"price": "13",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Bruschetta",
+"description": "Ciabatta brushed with olive oil and garlic, served with Tuscan white beans and onion, with a chopped tomato, basil, and garlic salsa, topped with parmesan cheese",
+"offers": {
+"@type": "Offer",
+"price": "13",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Trio of Lamb Sliders",
+"description": "Savory ground lamb patties served on mini Portuguese rolls with baby spinach, topped with sauteed onions and feta cheese, served with green salad",
+"offers": {
+"@type": "Offer",
+"price": "15",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Shrimp and Chip Basket",
+"description": "Breaded butterflied shrimp and french fries, served with cocktail or tartar sauce",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Chicken Fingers",
+"description": "Whole chicken tenderloins lightly breaded with a side of BBQ or honey mustard sauce served with french fries",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "SALADS",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "House Salad",
+"description": "Mixed baby greens, shredded carrots, and grape tomatoes",
+"offers": {
+"@type": "Offer",
+"price": "7",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Caesar Salad",
+"description": "Crisp romaine hearts with a side of creamy caesar dressing and multi-grain croutons, sprinkled with shredded parmesan",
+"offers": {
+"@type": "Offer",
+"price": "10",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Grilled Salmon on Baby Greens",
+"description": "Grilled Salmon finished with a hoisin and Vermont maple syrup glaze on baby greens with carrots, tri-colored peppers, red onion and tomatoes",
+"offers": {
+"@type": "Offer",
+"price": "16",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Grilled Chicken Breast and Blue Cheese Salad",
+"description": "Boneless breast of chicken on baby greens, topped with blue cheese crumbles, toasted almonds, craisins, carrots, tomato and red onion",
+"offers": {
+"@type": "Offer",
+"price": "13",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Grilled Steak Salad",
+"description": "Sliced flat iron steak grape tomatoes, carrots, feta cheese, kalamata olives and red onion on a bed of mixed greens",
+"offers": {
+"@type": "Offer",
+"price": "16",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Spinach and Grilled Chicken Salad",
+"description": "Baby spinach with chicken breast, applewood bacon, sliced apples, carrots, toasted almonds and shredded parmesan cheese",
+"offers": {
+"@type": "Offer",
+"price": "14",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Santa Fe Salad",
+"description": "Romaine lettuce topped with tortilla chips, chili, VT cheddar, tomatoes, scallions, jalapenos, and salsa",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "SANDWICHES",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "B.L.T.",
+"description": "An all-time favorite with applesauce smoked bacon, crisp lettuce, juicy tomatoes, and mayo on toasted wheatberry bread",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Tuna Melt",
+"description": "Albacore tuna salad with onions and celery, topped with tomato and melted VT cheddar on ciabatta bread",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Artisanal Vegetarian Melt",
+"description": "A layer of hummus, topped with tomato, spinach, sliced mushrooms, red onion, roasted red pepper and melted VT cheddar on ciabatta bread",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Portobello Mushroom and Brie",
+"description": "Grilled marinated portobello mushroom, melted brie, and basil pesto, served on ciabatta bread",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Swordfish and Roasted Red Peppers",
+"description": "Grilled swordfish steak, roasted red peppers with pesto, mayo, lettuce, tomato and red onion on a country roll",
+"offers": {
+"@type": "Offer",
+"price": "14",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Chicken, Bacon and Apple Melt",
+"description": "Grilled chicken, applewood smoked bacon, sliced apples, VT cheddar, lettuce, tomato and onion served on a country roll with a side of VT maple mayo",
+"offers": {
+"@type": "Offer",
+"price": "12",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Grilled Cajun Chicken",
+"description": "Boneless breast of chicken, rubbed with Cajun spices, topped with jalapenos and VT cheddar, served with lettuce, tomato, and onion on a soft country roll",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Roast Beef and VT Cheddar",
+"description": "Sliced roast beef, VT cheddar cheese, lettuce, tomato and red onion on wheatberry bread. With horseradish dill sauce served with chips or coleslaw",
+"offers": {
+"@type": "Offer",
+"price": "12",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "BURGERS",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Classic Cheese Burger",
+"description": "Cooked just the way you link it with VT cheddar",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Mushroom Burger",
+"description": "Sauteed mushrooms and VT cheddar on top of our classic burger",
+"offers": {
+"@type": "Offer",
+"price": "12",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "North Fork Bison Burger",
+"description": "An 8 `0`000000oz all natural grass-fed buffalo burger, low in fat, high in protein ",
+"offers": {
+"@type": "Offer",
+"price": "14",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Turkey Fusion Burger",
+"description": "Char-grilled all-natural turkey blended with spinach, roasted onions and brown rice, topped with melted VT cheddar, with a side of cranberry mayonnaise",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Salmon Burger",
+"description": "Grilled wild Alaskan salmon patty, topped with a cucumber wasabi sauce",
+"offers": {
+"@type": "Offer",
+"price": "14",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Baja Veggie Burger",
+"description": "A vegetarian, chipotle-spiced, black bean burger, topped with VT cheddar, salsa, and guacamole",
+"offers": {
+"@type": "Offer",
+"price": "12",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "PASTA",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Lobster and Shrimp Farfalle",
+"description": "Lobster, shrimp, and rainbow peppers tossed with bow tie pasta in a garlic cream sauce",
+"offers": {
+"@type": "Offer",
+"price": "23",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Seafood Fettuccine",
+"description": "Sea scallops, shrimp, PEI mussels, and diced tomatoes in a white wine garlic sauce, topped with shredded parmesan over fettuccine",
+"offers": {
+"@type": "Offer",
+"price": "24",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Timothy’s New Favorite",
+"description": "Bow tie pasta with garlic chicken breast, sweet Italian sausage and spinach in a marinara sauce topped with shredded parmesan",
+"offers": {
+"@type": "Offer",
+"price": "18",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Butternut Squash Ravioli",
+"description": "Ravioli filled with butternut squash sauteed in butter and fresh sage, a little cream and VT maple syrup and finished with a balsamic drizzle",
+"offers": {
+"@type": "Offer",
+"price": "18",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Lobster Mac and Cheese",
+"description": "Macaroni and Grafton VT cheddar cheese and chunks of lobster topped with panko bread crumbs. Baked to a golden brown, served with a green salad",
+"offers": {
+"@type": "Offer",
+"price": "22",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "DOCKSIDE FAVORITES",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Broiled Sea Scallops",
+"description": "Plump scallops in a light lemon garlic sauce garnished with chopped tomatoes",
+"offers": {
+"@type": "Offer",
+"price": "25",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Norwegian Salmon",
+"description": "Grilled salmon fillet, glazed with VT maple syrup, hoisin sauce, and a hint of ginger",
+"offers": {
+"@type": "Offer",
+"price": "22",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "New England Haddock",
+"description": "Haddock baked with a little garlic, white wine, and a light panko topping. Truly a classic dish",
+"offers": {
+"@type": "Offer",
+"price": "19",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Flat Iron Steak",
+"description": "Flat iron steak, char-grilled and topped with sauteed onions and crumbled blue cheese",
+"offers": {
+"@type": "Offer",
+"price": "20",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Lobster and Scallop Pie",
+"description": "Lobster, scallops, and mushrooms in a buttery cream sauce, flavored with dill, and tucked under puff pastry",
+"offers": {
+"@type": "Offer",
+"price": "25",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "New York Strip Steak",
+"description": "10oz. Lightly seasoned char-grilled NY strip steak",
+"offers": {
+"@type": "Offer",
+"price": "25",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "BBQ Ribs - 1/2 rack",
+"description": "Pork ribs with a sweet and spicy glaze served with fries and coleslaw",
+"offers": {
+"@type": "Offer",
+"price": "17",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "BBQ Ribs - full rack",
+"description": "Pork ribs with a sweet and spicy glaze served with fries and coleslaw",
+"offers": {
+"@type": "Offer",
+"price": "25",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "FRIED SEAFOOD PLATES",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Whole-Belly Clams",
+"description": "Served with french fries, coleslaw, and tartar sauce",
+"offers": {
+"@type": "Offer",
+"price": "25",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Fish and Chips",
+"description": "(the fish is haddock) Served with french fries, coleslaw, and tartar sauce",
+"offers": {
+"@type": "Offer",
+"price": "18",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Fried Scallops",
+"description": "Served with french fries, coleslaw, and tartar sauce.",
+"offers": {
+"@type": "Offer",
+"price": "24",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "KIDS MENU",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Starter",
+"description": " Choose one: CLAM CHOWDER, CHILI, VEGGIES AND DIP, CHIPS AND SALSA, FRENCH FRIES,  ONION RINGS, CEASER SALAD, OR MOZZARELLA STICKS",
+"offers": {
+"@type": "Offer",
+"price": "3",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "KIDS' DINNER",
+"description": "Choose one:  INCLUDES FRIES AND CARROT STICKS) CHICKEN FINGERS, CHICKEN WINGS, CHEESE BURGER, GRILLED CHEESE SANDWICH, GRILLED HOT DOG, FRIED FISH BITES CHEESE PIZZA PEPPERONI PIZZA, CHEESE Quesadilla, BBQ PULLED PORK SLIDER, BOW TIE PASTA PLAIN WITH BUTTER OR WITH MARINARA SAUCE, GRAFTON CHEDDAR MAC AND CHEESE (WHEN AVAILABLE) CREAMY CHEESY AND DELICIOUS",
+"offers": {
+"@type": "Offer",
+"price": "6",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "KIDS' DESSERT",
+"description": "TEENY WEENY ICE CREAMY ONE SMALL SCOOP",
+"offers": {
+"@type": "Offer",
+"price": "1",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "BRUNCH (Sunday)",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Eggs Benedict",
+"description": "Two poached eggs with smoked ham on an English muffin, smothered in Hollandaise sauce. Served with homefries",
+"offers": {
+"@type": "Offer",
+"price": "10",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Lobster Bearnaise",
+"description": "Two poached eggs with lobster meat on an English muffin, topped with Bearnaise sauce. Served with homefries",
+"offers": {
+"@type": "Offer",
+"price": "17",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Scrambled Trios",
+"description": "Open faced, with Hollandaise sauce and homefries with Smoked Ham, or with Artichoke Hearts and Baby Spinach, or with thinly sliced smoked Salmon and Red Onion",
+"offers": {
+"@type": "Offer",
+"price": "10",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Huevos Rancheros",
+"description": "Scrambled eggs on a flour tortilla with refried beans, chopped tomato, tri colored peppers and jalapenos, topped with melted cheese. Served with a side of salsa and homefries",
+"offers": {
+"@type": "Offer",
+"price": "10",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Smoked Salmon and Cream Cheese Bagel",
+"description": "Toasted plain bagel, cream cheese, tomato, red onion and thinly sliced smoked salmon. Served with homefries ",
+"offers": {
+"@type": "Offer",
+"price": "11",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Brunch Quiche",
+"description": "Broccoli, tomato and Vermont cheddar cheese. Served with homefries",
+"offers": {
+"@type": "Offer",
+"price": "10",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Buffet",
+"description": "All you can eat buffet includes salads, pastries, desserts and much more!",
+"offers": {
+"@type": "Offer",
+"price": "10",
+"priceCurrency": "USD"
+}}
+]},
+
+{
+"@type": "MenuSection",
+"name": "DESSERTS",
+"hasMenuItem": [
+{
+"@type": "MenuItem",
+"name": "Chocolate Torte",
+"description": "Flourless chocolate torte (gluten-free)",
+"offers": {
+"@type": "Offer",
+"price": "6.5",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Tollhouse Cookie Sunday",
+"description": "A square of Tollhouse cookie tipped with Chelsea Royal vanilla ice cream, drizzled with chocolate and topped with whipped cream",
+"offers": {
+"@type": "Offer",
+"price": "6.5",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "New York Style Cheesecake",
+"description": "Try it with mixed berries or a raspberry drizzle ",
+"offers": {
+"@type": "Offer",
+"price": "6.5",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Very Chocolate Cake",
+"description": "Moist, dark, and delicious",
+"offers": {
+"@type": "Offer",
+"price": "6.5",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Paradise Farm Pies",
+"description": "Blueberry Crumb Pie or Vermont Maple Walnut Pie",
+"offers": {
+"@type": "Offer",
+"price": "6.5",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Chelsea Royal Ice Cream",
+"description": "Vanilla, Coffee, Royal Special",
+"offers": {
+"@type": "Offer",
+"price": "5",
+"priceCurrency": "USD"
+}},
+{
+"@type": "MenuItem",
+"name": "Marina Madness Ice Cream",
+"description": "Chocolate ice cream mixed with toasted coconut, toasted almonds, and chocolate chunks",
+"offers": {
+"@type": "Offer",
+"price": "6",
+"priceCurrency": "USD"
+}}
+
+
+
+]
 }
-summary:focus {
-  outline-style: none;
+]
 }
-article > details > summary {
-  font-size: 28px;
-  margin-top: 16px;
 }
-details > p {
-  margin-left: 24px;
-}
-details details {
-  margin-left: 36px;
-}
-details details summary {
-  font-size: 16px;
-}
+</script>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-
-
-/*Modular scale:  major 3rd  1.250*/
-
-
-
-html {font-size: 1em;}
-
-body {
-  background-color: white;
-
-  font-weight: 400;
-  line-height: 1.45;
-  color: #333;
-  background-color: #7de1f8;
-}
-
-p {margin-bottom: 0.9em;}
-
-h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.2;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 2.441em;
-}
-
-h2 {font-size: 1.953em;}
-
-h3 {font-size: 1.563em;}
-
-h4 {font-size: 1.25em;}
-
-small, .font_small {font-size: 0.8em;}
-
-
-</style>
-
+</head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZT4ZL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
+
+<a href="https://marina.restaurant"> 
+
+<img src="../app/img/svg/fish.svg" width="50">
+<-- back to the website
+</a>
 
 
 
-<!-- <article>
+<a href="https://marina.restaurant" class="marina" title="back to the website"> 
+
+<img src="../app/img/svg/marina-logo.svg" width="150">
+
+</a>
+
+<h1>Our Menu</h1>
+
+  <article>
         <details>
-          <summary>temp</summary>
+          <summary>
+            APPETIZERS
+          </summary>
           <details>
-            <summary>item </summary>
-            <p>descriptionl</p>
+            <summary>
+              Chips &amp; Salsa <span><sup>$</sup>5</span>
+            </summary>
+            <p>Crunchy tortilla chips with delicious tomato sauce<br>
+            <small>Add Guacamole <span><sup>$</sup>3</span></small></p>
           </details>
-
+          <details>
+            <summary>
+              Spinach Artichoke Dip <span class="no-mobile no-tablet">and Tortilla Chips</span> <span><sup>$</sup>9</span>
+            </summary>
+            <p>Hot and cheesy, served with pita bread</p>
+          </details>
+          <details>
+            <summary>
+              Crab Cakes <span><sup>$</sup>11</span>
+            </summary>
+            <p>Two hand-pattied crab cakes, served with mango salsa on baby greens</p>
+          </details>
+          <details>
+            <summary>
+              Crispy Fried Calamari <span><sup>$</sup>11</span>
+            </summary>
+            <p>Tender rings and tentacles, lightly breaded and served with a side of chipotle aioli</p>
+          </details>
+          <details>
+            <summary>
+              Smoked Trout <span><sup>$</sup>14</span>
+            </summary>
+            <p>A delicious chilled fillet, served with horseradish dill sauce, red onions, tomatoes and crackers</p>
+          </details>
+          <details>
+            <summary>
+              Shrimp Skewers <span><sup>$</sup>14</span>
+            </summary>
+            <p>Lime-marinated and grilled, eight large shrimp with chipotle aioli sauce</p>
+          </details>
+          <details>
+            <summary>
+              Mozzarella Sticks <span><sup>$</sup>8</span>
+            </summary>
+            <p>Breaded and crispy with a marinara dipping sauce</p>
+          </details>
+          <details>
+            <summary>
+              Buffalo Wings <span><sup>$</sup>10</span>
+            </summary>
+            <p>Jumbo, hot and spicy chicken wings, served with a side of bleu cheese dressing and celery sticks</p>
+          </details>
+          <details>
+            <summary>
+              Nachos <span><sup>$</sup>10</span>
+            </summary>
+            <p>Tortilla chips covered in cheese, scallions,<br>
+            chopped tomatoes, and jalapenos with a side of salsa<br>
+            Add Guacamole <span><sup>$</sup>3</span><br>
+            Sour Cream <span><sup>$</sup>0.8</span><br>
+            Chili <span><sup>$</sup>3</span></p>
+          </details>
+          <details>
+            <summary>
+              Brie Plate <span><sup>$</sup>10</span>
+            </summary>
+            <p>A warm wedge of brie served with mango chutney and a locally baked baguette<br>
+            <br></p>
+            <p></p><!-- spacer -->
+          </details>
         </details>
+      </article><!-- Lobster Bisque
+              New England Clam Chowder
+              Beef-and-Bean Chili
+              soup of the day -->
+      <article>
+        <details>
+          <summary>
+            SOUPS <!--  <span><sup>$</sup>7</span> -->
+          </summary>
+          <details>
+            <summary>
+              Lobster Bisque <span><sup>$</sup>7</span>
+            </summary>
+            <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
+          </details>
+          <details>
+            <summary>
+              <span class="no-mobile">New England</span> Clam Chowder <span><sup>$</sup>6.5</span>
+            </summary>
+            <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
+          </details>
+          <details>
+            <summary>
+              Beef-<span class="no-mobile">and</span><span class="no-mobile show-mobile">&amp;</span>-Bean Chili <span><sup>$</sup>6.5</span>
+            </summary>
+            <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
+          </details>
+          <details>
+            <summary>
+              soup of the day <span><sup>$</sup>6.5</span>
+            </summary>
+            <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
+            <p></p><!-- spacer -->
+          </details>
+        </details>
+      </article><!-- Onion Rings
+              French Fries
+              Sweet Potato Fries 
+              Green Beans
+              Coleslaw
+              French Baguette
+              Garlic Bread  -->
+      <article>
+        <details>
+          <summary>
+            SIDES
+          </summary>
+          <details>
+            <summary>
+              Onion Rings <span><sup>$</sup>8</span>
+            </summary>
+            <p>A basket full of beer-battered onion rings served with a honey mustard dipping sauce</p>
+          </details>
+          <details>
+            <summary>
+              French Fries <span><sup>$</sup>5</span>
+            </summary>
+            <p>Our great crispy coated fries<br>
+            <small>Large <span><sup>$</sup>7</span></small></p>
+          </details>
+          <details>
+            <summary>
+              Sweet Potato Fries <span><sup>$</sup>6</span>
+            </summary>
+            <p>Served with a side of honey mustard<br>
+            <small>Large <span><sup>$</sup>8</span></small></p>
+          </details>
+          <details>
+            <summary>
+              Green Beans <span><sup>$</sup>4</span>
+            </summary>
+            <p>Haricot verts with a touch of garlic butter</p>
+          </details>
+          <details>
+            <summary>
+              Coleslaw <span><sup>$</sup>3</span>
+            </summary>
+            <p>Traditional and crunchy cold</p>
+          </details>
+          <details>
+            <summary>
+              French Baguette <span><sup>$</sup>3</span>
+            </summary>
+            <p>House Baked</p>
+          </details>
+          <details>
+            <summary>
+              Garlic Bread <span><sup>$</sup>7</span>
+            </summary>
+            <p>Toasted ciabatta bread with homemade garlic butter, topped with parmesan cheese</p>
+          </details>
+        </details><!-- Prince Edward Island Mussels
+              Soup, Salad, Half Sandwich
+              Vegetable quiche
+              Middle East Plate
+              Bruschetta
+              Trio of Lamb Sliders
+              Shrimp & Chip Basket
+              Chicken Fingers -->
+        <details>
+          <summary>
+            SMALL PLATES
+          </summary>
+          <details>
+            <summary>
+              <span class="no-mobile">Prince Edward Island</span> Mussels <span><sup>$</sup>15</span>
+            </summary>
+            <p>A bowl full of mussels, steamed with garlic, white wine, and a touch of cream, served with toasted bread</p>
+          </details>
+          <details>
+            <summary>
+              Soup, Salad, <span class="no-mobile">Half</span> <span class="no-mobile show-mobile"><small>1/2</small></span>Sandwich<span><sup>$</sup>14</span>
+            </summary>
+            <p>Pick Two <span><sup>$</sup>11</span>|<br>
+            Pick Three Chili, Chowder, Lobster Bisque<br>
+            House Salad, Caesar Salad<br>
+            Turkey, Tuna, BLT, Roast beef</p>
+          </details>
+          <details>
+            <summary>
+              Vegetable Quiche <span><sup>$</sup>11</span>
+            </summary>
+            <p>Eggs whipped with baby spinach, Fresh basil leaves, roasted red peppers mixed with feta and CT cheddar perfectly baked with a house green salad</p>
+          </details>
+          <details>
+            <summary>
+              Middle East Plate <span><sup>$</sup>13</span>
+            </summary>
+            <p>Hummus, feta cheese, kalamata olives, cucumbers, tomatoes, with a side of pita bread</p>
+          </details>
+          <details>
+            <summary>
+              Bruschetta <span><sup>$</sup>11</span>
+            </summary>
+            <p>Ciabatta brushed with olive oil and garlic, served with Tuscan white beans and onion, with a chopped tomato, basil, and garlic salsa, topped with parmesan cheese<br>
+            <small>Add a skewer of shrimp <span><sup>$</sup>7</span></small></p>
+          </details>
+          <details>
+            <summary>
+              Trio of Lamb Sliders <span><sup>$</sup>15</span>
+            </summary>
+            <p>Savory ground lamb patties served on mini Portuguese rolls with baby spinach, topped with sauteed onions and feta cheese, served with green salad</p>
+          </details>
+          <details>
+            <summary>
+              Shrimp &amp; Chip Basket <span><sup>$</sup>11</span>
+            </summary>
+            <p>Breaded butterflied shrimp and french fries, served with cocktail or tartar sauce</p>
+          </details>
+          <details>
+            <summary>
+              Chicken Fingers <span><sup>$</sup>11</span>
+            </summary>
+            <p>Whole chicken tenderloins lightly breaded with a side of BBQ or honey mustard sauce served with french fries<br>
+            Half Basket <span><sup>$</sup>6</span></p>
+          </details>
+        </details>
+      </article><!-- House Salad
+              Caesar Salad
+              Grilled Salmon on Baby Greens
+              Grilled Chicken Breast and Blue Cheese Salad
+              Grilled Steak Salad
+              Spinach and Grilled Chicken Salad
+              Santa Fe Salad -->
+      <article>
+        <details>
+          <summary>
+            SALADS
+          </summary>
+          <details>
+            <summary>
+              House Salad <span><sup>$</sup>7</span>
+            </summary>
+            <p>Mixed baby greens, shredded carrots, and grape tomatoes</p>
+          </details>
+          <details>
+            <summary>
+              Caesar Salad <span><sup>$</sup>10</span>
+            </summary>
+            <p>Crisp romaine hearts with a side of creamy caesar dressing and multi-grain croutons, sprinkled with shredded parmesan<br>
+            <small>Add Grilled Chicken Breast <span><sup>$</sup>3</span><br>
+            Add Shrimp Skewer <span><sup>$</sup>7</span><br>
+            Add Steak <span><sup>$</sup>7</span><br>
+            Add Salmon <span><sup>$</sup>7</span></small></p>
+          </details>
+          <details>
+            <summary>
+              Grilled Salmon <span class="no-mobile show-mobile">&amp;</span><span class="no-mobile">on Baby</span> Greens <span><sup>$</sup>16</span>
+            </summary>
+            <p>Grilled Salmon finished with a hoisin and Vermont maple syrup glaze on baby greens with carrots, tri-colored peppers, red onion and tomatoes</p>
+          </details>
+          <details>
+            <summary>
+              Grilled Chicken <span class="no-mobile no-tablet">Breast and Blue Cheese</span> Salad <span><sup>$</sup>13</span>
+            </summary>
+            <p>Boneless breast of chicken on baby greens, topped with blue cheese crumbles, toasted almonds, craisins, carrots, tomato and red onion</p>
+          </details>
+          <details>
+            <summary>
+              Grilled Steak Salad <span><sup>$</sup>16</span>
+            </summary>
+            <p>Sliced flat iron steak grape tomatoes, carrots, feta cheese, kalamata olives and red onion on a bed of mixed greens</p>
+          </details>
+          <details>
+            <summary>
+              Spinach <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Grilled Chicken <span class="no-mobile">Salad</span> <span><sup>$</sup>14</span>
+            </summary>
+            <p>Baby spinach with chicken breast, applewood bacon, sliced apples, carrots, toasted almonds and shredded parmesan cheese</p>
+          </details>
+          <details>
+            <summary>
+              Santa Fe Salad <span><sup>$</sup>11</span>
+            </summary>
+            <p>Romaine lettuce topped with tortilla chips, chili, VT cheddar, tomatoes, scallions, jalapenos, and salsa<br>
+            <small>Add Guacamole <span><sup>$</sup>3</span></small></p>
+          </details>
+        </details>
+      </article><!-- B.L.T.
+              Tuna Melt
+              Artisanal Vegetarian Melt
+              Portobello Mushroom and Brie
+              Swordfish and Roasted Red Peppers
+              Chicken, Bacon and Apple Melt
+              Grilled Cajun Chicken
+              Roast Beef &amp; VT Cheddar  -->
+      <article>
+        <details>
+          <summary>
+            SANDWICHES
+          </summary>
+          <details>
+            <summary>
+              <strong>Details</strong>
+            </summary>
+            <p>Served with potato chips or coleslaw<br>
+            <small>Substitute french fries,<br>
+            Sweet potato fries, onion rings, green salad,<br>
+            Against the Grain gluten-free sandwich roll <span><sup>$</sup>1.5</span></small></p>
+          </details>
+          <details>
+            <summary>
+              B.L.T. <span><sup>$</sup>11</span>
+            </summary>
+            <p>An all-time favorite with applesauce smoked bacon, crisp lettuce, juicy tomatoes, and mayo on toasted wheatberry bread</p>
+          </details>
+          <details>
+            <summary>
+              Tuna Melt <span><sup>$</sup>11</span>
+            </summary>
+            <p>Albacore tuna salad with onions and celery, topped with tomato and melted VT cheddar on ciabatta bread</p>
+          </details>
+          <details>
+            <summary>
+              <span class="no-mobile">Artisanal</span> Vegetarian Melt <span><sup>$</sup>11</span>
+            </summary>
+            <p>A layer of hummus, topped with tomato, spinach, sliced mushrooms, red onion, roasted red pepper and melted VT cheddar on ciabatta bread</p>
+          </details>
+          <details>
+            <summary>
+              Portobello <span class="no-mobile">Mushroom and</span> <span class="no-mobile show-mobile">&amp;</span> Brie <span><sup>$</sup>11</span>
+            </summary>
+            <p>Grilled marinated portobello mushroom, melted brie, and basil pesto, served on ciabatta bread</p>
+          </details>
+          <details>
+            <summary>
+              Swordfish <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Roasted <span class="no-mobile">Red</span> Peppers <span><sup>$</sup>14</span>
+            </summary>
+            <p>Grilled swordfish steak, roasted red peppers with pesto, mayo, lettuce, tomato and red onion on a country roll</p>
+          </details>
+          <details>
+            <summary>
+              Chicken, Bacon <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Apple Melt <span><sup>$</sup>12</span>
+            </summary>
+            <p>Grilled chicken, applewood smoked bacon, sliced apples, VT cheddar, lettuce, tomato and onion served on a country roll with a side of VT maple mayo</p>
+          </details>
+          <details>
+            <summary>
+              Grilled Cajun Chicken <span><sup>$</sup>11</span>
+            </summary>
+            <p>Boneless breast of chicken, rubbed with Cajun spices, topped with jalapenos and VT cheddar, served with lettuce, tomato, and onion on a soft country roll</p>
+          </details>
+          <details>
+            <summary>
+              Roast Beef &amp; VT Cheddar <span><sup>$</sup>12</span>
+            </summary>
+            <p>Sliced roast beef, VT cheddar cheese, lettuce, tomato and red onion on wheatberry bread. With horseradish dill sauce served with chips or coleslaw</p>
+          </details>
+        </details><!--       </article> -->
+        <!-- Classic Cheese Burger
+              Mushroom Burger
+              North Fork Bison Burger
+              Turkey Fusion Burger
+              Salmon Burger
+              Baja Veggie Burger -->
+        <!-- <article> -->
+        <details>
+          <summary>
+            BURGERS
+          </summary><!--                 <details>
+                    <summary>
+                    <strong>Details</strong>
+                    </summary>
+                    <p>Half pound burgers, served on a soft country roll with lettuce, tomato, red onion, and our great crispy coated fries or coleslaw (and a pickle if you ask) <br><br>
 
-</article>  -->
+                    <small>Substitute sweet potato fries, onion rings or green salad
+                    <span><sup>$</sup>1</span></small></p>
+                  </details> -->
+          <details>
+            <summary>
+              Classic Cheese Burger <span><sup>$</sup>11</span>
+            </summary>
+            <p>Cooked just the way you link it with VT cheddar<br>
+            With applewood smoked bacon <span><sup>$</sup>12</span></p>
+          </details>
+          <details>
+            <summary>
+              Mushroom Burger <span><sup>$</sup>12</span>
+            </summary>
+            <p>Sauteed mushrooms and VT cheddar on top of our classic burger</p>
+          </details>
+          <details>
+            <summary>
+              North Fork Bison Burger <span><sup>$</sup>14</span>
+            </summary>
+            <p>An 8 oz all natural grass-fed buffalo burger, low in fat, high in protein<br>
+            With VT cheddar <span><sup>$</sup>15</span></p>
+          </details>
+          <details>
+            <summary>
+              Turkey Fusion Burger <span><sup>$</sup>11</span>
+            </summary>
+            <p>Char-grilled all-natural turkey blended with spinach, roasted onions &amp; brown rice, topped with melted VT cheddar, with a side of cranberry mayonnaise</p>
+          </details>
+          <details>
+            <summary>
+              Salmon Burger <span><sup>$</sup>14</span>
+            </summary>
+            <p>Grilled wild Alaskan salmon patty, topped with a cucumber wasabi sauce</p>
+          </details>
+          <details>
+            <summary>
+              Baja Veggie Burger <span><sup>$</sup>12</span>
+            </summary>
+            <p>A vegetarian, chipotle-spiced, black bean burger, topped with VT cheddar, salsa, and guacamole</p>
+          </details>
+          <details>
+            <summary>
+              <strong>Details</strong>
+            </summary>
+            <p>Half pound burgers, served on a soft country roll with lettuce, tomato, red onion, and our great crispy coated fries or coleslaw (and a pickle if you ask)<br>
+            <br>
+            <small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small><br><br></p>
+          </details>
+        </details>
+      </article><!-- Lobster and Shrimp Farfalle
+              Seafood Fettuccine
+              Timothy’s New Favorite
+              Butternut Squash Ravioli
+              Lobster Mac and Cheese -->
+      <article>
+        <details>
+          <summary>
+            PASTA
+          </summary>
+          <details>
+            <summary>
+              Lobster <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Shrimp Farfalle <span><sup>$</sup>23</span>
+            </summary>
+            <p>Lobster, shrimp, and rainbow peppers tossed with bow tie pasta in a garlic cream sauce</p>
+          </details>
+          <details>
+            <summary>
+              Seafood Fettuccine <span><sup>$</sup>24</span>
+            </summary>
+            <p>Sea scallops, shrimp, PEI mussels, and diced tomatoes in a white wine garlic sauce, topped with shredded parmesan over fettuccine</p>
+          </details>
+          <details>
+            <summary>
+              Timothy’s New Favorite <span><sup>$</sup>18</span>
+            </summary>
+            <p>Bow tie pasta with garlic chicken breast, sweet Italian sausage and spinach in a marinara sauce topped with shredded parmesan</p>
+          </details>
+          <details>
+            <summary>
+              Butternut Squash Ravioli <span><sup>$</sup>18</span>
+            </summary>
+            <p>Ravioli filled with butternut squash sauteed in butter and fresh sage, a little cream and VT maple syrup and finished with a balsamic drizzle</p>
+          </details>
+          <details>
+            <summary>
+              Lobster Mac <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Cheese <span><sup>$</sup>22</span>
+            </summary>
+            <p>Macaroni and Grafton VT cheddar cheese and chunks of lobster topped with panko bread crumbs. Baked to a golden brown, served with a green salad</p>
+          </details>
+        </details><!--     </article>
+               -->
+        <!-- Broiled Sea Scallops
+              Norwegian Salmon
+              New England Haddock
+              Flat Iron Steak
+              Lobster and Scallop Pie
+              New York Strip Steak
+              BBQ Ribs -->
+        <!-- <article> -->
+        <details>
+          <summary>
+            DOCKSIDE FAVORITES
+          </summary>
+          <details>
+            <summary>
+              Broiled Sea Scallops <span><sup>$</sup>25</span>
+            </summary>
+            <p>Plump scallops in a light lemon garlic sauce garnished with chopped tomatoes</p>
+          </details>
+          <details>
+            <summary>
+              Norwegian Salmon <span><sup>$</sup>22</span>
+            </summary>
+            <p>Grilled salmon fillet, glazed with VT maple syrup, hoisin sauce, and a hint of ginger</p>
+          </details>
+          <details>
+            <summary>
+              New England Haddock <span><sup>$</sup>19</span>
+            </summary>
+            <p>Haddock baked with a little garlic, white wine, and a light panko topping. Truly a classic dish</p>
+          </details>
+          <details>
+            <summary>
+              Flat Iron Steak <span><sup>$</sup>20</span>
+            </summary>
+            <p>Flat iron steak, char-grilled and topped with sauteed onions and crumbled blue cheese</p>
+          </details>
+          <details>
+            <summary>
+              Lobster <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Scallop Pie <span><sup>$</sup>25</span>
+            </summary>
+            <p>Lobster, scallops, and mushrooms in a buttery cream sauce, flavored with dill , and tucked under puff pastry</p>
+          </details>
+          <details>
+            <summary>
+              New York Strip Steak <span><sup>$</sup>25</span>
+            </summary>
+            <p>10oz. Lightly seasoned char-grilled NY strip steak</p>
+          </details>
+          <details>
+            <summary>
+              BBQ Ribs <span><sup>$</sup>25</span>
+            </summary>
+            <p>Pork ribs with a sweet and spicy glaze served with fries and coleslaw.<br>
+            half rack <span><sup>$</sup>17</span></p>
+          </details>
+          <details>
+            <summary>
+              <strong>Details</strong>
+            </summary>
+            <p>The following entrées are served with french fries, coleslaw, wild rice or roasted potatoes, and green beans.<br>
+            <br>
+            <small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small></p>
+          </details>
+        </details><!--       </article>
+               -->
+        <!-- Whole-Belly Clams
+              Fish and Chips
+              Fried Scallops -->
+        <!-- <article> -->
+        <details>
+          <summary>
+            FRIED SEAFOOD PLATES
+          </summary>
+          <details>
+            <summary>
+              Whole-Belly Clams <span><sup>$</sup>25</span>
+            </summary>
+            <p>Served with french fries, coleslaw, and tartar sauce.<br>
+            <small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small></p>
+          </details>
+          <details>
+            <summary>
+              Fish <span class="no-mobile">and</span> <span class="no-mobile show-mobile">&amp;</span> Chips <span><sup>$</sup>18</span>
+            </summary>
+            <p>Haddock, served with french fries, coleslaw, and tartar sauce.<br>
+            <small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small></p>
+          </details>
+          <details>
+            <summary>
+              Fried Scallops <span><sup>$</sup>24</span>
+            </summary>
+            <p>Served with french fries, coleslaw, and tartar sauce.<br>
+            <small>Substitute sweet potato fries, onion rings or green salad <span><sup>$</sup>1</span></small> <br><br></p>
+          </details>
+        </details>
+      </article><!-- Chocolate Torte
+              Tollhouse Cookie Sunday
+              New York Style Cheesecake
+              Very Chocolate Cake
+              Paradise Farm Pies
+              Chelsea Royal Ice Cream
+              Marina Madness Ice Cream -->
+      <article>
+        <details>
+          <summary>
+            DESSERTS
+          </summary>
+          <details>
+            <summary>
+              Chocolate Torte <span><sup>$</sup>6.5</span>
+            </summary>
+            <p>Flourless chocolate torte (gluten-free)</p>
+          </details>
+          <details>
+            <summary>
+              Tollhouse Cookie Sundae<span><sup>$</sup>6.5</span>
+            </summary>
+            <p>A square of Tollhouse cookie tipped with Chelsea Royal vanilla ice cream, drizzled with chocolate and topped with whipped cream</p>
+          </details>
+          <details>
+            <summary>
+              NY <span class="no-mobile">Style</span> Cheesecake <span><sup>$</sup>6.5</span>
+            </summary>
+            <p>Try it with mixed berries or a raspberry drizzle</p>
+          </details>
+          <details>
+            <summary>
+              Very Chocolate Cake <span><sup>$</sup>6.5</span>
+            </summary>
+            <p>Moist, dark, and delicious</p>
+          </details>
+          <details>
+            <summary>
+              Paradise Farm Pies <span><sup>$</sup>6.5</span>
+            </summary>
+            <p>Blueberry Crumb Pie</p>
+            <p>Vermont Maple Walnut Pie</p>
+            <p>Add a Scoop of Ice Cream <span><sup>$</sup>1.25</span></p>
+          </details>
+          <details>
+            <summary>
+              Chelsea Royal Ice Cream <span><sup>$</sup>5</span>
+            </summary>
+            <p>Vanilla, Coffee, Royal Special</p>
+          </details>
+          <details>
+            <summary>
+              Marina Madness Ice Cream <span><sup>$</sup>6</span>
+            </summary>
+            <p>Chocolate ice cream mixed with toasted coconut, toasted almonds, and chocolate chunks Make It a Sunday <span><sup>$</sup>7.5</span> <br><br></p>
+          </details>
+        </details>
+      </article><!-- WINE -->
+      <article>
+        <details>
+          <summary>
+            Wine List
+          </summary>
+          
+          <h4>Sparkling</h4>
+
+          <p>
+            <small>
+            <em>prosecco &mdash;La Marca</em> classic from Italy<br>
+
+            <em>brut &mdash;Le Gruet</em> New Mexico<br>
+            </small>
+          </p>
+
+          
+          
+          <h4>White</h4>
+          <p>
+            <small>
+            <em>pinot grigio &mdash;Stella</em> <span class="no-mobile">Italy-   aroma of pear, fresh and easy going</span><br>
+
+            <em>riesling&mdash; S.A. Prum Essence</em> <span class="no-mobile"> Germany- <i>sweet</i> peach and citrus</span><br>
+
+            <em>sauvignon blanc&mdash;The Crossings</em> <span class="no-mobile"> New Zealand- <i>crisp</i> fruit, classic Marlborough taste</span><br>
+
+            <em>sauvignon blanc&mdash; Domaine Fournier</em> <span class="no-mobile"> France- fresh and <i>crisp</i> Loire Valley</span><br>
+
+            <!-- <em>pinot blanc, chard, gruner&mdash; Pannonica </em> Austria light, easy-drinking, <i>dry body</i><br> -->
+
+            <em>pinot gris&mdash; Joel Gott</em> <span class="no-mobile">Oregon- smooth and sophisticated, floral notes</span><br>
+
+            <em>chardonnay&mdash; Domaine Jean Touzot</em> <span class="no-mobile">France- an "old vines" white burgundy</span><br>
+
+            <em>chardonnay&mdash; Wente</em> <span class="no-mobile">California- plush with fruit and <i>mellow oak</i></span>
+            </small>
+          </p>
+
+
+          
+          <h4>Red</h4>
+
+          <p>
+
+            <small>
+            <em>cote du Rhone&mdash; Pont de Nyons</em> <span class="no-mobile"> France- <i>light</i> dry and earthy</span><br>
+
+            <em>merlot&mdash; Wente</em> <span class="no-mobile">California- velvet black cherry with a clear, dry finish</span><br>
+
+            <em>pinot noir&mdash; Austerity</em>  <span class="no-mobile">California- vibrant and balanced </span><br>
+
+            <em>cabernet sauvignon&mdash; Joel Gott</em> <span class="no-mobile"> California- mocha and spice with a touch of tannin</span><br>
+
+            <em>cabernet sauvignon&mdash; Hall</em> <span class="no-mobile">California- impressive, <i>ripe tannins</i>, succulent</span><br>
+
+            <em>zin, petite sirah&mdash; Hook &amp; Ladder</em> <span class="no-mobile">California- Russian River luscious</span>
+            </small>
+          </p>
+
+
+          <p></p><!-- spacer -->
+        </details>
+      </article><!-- BRUNCH
+              Eggs Benedict
+              Lobster Bearnaise
+              Scrambled Trios
+              Huevos Rancheros
+              Smoked Salmon &amp; Cream Cheese Bagel
+              Brunch Quiche
+              Buffet -->
+      <article>
+        <details>
+          <summary>
+            BRUNCH (Sunday)
+          </summary>
+          <details>
+            <summary>
+              Eggs Benedict <span><sup>$</sup>10</span>
+            </summary>
+            <p>Two poached eggs with smoked ham on an English muffin, smothered in Hollandaise sauce.<br>
+            Served with home fries</p>
+          </details>
+          <details>
+            <summary>
+              Lobster Bearnaise <span><sup>$</sup>17</span>
+            </summary>
+            <p>Two poached eggs with lobster meat on an English muffin, topped with Bearnaise sauce.<br>
+            Served with homefries</p>
+          </details>
+          <details>
+            <summary>
+              Scrambled Trios <span><sup>$</sup>10</span>
+            </summary>
+            <p>Open faced, with Hollandaise sauce &amp; homefries with Smoked Ham<br>
+            with Artichoke Hearts and Baby Spinach<br>
+            with thinly sliced smoked Salmon and Red Onion<br>
+            (Choose a set of 3 or 1 of each)</p>
+          </details>
+          <details>
+            <summary>
+              Huevos Rancheros <span><sup>$</sup>10</span>
+            </summary>
+            <p>Scrambled eggs on a flour tortilla with refried beans, chopped tomato, tri colored peppers and jalapenos, topped with melted cheese. Served with a side of salsa and homefries<br>
+            <!-- Add: Sour Cream <span><sup>$</sup>1</span> Guacamole <span><sup>$</sup>3</span> --></p>
+          </details>
+          <details>
+            <summary>
+              Smoked Salmon &amp; Bagel <span><sup>$</sup>11</span>
+            </summary>
+            <p>Toasted plain bagel, cream cheese, tomato, red onion and thinly sliced smoked salmon. Served with homefries</p>
+          </details>
+          <details>
+            <summary>
+              Brunch Quiche <span><sup>$</sup>10</span>
+            </summary>
+            <p>Broccoli, tomato and Vermont cheddar cheese. Served with homefries</p>
+          </details>
+          <details>
+            <summary>
+              Buffet <span><sup>$</sup>16</span>
+            </summary>
+            <p>All you can eat buffet includes salads, pastries, desserts and much more!<br>
+            Add an omelet for an addition <span><sup>$</sup>2</span></p>
+          </details>
+        </details>
+      </article>
+      <article>
+        <details>
+          <summary>
+            KIDS MENU
+          </summary>
+          <details>
+            <summary>
+              Starter <span><sup>$</sup>3</span>
+            </summary>
+            <p>Clam Chowder,<br>
+            Chili,<br>
+            Veggies and Dip,<br>
+            Ships and Salsa<br>
+            French Fries,<br>
+            Onion Rings,<br>
+            Caesar Salad, or<br>
+            Mozzarella Sticks</p>
 
 
 
+          </details>
+          <details>
+            <summary>
+            <small>“KIDS COME IN FOR DINNER“</small> <span><sup>$</sup>6</span>
+            </summary>
+            <p>Pick one, includes fries and carrot sticks<br>
+            Chicken Fingers<br>
+            Chicken Wings<br>
+            Cheese Burger<br>
+            Grilled Cheese Sandwich<br>
+            Grilled Hot Dog<br>
+            Fried Fish Bites Cheese Pizza Pepperoni Pizza<br>
+            Cheese Quesadilla<br>
+            bbq Pulled Pork Slider<br>
+            Bow Tie Pasta &mdash;plain with butter or with marinara sauce<br>
+            Grafton Cheddar Mac &amp; Cheese (when available)) <i>creamy cheesy and delicious</i></p>
 
 
 
-<article>
-  <details>
-    <summary>
-      APPETIZERS
-    </summary>
-    <details>
-      <summary>
-        Chips &amp; Salsa
-      </summary>
-      <p>Crunchy tortilla chips with delicious tomato sauce 5<br>
-      Add Guacamole 3</p>
-    </details>
-    <details>
-      <summary>
-        Spinach Artichoke Dip and Tortilla Chips
-      </summary>
-      <p>Hot and cheesy, served with pita bread 9</p>
-    </details>
-    <details>
-      <summary>
-        Crab Cakes
-      </summary>
-      <p>Two hand-pattied crab cakes, served with mango salsa on baby greens 11</p>
-    </details>
-    <details>
-      <summary>
-        Crispy Fried Calamari
-      </summary>
-      <p>Tender rings and tentacles, lightly breaded and served with a side of chipotle aioli 11</p>
-    </details>
-    <details>
-      <summary>
-        Smoked Trout
-      </summary>
-      <p>A delicious chilled fillet, served with horseradish dill sauce, red onions, tomatoes and crackers 14</p>
-    </details>
-    <details>
-      <summary>
-        Shrimp Skewers
-      </summary>
-      <p>Lime-marinated and grilled, eight large shrimp with chipolte aioli sauce 14</p>
-    </details>
-    <details>
-      <summary>
-        Mozzarella Sticks
-      </summary>
-      <p>Breaded and crispy with a marinara dipping sauce 8</p>
-    </details>
-    <details>
-      <summary>
-        Buffalo Wings
-      </summary>
-      <p>Jumbo, hot and spicy chicken wings, served with a side of bleu cheese dressing and celery sticks 10</p>
-    </details>
-    <details>
-      <summary>
-        Nachos
-      </summary>
-      <p>Tortilla chips covered in cheese, scallions, chopped tomatoes, and jalapenos with a side of salsa 10<br>
-      Add Guacamole 3 Sour Cream 0.8 Chili 3</p>
-    </details>
-    <details>
-      <summary>
-        Brie Plate
-      </summary>
-      <p>A warm wedge of brie served with mango chutney and a locally baked baguette 10</p>
-    </details>
-  </details>
-</article><!-- Lobster Bisque
-New England Clam Chowder
-Beef-and-Bean Chili
-soup of the day -->
-<article>
-  <details>
-    <summary>
-      SOUPS
-    </summary>
-    <details>
-      <summary>
-        Lobster Bisque
-      </summary>
-      <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
-    </details>
-    <details>
-      <summary>
-        New England Clam Chowder
-      </summary>
-      <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
-    </details>
-    <details>
-      <summary>
-        Beef-and-Bean Chili
-      </summary>
-      <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
-    </details>
-    <details>
-      <summary>
-        soup of the day
-      </summary>
-      <p>All soups are served in a big mug with all natural Westminster Vermont oyster crackers</p>
-    </details>
-  </details>
-</article><!-- Onion Rings
-French Fries
-Sweet Potato Fries 
-Green Beans
-Coleslaw
-French Baguette
-Garlic Bread  -->
-<article>
-  <details>
-    <summary>
-      SIDES
-    </summary>
-    <details>
-      <summary>
-        Onion Rings
-      </summary>
-      <p>A basket full of beer-battered onion rings served with a honey mustard dipping sauce 8</p>
-    </details>
-    <details>
-      <summary>
-        French Fries
-      </summary>
-      <p>Our great crispy coated fries Regular 5 Large 7</p>
-    </details>
-    <details>
-      <summary>
-        Sweet Potato Fries
-      </summary>
-      <p>Served with a side of honey mustard Regular 6 Large 8</p>
-    </details>
-    <details>
-      <summary>
-        Green Beans
-      </summary>
-      <p>Haricot verts with a touch of garlic butter 4</p>
-    </details>
-    <details>
-      <summary>
-        Coleslaw
-      </summary>
-      <p>Traditional and crunchy cold 3</p>
-    </details>
-    <details>
-      <summary>
-        French Baguette
-      </summary>
-      <p>House Baked 3</p>
-    </details>
-    <details>
-      <summary>
-        Garlic Bread
-      </summary>
-      <p>Toasted ciabatta bread with homemade garlic butter, topped with parmesan cheese 7</p>
-    </details>
-  </details><!-- Prince Edward Island Mussels
-Soup, Salad, Half Sandwich
-Vegetable Frittata
-Middle East Plate
-Bruschetta
-Trio of Lamb Sliders
-Shrimp & Chip Basket
-Chicken Fingers -->
-  <details>
-    <summary>
-      SMALL PLATES
-    </summary>
-    <details>
-      <summary>
-        Prince Edward Island Mussels
-      </summary>
-      <p>A bowl full of mussels, steamed with garlic, white wine, and a touch of cream, served with toasted bread 15</p>
-    </details>
-    <details>
-      <summary>
-        Soup, Salad, Half Sandwich
-      </summary>
-      <p>Pick Two 11 | Pick Three 14 Chili, Chowder, Lobster Bisque<br>
-      House Salad, Caesar Salad<br>
-      Turkey, Tuna, BLT, Roast beef</p>
-    </details>
-    <details>
-      <summary>
-        Vegetable Frittata
-      </summary>
-      <p>Eggs whipped with baby spinach, Fresh basil leaves, roasted red peppers mixed with feta and CT cheddar perfectly baked with a house green salad 11</p>
-    </details>
-    <details>
-      <summary>
-        Middle East Plate
-      </summary>
-      <p>Hummus, feta cheese, kalamata olives, cucumbers, tomatoes, with a side of pita bread 13</p>
-    </details>
-    <details>
-      <summary>
-        Bruschetta
-      </summary>
-      <p>Ciabatta brushed with olive oil and garlic, served with Tuscan white beans and onion, with a chopped tomato, basil, and garlic salsa, topped with parmesan cheese 11<br>
-      Add a skewer of shrimp 7</p>
-    </details>
-    <details>
-      <summary>
-        Trio of Lamb Sliders
-      </summary>
-      <p>Savory ground lamb patties served on mini Portuguese rolls with baby spinach, topped with sauteed onions and feta cheese, served with green salad 15</p>
-    </details>
-    <details>
-      <summary>
-        Shrimp &amp; Chip Basket
-      </summary>
-      <p>Breaded butterfiled shrimp and french fries, served with cocktail or tartar sauce 11</p>
-    </details>
-    <details>
-      <summary>
-        Chicken Fingers
-      </summary>
-      <p>Whole chicken tenderloins lightly breaded with a side of BBQ or honey mustard sauce served with french fries 11<br>
-      Half Basket 6</p>
-    </details>
-  </details>
-</article><!-- House Salad
-Caesar Salad
-Grilled Salmon on Baby Greens
-Grilled Chicken Breast and Blue Cheese Salad
-Grilled Steak Salad
-Spinach and Grilled Chicken Salad
-Santa Fe Salad -->
-<article>
-  <details>
-    <summary>
-      SALADS
-    </summary>
-    <details>
-      <summary>
-        House Salad
-      </summary>
-      <p>Mixed baby greens, shredded carrots, and grape tomatoes 7</p>
-    </details>
-    <details>
-      <summary>
-        Caesar Salad
-      </summary>
-      <p>Crisp romaine hearts with a side of creamy caesar dressing and multi-grain croutons, sprinkled with shredded parmesan 10<br>
-      Add Grilled Chicken Breast 3<br>
-      Add Shrimp Skewer 7 Add Steak 7<br>
-      Add Salmon 7</p>
-    </details>
-    <details>
-      <summary>
-        Grilled Salmon on Baby Greens
-      </summary>
-      <p>Grilled Salmon finished with a hoisin and Vermont maple syrup glaze on baby greens with carrots, tri-colored peppers, red onion and tomatoes 16</p>
-    </details>
-    <details>
-      <summary>
-        Grilled Chicken Breast and Blue Cheese Salad
-      </summary>
-      <p>Boneless breast of chicken on baby greens, topped with blue cheese crumbles, toasted almonds, crasins, carrots, tomato and red onion 13</p>
-    </details>
-    <details>
-      <summary>
-        Grilled Steak Salad
-      </summary>
-      <p>Sliced flat iron steak grape tomatoes, carrots, feta cheese, kalamata olives and red onion on a bed of mixed greens 16</p>
-    </details>
-    <details>
-      <summary>
-        Spinach and Grilled Chicken Salad
-      </summary>
-      <p>Baby spinach with chicken breast, applewood bacon, sliced apples, carrots, toasted almonds and shredded parmesan cheese 14</p>
-    </details>
-    <details>
-      <summary>
-        Santa Fe Salad
-      </summary>
-      <p>Romaine lettuce topped with tortilla chips, chili, VT cheddar, tomatoes, scallions, jalapenos, and salsa 11 Add Guacamole 3 Sour cream 0.8</p>
-    </details>
-  </details>
-</article><!-- B.L.T.
-Tuna Melt
-Artisanal Vegetarian Melt
-Portabello Mushroom and Brie
-Swordfish and Roasted Red Peppers
-Chicken, Bacon and Apple Melt
-Grilled Cajun Chicken
-Roast Beef &amp; VT Cheddar  -->
-<article>
-  <details>
-    <summary>
-      SANDWICHES
-    </summary>
-    <details>
-      <summary>
-        info
-      </summary>
-      <p>Served with potato chips or coleslaw<br>
-      Substitute french fries 1.5<br>
-      Sweet potato fries, onion rings, or green salad<br>
-      Against the Grain gluten-free sandwich roll<br></p>
-    </details>
-    <details>
-      <summary>
-        B.L.T.
-      </summary>
-      <p>An all-time favorite with applesauce smoked bacon, crisp lettuce, juicy tomatoes, and mayo on toasted wheatberry bread 11</p>
-    </details>
-    <details>
-      <summary>
-        Tuna Melt
-      </summary>
-      <p>Albacore tuna salad with onions and celery, topped with tomato and melted VT cheddar on ciabatta bread 11</p>
-    </details>
-    <details>
-      <summary>
-        Artisanal Vegetarian Melt
-      </summary>
-      <p>A layer of hummus, topped with tomato, spinach, sliced mushrooms, red onion, roasted red pepper and melted VT cheddar on ciabatta bread 11</p>
-    </details>
-    <details>
-      <summary>
-        Portabello Mushroom and Brie
-      </summary>
-      <p>Grilled marinated portobello mushroom, melted brie, and basil pesto, served on ciabatta bread 11</p>
-    </details>
-    <details>
-      <summary>
-        Swordfish and Roasted Red Peppers
-      </summary>
-      <p>Grilled swordfish steak, roasted red peppers with pesto, mayo, lettuce, tomato and red onion on a country roll 14</p>
-    </details>
-    <details>
-      <summary>
-        Chicken, Bacon and Apple Melt
-      </summary>
-      <p>Grilled chicken, applewood smoked bacon, sliced apples, VT cheddar, lettuce, tomato and onion served on a country roll with a side of VT maple mayo 12</p>
-    </details>
-    <details>
-      <summary>
-        Grilled Cajun Chicken
-      </summary>
-      <p>Boneless breast of chicken, rubbed with Cajun spices, topped with jalapenos and VT cheddar, served with lettuce, tomato, and onion on a soft country roll 11</p>
-    </details>
-    <details>
-      <summary>
-        Roast Beef &amp; VT Cheddar
-      </summary>
-      <p>Sliced roast beef, VT cheddar cheese, lettuce, tomato and red onion on wheatberry bread. With horseradish dill sauce served with chips or coleslaw 12 BBQ Pulled Pork Sandwich</p>
-    </details>
-  </details><!--       </article> -->
-  <!-- Classic Cheese Burger
-Mushroom Burger
-North Fork Bison Burger
-Turkey Fusion Burger
-Salmon Burger
-Baja Veggie Burger -->
-  <!-- <article> -->
-  <details>
-    <summary>
-      BURGERS
-    </summary>
-    <details>
-      <summary>
-        Classic Cheese Burger
-      </summary>
-      <p>Cooked just the way you link it with VT cheddar 11<br>
-      With applewood smoked bacon 12</p>
-    </details>
-    <details>
-      <summary>
-        Mushroom Burger
-      </summary>
-      <p>Sauteed mushrooms and VT cheddar on top of our classic burger 12</p>
-    </details>
-    <details>
-      <summary>
-        North Fork Bison Burger
-      </summary>
-      <p>An 8oz all natural grass-fed buffalo burger, lw in fat, high in protein 14<br>
-      With VT cheddar 15</p>
-    </details>
-    <details>
-      <summary>
-        Turkey Fusion Burger
-      </summary>
-      <p>Char-grilled all-natural turkey blended with spinach, roasted onions &amp; brown rice, topped with melted VT cheddar, with a side of cranberry mayonnaise 11</p>
-    </details>
-    <details>
-      <summary>
-        Salmon Burger
-      </summary>
-      <p>Grilled wild Alaskan salmon patty, topped with a cucumber wasabi sauce 14</p>
-    </details>
-    <details>
-      <summary>
-        Baja Veggie Burger
-      </summary>
-      <p>A vegetarian, chipotle-spiced, black bean burger, topped with VT cheddar, salsa, and guacamole 12</p>
-    </details>
-    <details>
-      <summary>
-        info
-      </summary>
-      <p>Half pound burgers, served on a soft country roll with lettuce, tomato, red onion, and our great crispy coated fries or coleslaw (and a pickle if you ask) Substitute sweet potato fries, onion rings or green salad for 1</p>
-    </details>
-  </details>
-</article><!-- Lobster and Shrimp Farfalle
-Seafood Fettuccine
-Timothy’s New Favorite
-Butternut Squash Ravioli
-Lobster Mac and Cheese -->
-<article>
-  <details>
-    <summary>
-      PASTA
-    </summary>
-    <details>
-      <summary>
-        Lobster and Shrimp Farfalle
-      </summary>
-      <p>Lobster, shrimp, and rainbow peppers tossed with bow tie pasta in a garlic cream sauce 23</p>
-    </details>
-    <details>
-      <summary>
-        Seafood Fettuccine
-      </summary>
-      <p>Sea scallops, shrimp, PEI mussels, and diced tomatoes in a white wine garlic sauce, topped with shredded parmesan over fettuccine 24</p>
-    </details>
-    <details>
-      <summary>
-        Timothy’s New Favorite
-      </summary>
-      <p>Bow tie pasta with garlic chicken breast, sweet Italian sausage and spinach in a marinara sauce topped with shredded parmesan 18</p>
-    </details>
-    <details>
-      <summary>
-        Butternut Squash Ravioli
-      </summary>
-      <p>Ravioli filled with butternut squash sauteed in butter and fresh sage, a little cream and VT maple syrup and finished with a balsamic drizzle 18</p>
-    </details>
-    <details>
-      <summary>
-        Lobster Mac and Cheese
-      </summary>
-      <p>Macaroni and Grafton VT cheddar cheese and chunks of lobster topped with panko bread crumbs. Baked to a golden brown, served with a green salad 22</p>
-    </details>
-  </details><!--     </article>
- -->
-  <!-- Broiled Sea Scallops
-Norwegian Salmon
-New England Haddock
-Flat Iron Steak
-Lobster and Scallop Pie
-New York Strip Steak
-BBQ Ribs -->
-  <!-- <article> -->
-  <details>
-    <summary>
-      DOCKSIDE FAVORITES
-    </summary>
-    <details>
-      <summary>
-        Broiled Sea Scallops
-      </summary>
-      <p>Plump scallops in a light lemon garlic sauce garnished with chopped tomatoes 25</p>
-    </details>
-    <details>
-      <summary>
-        Norwegian Salmon
-      </summary>
-      <p>Grilled salmon fillet, glazed with VT maple syrup, hoisin sauce, and a hint of ginger 22</p>
-    </details>
-    <details>
-      <summary>
-        New England Haddock
-      </summary>
-      <p>Haddock baked with a little garlic, white wine, and a light panko topping. Truly a classic dish 19</p>
-    </details>
-    <details>
-      <summary>
-        Flat Iron Steak
-      </summary>
-      <p>Flat iron steak, char-grilled and topped with sauteed onions and crumbled blue cheese 20</p>
-    </details>
-    <details>
-      <summary>
-        Lobster and Scallop Pie
-      </summary>
-      <p>Lobster, scallops, and mushrooms in a buttery cream sauce, flavored with dill , and tucked under puff pastry 25</p>
-    </details>
-    <details>
-      <summary>
-        New York Strip Steak
-      </summary>
-      <p>10oz. Lightly seasoned char-grilled NY strip steak 25</p>
-    </details>
-    <details>
-      <summary>
-        BBQ Ribs
-      </summary>
-      <p>Pork ribs with a sweet and spicy glaze served with fries and coleslaw. half rack 17 full rack 25</p>
-    </details>
-    <details>
-      <summary>
-        DETAILS
-      </summary>
-      <p>The following entrées are served with french fries, coleslaw, wild rice or roasted potatoes, and green beans. Substitute sweet potato fries, onion rings or green salad for 1</p>
-    </details>
-  </details><!--       </article>
- -->
-  <!-- Whole-Belly Clams
-Fish and Chips
-Fried Scallops -->
-  <!-- <article> -->
-  <details>
-    <summary>
-      FRIED SEAFOOD PLATES
-    </summary>
-    <details>
-      <summary>
-        Whole-Belly Clams
-      </summary>
-      <p>Served with french fries, coleslaw, and tartar sauce. Substitute sweet potato fries, onion rings or green salad for 1</p>
-    </details>
-    <details>
-      <summary>
-        Fish and Chips
-      </summary>
-      <p>(the fish is haddock) Served with french fries, coleslaw, and tartar sauce. Substitute sweet potato fries, onion rings or green salad for 1</p>
-    </details>
-    <details>
-      <summary>
-        Fried Scallops
-      </summary>
-      <p>Served with french fries, coleslaw, and tartar sauce. Substitute sweet potato fries, onion rings or green salad for 1</p>
-    </details>
-  </details>
-</article><!-- Chocolate Torte
-Tollhouse Cookie Sunday
-New York Style Cheesecake
-Very Chocolate Cake
-Paradise Farm Pies
-Chelsea Royal Ice Cream
-Marina Madness Ice Cream -->
-<article>
-  <details>
-    <summary>
-      DESSERTS
-    </summary>
-    <details>
-      <summary>
-        Chocolate Torte
-      </summary>
-      <p>Flourless chocolate torte (gluten-free) 6.5</p>
-    </details>
-    <details>
-      <summary>
-        Tollhouse Cookie Sunday
-      </summary>
-      <p>A square of Tollhouse cookie tipped with Chelsea Royal vanilla ice cream, drizzled with chocolate and topped with whipped cream 6.5</p>
-    </details>
-    <details>
-      <summary>
-        New York Style Cheesecake
-      </summary>
-      <p>Try it with mixed berries or a raspberry drizzle 6.5</p>
-    </details>
-    <details>
-      <summary>
-        Very Chocolate Cake
-      </summary>
-      <p>Moist, dark, and delicious 6.5</p>
-    </details>
-    <details>
-      <summary>
-        Paradise Farm Pies
-      </summary>
-      <p>Blueberry Crumb Pie 6.5</p>
-      <p>Vermont Maple Walnut Pie 6.5</p>
-      <p>Add a Scoop of Ice Cream 1.25</p>
-    </details>
-    <details>
-      <summary>
-        Chelsea Royal Ice Cream
-      </summary>
-      <p>Vanilla, Coffee, Royal Special 5</p>
-    </details>
-    <details>
-      <summary>
-        Marina Madness Ice Cream
-      </summary>
-      <p>Chocolate ice cream mixed with toasted coconut, toasted almonds, and chocolate chunks 6 Make It a Sunday 7.5</p>
-    </details>
-  </details>
-</article><!-- BRUNCH
-Eggs Benedict
-Lobster Bearnaise
-Scrambled Trios
-Huevos Rancheros
-Smoked Salmon &amp; Cream Cheese Bagel
-Brunch Quiche
-Buffet -->
-<article>
-  <details>
-    <summary>
-      BRUNCH
-    </summary>
-    <details>
-      <summary>
-        Eggs Benedict
-      </summary>
-      <p>Two poached eggs with smoked ham on an English muffin, smothered in Hollandaise sauce.<br>
-      Served with homefries 10</p>
-    </details>
-    <details>
-      <summary>
-        Lobster Bearnaise
-      </summary>
-      <p>Two poached eggs with lobster meat on an English muffin, topped with Bearnaise sauce.<br>
-      Served with homefries 17</p>
-    </details>
-    <details>
-      <summary>
-        Scrambled Trios
-      </summary>
-      <p>Open faced, with Hollandaise sauce &amp; homefries with Smoked Ham<br>
-      with Artichoke Hearts and Baby Spinach<br>
-      with thinly sliced smoked Salmon and Red Onion<br>
-      (Choose a set of 3 or 1 of each) 10</p>
-    </details>
-    <details>
-      <summary>
-        Huevos Rancheros
-      </summary>
-      <p>Scrambled eggs on a flour tortilla with refried beans, chopped tomato, tri colored peppers and jalapenos, topped with melted cheese. Served with a side of salsa and homefries 10 Add: Sour Cream 1 Guacamole 3</p>
-    </details>
-    <details>
-      <summary>
-        Smoked Salmon &amp; Cream Cheese Bagel
-      </summary>
-      <p>Toasted plain bagel, cream cheese, tomato, red onion and thinly sliced smoked salmon. Served with homefries 11</p>
-    </details>
-    <details>
-      <summary>
-        Brunch Quiche
-      </summary>
-      <p>Broccoli, tomato and Vermont cheddar cheese. Served with homefries 10</p>
-    </details>
-    <details>
-      <summary>
-        Buffet
-      </summary>
-      <p>All you can eat buffet includes salads, pastries, desserts and much more! Add an omelet for an addition $2</p>
-    </details>
-  </details>
-</article>
-<article>
-  <details>
-    <summary>
-      KIDS MENU
-    </summary>
-    <details>
-      <summary>
-        item 1
-      </summary>
-      <p>kids menu item detail</p>
-    </details>
-    <details>
-      <summary>
-        item 2
-      </summary>
-      <p>kids menu item detail 2</p>
-    </details>
-  </details>
-</article>
-<article></article>
+          </details>
+          <details>
+            <summary>
+            <small>IF YOU CLEAN YOUR PLATE</small> 
+            </summary>
+            <p>TEENY WEENY ICE CREAMY: one small scoop <span><sup>$</sup>1</span><br>
+            or<br>
+            MAKE IT A SUNDAE: two small scoops, chocolate sauce, whip cream and sprinkles <span><sup>$</sup>2</span></p>
+          </details>
+          <details>
+            <summary>
+              SOMETHING TO WET YOUR WHISTLE
+            </summary>
+            <p>OJ<br>
+            cranberry<br>
+            apple or pineapple juice<br>
+            lemonade<br>
+            marina breeze<br>
+            plain milk, chocolate milk<br>
+            or soda <span><sup>$</sup>1</span><br>
+            orange san pellegrino <span><sup>$</sup>2.5</span><br>
+            Bottle VIRGIL'S root beer <span><sup>$</sup>2.5</span></p><br>
 
-<span style="display:none">
 
-<h4>MAP</h4>
 
-<ul>APPETIZERS
-  <li>Chips &amp; Salsa</li>
-  <li>Spinach Artichoke Dip and Tortilla Chips</li>
-  <li>Crab Cakes</li>
-  <li>Crispy Fried Calamari</li>
-  <li>Smoked Trout</li>
-  <li>Shrimp Skewers</li>
-  <li>Mozzarella Sticks</li>
-  <li>Buffalo Wings</li>
-  <li>Nachos</li>
-  <li>Brie Plate</li>
-</ul>
-
-<ul>SOUPS
-  <li>Lobster Bisque</li>
-  <li>New England Clam Chowder</li>
-  <li>Beef-and-Bean Chili</li>
-  <li>soup of the day</li>
-</ul>
-
-<ul>SIDES
-  <li>Onion Rings</li>
-  <li>French Fries</li>
-  <li>Sweet Potato Fries </li>
-  <li>Green Beans</li>
-  <li>Coleslaw</li>
-  <li>French Baguette</li>
-  <li>Garlic Bread </li>
-</ul>
-
-<ul>SMALL PLATES
-  <li>Prince Edward Island Mussels</li>
-  <li>Soup, Salad, Half Sandwich</li>
-  <li>Vegetable Frittata</li>
-  <li>Middle East Plate</li>
-  <li>Bruschetta</li>
-  <li>Trio of Lamb Sliders</li>
-  <li>Shrimp &amp; Chip Basket</li>
-  <li>Chicken Fingers</li>
-</ul>
-
-<ul>SALDS
-  <li>House Salad</li>
-  <li>Caesar Salad</li>
-  <li>Grilled Salmon on Baby Greens</li>
-  <li>Grilled Chicken Breast and Blue Cheese Salad</li>
-  <li>Grilled Steak Salad</li>
-  <li>Spinach and Grilled Chicken Salad</li>
-  <li>Santa Fe Salad</li>
-</ul>
-
-<ul>SANDWICHES
-  <li>B.L.T.<li>
-  <li>Tuna Melt<li>
-  <li>Artisanal Vegetarian Melt<li>
-  <li>Portabello Mushroom and Brie<li>
-  <li>Swordfish and Roasted Red Peppers<li>
-  <li>Chicken, Bacon and Apple Melt<li>
-  <li>Grilled Cajun Chicken<li>
-  <li>Roast Beef &amp; VT Cheddar<li>
-</ul>
-
-<ul>BURGERS
-  <li>Classic Cheese Burger</li>
-  <li>Mushroom Burger</li>
-  <li>North Fork Bison Burger</li>
-  <li>Turkey Fusion Burger</li>
-  <li>Salmon Burger</li>
-  <li>Baja Veggie Burger</li>
-
-<ul>PASTA
-  <li>Lobster and Shrimp Farfalle</li>
-  <li>Seafood Fettuccine</li>
-  <li>Timothy’s New Favorite</li>
-  <li>Butternut Squash Ravioli</li>
-  <li>Lobster Mac and Cheese</li>
-</ul>
-
-<ul>DOCKSIDE FAVORITES
-  <li>Broiled Sea Scallops</li>
-  <li>Norwegian Salmon</li>
-  <li>New England Haddock</li>
-  <li>Flat Iron Steak</li>
-  <li>Lobster and Scallop Pie</li>
-  <li>New York Strip Steak</li>
-  <li>BBQ Ribs</li>
-</ul>
-
-<ul>FRIED SEAFOOD PLATES
-  <li>Whole-Belly Clams</li>
-  <li>Fish and Chips</li>
-  <li>Fried Scallops</li>
-</ul>
-
-<ul>DESSERTS
-  <li>Chocolate Torte</li>
-  <li>Tollhouse Cookie Sunday</li>
-  <li>New York Style Cheesecake</li>
-  <li>Very Chocolate Cake</li>
-  <li>Paradise Farm Pies</li>
-  <li>Chelsea Royal Ice Cream</li>
-  <li>Marina Madness Ice Cream</li>
-</ul>
-
-<ul>BRUNCH
-  <li>Eggs Benedict</li>
-  <li>Lobster Bearnaise</li>
-  <li>Scrambled Trios</li>
-  <li>Huevos Rancheros</li>
-  <li>Smoked Salmon &amp; Cream Cheese Bagel</li>
-  <li>Brunch Quiche</li>
-  <li>Buffet</li>
-</ul>
-</span>
-
+          </details>
+        </details>
+      </article><br>
+      <br>
+      <article></article>
+<script type="text/javascript" src="../app/js/menu.js"></script>
 
 </body>
+</html>
