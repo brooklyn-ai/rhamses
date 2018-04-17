@@ -464,8 +464,10 @@ img {
 }
 .wrap {
 	width: 100%;
-	height: 30vh;
-	text-align: center
+	height: 25vh;
+	text-align: center;
+	    position: relative;
+    top: -120px;
 } 
 
 .marina{
@@ -497,7 +499,8 @@ img {
 
 .ctrl-wrap {
 	position: absolute;
-	font-size: 10px
+	font-size: 10px;
+	z-index: 19
 }
 
 input {
@@ -517,10 +520,18 @@ input {
 #slider3 {
     width : 200px;
 }
+h4{
+	    margin: 0;
+    font-size: 13px;
+}
+
+h3{
+	margin-bottom: 0;
+}
 </style>
 
 
-<p>instructions: <b> drag</b>/move components into position and click and drag over group to cread a screenshot: below: download screenshot by right clicking on image</p>
+<p>instructions: <b> drag</b>/move components into position and click and drag over group to create a screenshot: below: download screenshot by right clicking on image</p>
 
   <h4>adjust background color:</h4>
  <div id="picker"></div>
@@ -543,15 +554,15 @@ input {
 
 
 
- <br>  <br> 
- <div class="center text-ctrl" style="margin-bottom:1.5rem;">
+ <br>  
+ <div class="center text-ctrl" style="margin-bottom:0.5rem; font-size: 10px">
 	adjust font size:
   <button class="btn btn-default" id="ftmn" onclick="ftchg('min')">&ndash;</button><span id="ftsz" style="padding:0 10px;font-size:14px">21</span><button class="btn btn-default" id="ftpl" onclick="ftchg('plus')">+</button>
   </div>
 font color:
 <input type="color" v-model="color">
 
-<br><br>
+<br>
 
 Resize image 1
 <div id="slider"></div>
@@ -575,7 +586,6 @@ Resize image 4
 </div>
 
 
-</div>
 
 
 <div class="wrap">
@@ -620,6 +630,7 @@ Resize image 4
 
 
 
+</div>
 
 <hr>
 <h3>Result: <u> Right Cick on Image to save</u> </h3>
