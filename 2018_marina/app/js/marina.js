@@ -618,7 +618,7 @@ document.getElementById("cb25").checked = true;
 var lazyPageA = [];
 registerListener('load', setLazyPageA);
 registerListener('load', lazyLoadPageA);
-registerListener('scroll', lazyLoadA);
+registerListener('scroll', lazyPageA);
 
 function setLazyPageA(){
    // document.getElementById('listing').removeChild(document.getElementById('viewMore'));
