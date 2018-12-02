@@ -996,6 +996,10 @@
 	<!-- manifest meta json -->
 <!-- 	<link rel="manifest" href="/manifest.json">
  -->
+	<script type="text/javascript">
+		window.history.forward();
+		function noBack() { window.history.forward(); }
+	</script>
 
 	<!-- Google Tag Manager -->
 	<script>
@@ -1012,7 +1016,7 @@
 
 
 <link rel="stylesheet" href="app/css/pongstagr.am.min.css">
-<body>
+<body onload="noBack();"onpageshow="if (event.persisted) noBack();" onunload="">
 
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZT4ZL"
@@ -1130,6 +1134,7 @@
 
 		<img class="tour" id="forModal3-tour" title="See in 3d" src="app/img/raster/icons/tour.png">
 
+		<!-- turn off until fixed
 
 		<a href="./games/" class="game">
 
@@ -1142,7 +1147,7 @@
             />
 		<span>Play A Game</span>
 
-		</a>
+		</a> -->
 
 
 
@@ -1933,72 +1938,70 @@
 			<article>
 				<details>
 					<summary>
-						Wine &amp; Tap List
+						Wine <!-- &amp; Tap List -->
 					</summary>
 					
-					<h4>Sparkling</h4>
+					<h4>Sparkling and Rose</h4>
 
 					<p>
 						<small>
-						<em>prosecco &mdash;La Marca</em> classic from Italy<br>
+						<em>rose &mdash;Sacha Lichine</em> France<br>
 
-						<em>brut &mdash;Le Gruet</em> New Mexico<br>
+						<em>prosecco &mdash;La Marca</em> classic from Italy<br>
 						</small>
 					</p>
-
-					
 					
 					<h4>White</h4>
 					<p>
 						<small>
-						<em>pinot grigio &mdash;Stella</em> <span class="no-mobile">Italy-   aroma of pear, fresh and easy going</span><br>
+						<em>pinot grigio &mdash; Stella</em> <span class="no-mobile">Italy-   aroma of pear, fresh and easy going</span><br>
 
-						<em>riesling&mdash; S.A. Prum Essence</em> <span class="no-mobile"> Germany- <i>sweet</i> peach and citrus</span><br>
+						<em>sauvignon blanc&mdash; The Crossings</em> <span class="no-mobile"> New Zealand- <i>crisp</i> fruit, classic Marlborough taste</span><br>
 
-						<em>sauvignon blanc&mdash;The Crossings</em> <span class="no-mobile"> New Zealand- <i>crisp</i> fruit, classic Marlborough taste</span><br>
+						<em>verdejo&mdash; Ipsum </em> <span class="no-mobile">Spain- vibrant and floral</span><br>
 
-						<em>sauvignon blanc&mdash; Domaine Fournier</em> <span class="no-mobile"> France- fresh and <i>crisp</i> Loire Valley</span><br>
+						<em>chardonnay&mdash; SeaGlass </em> <span class="no-mobile">California- unoaked, delicate</span><br>
 
-						<!-- <em>pinot blanc, chard, gruner&mdash; Pannonica </em> Austria light, easy-drinking, <i>dry body</i><br> -->
+						<em>pinot gris&mdash; Pike Road</em> <span class="no-mobile">Oregon- smooth and sophisticated</span><br>
 
-						<em>pinot gris&mdash; Joel Gott</em> <span class="no-mobile">Oregon- smooth and sophisticated, floral notes</span><br>
-
-						<em>chardonnay&mdash; Domaine Jean Touzot</em> <span class="no-mobile">France- an "old vines" white burgundy</span><br>
+						<em>riesling&mdash; Firesone Vineyards</em> <span class="no-mobile"> California- fruit and mellow oak</span><br>
 
 						<em>chardonnay&mdash; Wente</em> <span class="no-mobile">California- plush with fruit and <i>mellow oak</i></span>
 						</small>
 					</p>
 
-
-					
 					<h4>Red</h4>
 
 					<p>
-
 						<small>
+
 						<em>cote du Rhone&mdash; Pont de Nyons</em> <span class="no-mobile"> France- <i>light</i> dry and earthy</span><br>
 
-						<em>merlot&mdash; Wente</em> <span class="no-mobile">California- velvet black cherry with a clear, dry finish</span><br>
+						<em>red blend&mdash; Las Rocas</em> <span class="no-mobile"> Spain- garnacha, tempranillo, syrah</span><br>
 
 						<em>pinot noir&mdash; Austerity</em>  <span class="no-mobile">California- vibrant and balanced </span><br>
 
+						<em>merlot&mdash; Hayes Ranch</em> <span class="no-mobile">California- dry rime cherry</span><br>
+
+						<em>malbec&mdash; Septima</em> <span class="no-mobile">Argentina- dplum perfect</span><br>
+
+						<em>claret&mdash; Guenoc Victorian</em> <span class="no-mobile"> California- bordeaux-style blend, dark fruit</span><br>
+
 						<em>cabernet sauvignon&mdash; Joel Gott</em> <span class="no-mobile"> California- mocha and spice with a touch of tannin</span><br>
 
-						<em>cabernet sauvignon&mdash; Hall</em> <span class="no-mobile">California- impressive, <i>ripe tannins</i>, succulent</span><br>
+						</small> 
 
-						<em>zin, petite sirah&mdash; Hook &amp; Ladder</em> <span class="no-mobile">California- Russian River luscious</span>
-						</small>
-					</p>
-                    <p>
+					</p><br><br>
+                   <!-- <p>
                         
-                        <div id="menu-container"></div>
+                        <div id="menu-container" class="no-mobile"></div>
                         <script type="text/javascript">
                           !function(e,n){var t=document.createElement("script"),a=document.getElementsByTagName("script")[0];t.async=1,a.parentNode.insertBefore(t,a),t.onload=t.onreadystatechange=function(e,a){(a||!t.readyState||/loaded|complete/.test(t.readyState))&&(t.onload=t.onreadystatechange=null,t=void 0,a||n&&n())},t.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("menu-container",11257,41150)});
                         </script>
                         <style>.rating, #menu-container > div > div > div.header-bg-color.header-font-color.divider-color.menu-header-hideable.menu-header > div.header-bg-color.row.location-info > div:nth-child(2) > p, #menu-container > div > div > div.header-bg-color.header-font-color.divider-color.menu-header-hideable.menu-header > div.menu-header-logo-hideable, #menu-container > div > div > div.header-bg-color.header-font-color.divider-color.menu-header-hideable.menu-header > div.header-bg-color.row.location-info > div.col.pull-right.text-right.padding-right > p > a, #menu-container > div > div > div.header-bg-color.header-font-color.divider-color.menu-header-hideable.menu-header > div.header-bg-color.row.location-info > div.col.pull-left.padding-left.text-left > p, #menu-container > div > div > div.menu-nav.ut-row.divider-color > div > div.menu-list > div:nth-child(1) > a, #menu-container > div > div > div.menu-nav.ut-row.divider-color > div > div.menu-list > div:nth-child(2) > a{display:none}</style>
-                    </p>
+                    </p>   turn off until fixable -->
 
-					<p></p><!-- spacer -->
+					<p></p><!-- spacer --> 
 				</details>
 			</article><!-- BRUNCH
 	            Eggs Benedict
